@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    palette (0.0.8)
+      sass (= 3.1.1)
+    sass (3.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  palette

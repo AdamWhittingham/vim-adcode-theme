@@ -1,0 +1,45 @@
+vim_colors "adCode2" do
+  author "Adam Whittingham"
+  notes "A colourful scheme for bright programmers"
+
+  reset true
+  background :dark
+
+  plain_fg  = "fafafa"
+  plain_bg  = "121212"
+  highlight = "ffff00"
+  muted = "303030"
+
+  # Vim Elemets
+  Normal       plain_fg,  plain_bg
+  Default      plain_fg,  plain_bg
+  Visual       plain_fg,  "3C414C"
+  LineNr       "999999",  plain_bg
+  Cursor       none,      "626262"
+  CursorLine   none,      muted
+  CursorLineNr highlight, muted
+  SignColumn   none,      plain_bg
+  VertSplit    muted,     muted
+
+  ## Status Bar
+  StatusLine   "d3d3d5", muted
+  StatusLineNC "939395", muted
+
+  ## Pop-out menus
+  PMenu      plain_fg,  muted
+  PMenuSbar  none,      muted
+  PMenuSel   highlight, muted
+  PMenuThumb plain_bg,  muted
+
+  ## Git Gutter
+  GitGutterAdd        "33FF33", "113311"
+  GitGutterAddLine    none,     "062806"
+  GitGutterChange     "FFFF33", "403511"
+  GitGutterChangeLine none,     "242003"
+  GitGutterDelete     "FF3333", "331111"
+  GitGutterDeleteLine none,     "280606"
+
+  # Programming
+
+  # Ruby
+end
