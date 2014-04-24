@@ -5,41 +5,169 @@ vim_colors "adCode2" do
   reset true
   background :dark
 
-  plain_fg  = "fafafa"
-  plain_bg  = "121212"
-  highlight = "ffff00"
-  muted = "303030"
+  plain_fg    = "fafafa"
+  plain_bg    = "121212"
+  highlight   = "ffff00"
+  muted       = "303030"
 
-  # Vim Elemets
+  red         = "F45050"
+  orange      = "FFC000"
+  yellow      = "E6FF00"
+  green       = "33CF11"
+  blue        = "1199ff"
+  light_blue  = "50D0FF"
+  purple      = "8575F0"
+  teal        = "00CCCC"
+  magenta     = "dd0093"
+  pink        = "EF6FCF"
+  lime        = "77CF11"
+
+  dark_green  = darken(green, 25)
+  light_mute  = lighten(muted, 25)
+
+
+# Vim Elemets
   Normal       plain_fg,  plain_bg
-  Default      plain_fg,  plain_bg
   Visual       plain_fg,  "3C414C"
-  LineNr       "999999",  plain_bg
+  LineNr       "999999"
   Cursor       none,      "626262"
   CursorLine   none,      muted
   CursorLineNr highlight, muted
   SignColumn   none,      plain_bg
   VertSplit    muted,     muted
 
-  ## Status Bar
+## Status Bar
   StatusLine   "d3d3d5", muted
   StatusLineNC "939395", muted
 
-  ## Pop-out menus
+## Pop-out menus
   PMenu      plain_fg,  muted
   PMenuSbar  none,      muted
   PMenuSel   highlight, muted
   PMenuThumb plain_bg,  muted
 
-  ## Git Gutter
+## Git Gutter
   GitGutterAdd        "33FF33", "113311"
   GitGutterAddLine    none,     "062806"
   GitGutterChange     "FFFF33", "403511"
   GitGutterChangeLine none,     "242003"
   GitGutterDelete     "FF3333", "331111"
-  GitGutterDeleteLine none,     "280606"
+  GitGutterDeleteLine none,     "250505"
 
-  # Programming
+## NERD Tree
+  NERDTreeCWD       "96ff00"
+  NERDTreeDir       "009ccf"
+  NERDTreeDirSlash  "009ccf"
 
-  # Ruby
+# Programming
+  Boolean                             yellow
+  Character                           green
+  Comment                             light_mute, none, gui: :italic
+  Conditional                         light_blue
+  Constant                            orange
+  Debug                               "ff9800"
+  Define                              "fafafa"
+  Delimiter                           "ff9800"
+  Exception                           red
+  Float                               darken(teal, 10)
+  Function                            "ffff00"
+  Identifier                          "c6de10"
+  Include                             orange
+  Keyword                             "00c4ff"
+  Label                               "7e8aa2"
+  MatchParen                          "ffffff"
+  Number                              teal
+  Operator                            "7e8aa2"
+  Special                             "84ff00"
+  Statement                           "8c5fe6"
+  String                              green
+  Structure                           "7e8aa2"
+  Title                               "f6f3e8"
+  Todo                                light_mute
+  Type                                "54c0ff"
+  Typedef                             "7e8aa2"
+
+# Ruby
+  rubyAccess                          "a40073"
+  rubyAttribute                       purple
+  rubyBlockParameter                  blue
+  rubyBlockParameterList              plain_fg
+  rubyBoolean                         orange
+  rubyClass                           orange
+  rubyClassDeclaration                yellow
+  rubyClassVariable                   darken(blue, 10)
+  rubyConditional                     light_blue
+  rubyConstant                        orange
+  rubyControl                         pink
+  rubyDefine                          blue
+  rubyFloat                           darken(teal, 10)
+  rubyFunction                        yellow
+  rubyGlobalVariable                  orange
+  rubyInclude                         yellow
+  rubyInstanceVariable                dark_green
+  rubyInteger                         teal
+  rubyPredefinedIdentifier            "de5577"
+  rubyRegexp                          magenta
+  rubyRegexpAnchor                    darken(magenta, 20)
+  rubyRegexpDelimiter                 darken(magenta, 20)
+  rubyRegexpSpecial                   lighten(magenta, 20)
+  rubyRegexpQuantifier                lighten(magenta, 20)
+  rubyStringDelimiter                 lime
+  rubySymbol                          light_blue
+
+# HTML
+  htmlTag                              "00c900"
+  htmlTagN                             "00c900"
+  htmlSpecialTagName                   "00c900"
+  htmlEndTag                           "00c900"
+  htmlArg                              "009cff"
+  htmlString                           "96ff00"
+  htmlTagName                          "00c900"
+  htmlLink                             "FFFFFF"
+  htmlComment                          "FFFFFF"
+  htmlCommentPart                      "BBBBBB"
+  htmlCSSStyleComment                  "BBBBBB"
+  htmlitalic                           "D0D0D0"
+  htmlboldunderlineitalic              "D0D0D0"
+  htmlbolditalic                       "D0D0D0"
+  htmlunderlineitalic                  "D0D0D0"
+  htmlbold                             "D0D0D0"
+  htmlboldunderline                    "D0D0D0"
+  htmlunderline                        "D0D0D0"
+
+# CSS
+  cssTagName                           "FFFFFF"
+  cssAttributeSelector                 "DDDDDD"
+  cssSelectorOp                        "DDDDDD"
+  cssSelectorOp2                       "DDDDDD"
+  cssColorProp                         "FFC912"
+  cssBoxProp                           "FFC912"
+  cssTextAttr                          "009cff"
+  cssDefinition                        "009cff"
+  cssFunctionName                      "009cff"
+  cssURL                               "009cff"
+  cssBoxAttr                           "B04DFF"
+  cssCommonAttr                        "B04DFF"
+  cssStringQQ                          "00c900"
+  cssColor                             "00c900"
+  cssDefinition                        "B04DFF"
+  cssRenderProp                        "009cff"
+  cssTextProp                          "FFC912"
+  cssTableProp                         "FFC912"
+  cssFontProp                          "FFC912"
+  cssFontAttr                          "009cff"
+  cssColorAttr                         "009cff"
+  cssGeneratedContentProp              "FFC912"
+
+# Javascript
+  javaScript                           "FFFFFF"
+  javaScriptGlobal                     "FFFFFF"
+  javaScriptNumber                     "00c99b"
+  javaScriptIdentifier                 "FFC912"
+  javaScriptOperator                   "FFC912"
+  javaScriptFunction                   "FFC912"
+  javaScriptStatement                  "FFC912"
+  javaScriptNull                       "FF2BC5"
+  javaScriptMember                     "00c900"
+
 end
