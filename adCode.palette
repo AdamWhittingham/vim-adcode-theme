@@ -9,20 +9,21 @@ vim_colors "adCode2" do
   plain_bg    = "121212"
   highlight   = "ffff00"
   muted       = "303030"
+  warning     = "ff9800"
 
   red         = "F45050"
-  orange      = "FFC000"
-  yellow      = "E6FF00"
-  green       = "33CF11"
+  orange      = "FFC525"
+  yellow      = "F0F040"
+  green       = "30C000"
+  lime        = "A0FF20"
   blue        = "1199ff"
   light_blue  = "50D0FF"
   purple      = "8575F0"
+  light_purple= "A090FF"
   teal        = "00CCCC"
   magenta     = "dd0093"
-  pink        = "EF6FCF"
-  lime        = "77CF11"
+  pink        = "D035B5"
 
-  dark_green  = darken(green, 25)
   light_mute  = lighten(muted, 25)
 
 
@@ -46,14 +47,6 @@ vim_colors "adCode2" do
   PMenuSel   highlight, muted
   PMenuThumb plain_bg,  muted
 
-## Git Gutter
-  GitGutterAdd        "33FF33", "113311"
-  GitGutterAddLine    none,     "062806"
-  GitGutterChange     "FFFF33", "403511"
-  GitGutterChangeLine none,     "242003"
-  GitGutterDelete     "FF3333", "331111"
-  GitGutterDeleteLine none,     "250505"
-
 ## NERD Tree
   NERDTreeCWD       "96ff00"
   NERDTreeDir       "009ccf"
@@ -65,9 +58,9 @@ vim_colors "adCode2" do
   Comment                             light_mute, none, gui: :italic
   Conditional                         light_blue
   Constant                            orange
-  Debug                               "ff9800"
-  Define                              "fafafa"
-  Delimiter                           "ff9800"
+  Debug                               warning
+  Define                              plain_fg
+  Delimiter                           warning
   Exception                           red
   Float                               darken(teal, 10)
   Function                            "ffff00"
@@ -80,7 +73,7 @@ vim_colors "adCode2" do
   Operator                            "7e8aa2"
   Special                             "84ff00"
   Statement                           "8c5fe6"
-  String                              green
+  String                              lime
   Structure                           "7e8aa2"
   Title                               "f6f3e8"
   Todo                                light_mute
@@ -88,32 +81,37 @@ vim_colors "adCode2" do
   Typedef                             "7e8aa2"
 
 # Ruby
-  rubyAccess                          "a40073"
+  rubyAccess                          darken(pink, 15),             none,    gui: :bold
   rubyAttribute                       purple
-  rubyBlockParameter                  blue
+  rubyBlockParameter                  teal
   rubyBlockParameterList              plain_fg
   rubyBoolean                         orange
-  rubyClass                           orange
+  rubyClass                           yellow,                       none,    gui: :italic
   rubyClassDeclaration                yellow
   rubyClassVariable                   darken(blue, 10)
-  rubyConditional                     light_blue
+  rubyConditional                     light_purple
   rubyConstant                        orange
   rubyControl                         pink
-  rubyDefine                          blue
+  rubyDefine                          pink
+  rubyException                       warning
   rubyFloat                           darken(teal, 10)
-  rubyFunction                        yellow
+  rubyFunction                        light_blue
   rubyGlobalVariable                  orange
   rubyInclude                         yellow
-  rubyInstanceVariable                dark_green
+  rubyInstanceVariable                green
   rubyInteger                         teal
-  rubyPredefinedIdentifier            "de5577"
+  rubyMethodDeclaration               light_blue
+  rubyModule                          lighten(orange, 20)
+  rubyPredefinedIdentifier            orange
   rubyRegexp                          magenta
-  rubyRegexpAnchor                    darken(magenta, 20)
+  rubyRegexpAnchor                    darken(magenta, 10)
   rubyRegexpDelimiter                 darken(magenta, 20)
-  rubyRegexpSpecial                   lighten(magenta, 20)
+  rubyRegexpSpecial                   lighten(magenta, 10)
   rubyRegexpQuantifier                lighten(magenta, 20)
-  rubyStringDelimiter                 lime
-  rubySymbol                          light_blue
+  rubyRailsTestMethod                 plain_fg
+  rubyString                          lime
+  rubyStringDelimiter                 green
+  rubySymbol                          blue
 
 # HTML
   htmlTag                              "00c900"
@@ -169,5 +167,13 @@ vim_colors "adCode2" do
   javaScriptStatement                  "FFC912"
   javaScriptNull                       "FF2BC5"
   javaScriptMember                     "00c900"
+
+## Git Gutter
+  GitGutterAdd        "33FF33", "113311"
+  GitGutterAddLine    none,     "062806"
+  GitGutterChange     "FFFF33", "403511"
+  GitGutterChangeLine none,     "242003"
+  GitGutterDelete     "FF3333", "331111"
+  GitGutterDeleteLine none,     "250505"
 
 end
