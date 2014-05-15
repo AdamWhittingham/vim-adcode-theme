@@ -1,4 +1,4 @@
-vim_colors "adCode2" do
+vim_colors "adCode" do
   author "Adam Whittingham"
   notes "A colourful scheme for bright programmers"
 
@@ -7,7 +7,7 @@ vim_colors "adCode2" do
 
   plain_fg    = "fafafa"
   plain_bg    = "121212"
-  highlight   = "ffff00"
+  highlight   = "FA2050"
   muted       = "303030"
   warning     = "ff9800"
 
@@ -16,13 +16,13 @@ vim_colors "adCode2" do
   yellow      = "F0F040"
   green       = "30C000"
   lime        = "A0FF20"
-  blue        = "1199ff"
+  blue        = "2599ff"
   light_blue  = "50D0FF"
   purple      = "8575F0"
   light_purple= "A090FF"
   teal        = "00CCCC"
   magenta     = "dd0093"
-  pink        = "D035B5"
+  pink        = "D555D5"
 
   light_mute  = lighten(muted, 25)
 
@@ -30,10 +30,11 @@ vim_colors "adCode2" do
 # Vim Elemets
   Normal       plain_fg,  plain_bg
   Visual       plain_fg,  "3C414C"
-  LineNr       "999999"
+  LineNr       lighten(muted, 10), lighten(plain_bg, 5)
   Cursor       none,      "626262"
   CursorLine   none,      muted
-  CursorLineNr highlight, muted
+  CursorLineNr yellow,    muted
+  Search       plain_fg,  highlight
   SignColumn   none,      plain_bg
   VertSplit    muted,     muted
 
@@ -44,16 +45,24 @@ vim_colors "adCode2" do
 ## Pop-out menus
   PMenu      plain_fg,  muted
   PMenuSbar  none,      muted
-  PMenuSel   highlight, muted
-  PMenuThumb plain_bg,  muted
+  PMenuSel   plain_fg,  blue
+  PMenuThumb plain_bg,  blue
 
 ## NERD Tree
-  NERDTreeCWD       "96ff00"
-  NERDTreeDir       "009ccf"
-  NERDTreeDirSlash  "009ccf"
+  NERDTreeCWD       lime
+  NERDTreeDir       blue
+  NERDTreeDirSlash  blue
+
+## Git Gutter
+  GitGutterAdd        "33FF33", "115511"
+  GitGutterAddLine    none,     "062806"
+  GitGutterChange     "FFFF33", "ABAB00"
+  GitGutterChangeLine none,     "242003"
+  GitGutterDelete     "FF3333", "331111"
+  GitGutterDeleteLine none,     "250505"
 
 # Programming
-  Boolean                             yellow
+  Boolean                             orange
   Character                           green
   Comment                             light_mute, none, gui: :italic
   Conditional                         light_blue
@@ -63,7 +72,7 @@ vim_colors "adCode2" do
   Delimiter                           warning
   Exception                           red
   Float                               darken(teal, 10)
-  Function                            "ffff00"
+  Function                            light_blue
   Identifier                          "c6de10"
   Include                             orange
   Keyword                             "00c4ff"
@@ -84,15 +93,16 @@ vim_colors "adCode2" do
   rubyAccess                          darken(pink, 15),             none,    gui: :bold
   rubyAttribute                       purple
   rubyBlockParameter                  teal
-  rubyBlockParameterList              plain_fg
+  rubyBlockParameterList              blue
   rubyBoolean                         orange
   rubyClass                           yellow,                       none,    gui: :italic
   rubyClassDeclaration                yellow
-  rubyClassVariable                   darken(blue, 10)
+  rubyClassVariable                   light_blue
   rubyConditional                     light_purple
   rubyConstant                        orange
   rubyControl                         pink
   rubyDefine                          pink
+  rubyDoBlock                         none,                         none
   rubyException                       warning
   rubyFloat                           darken(teal, 10)
   rubyFunction                        light_blue
@@ -100,6 +110,7 @@ vim_colors "adCode2" do
   rubyInclude                         yellow
   rubyInstanceVariable                green
   rubyInteger                         teal
+  rubyMethodBlock                     none,                         none
   rubyMethodDeclaration               light_blue
   rubyModule                          lighten(orange, 20)
   rubyPredefinedIdentifier            orange
@@ -114,48 +125,56 @@ vim_colors "adCode2" do
   rubySymbol                          blue
 
 # HTML
-  htmlTag                              "00c900"
-  htmlTagN                             "00c900"
-  htmlSpecialTagName                   "00c900"
-  htmlEndTag                           "00c900"
-  htmlArg                              "009cff"
-  htmlString                           "96ff00"
-  htmlTagName                          "00c900"
-  htmlLink                             "FFFFFF"
-  htmlComment                          "FFFFFF"
-  htmlCommentPart                      "BBBBBB"
-  htmlCSSStyleComment                  "BBBBBB"
-  htmlitalic                           "D0D0D0"
-  htmlboldunderlineitalic              "D0D0D0"
-  htmlbolditalic                       "D0D0D0"
-  htmlunderlineitalic                  "D0D0D0"
-  htmlbold                             "D0D0D0"
-  htmlboldunderline                    "D0D0D0"
-  htmlunderline                        "D0D0D0"
+  htmlTag                              green
+  htmlTagN                             green
+  htmlSpecialTagName                   green
+  htmlEndTag                           green
+  htmlArg                              blue
+  htmlString                           plain_fg
+  htmlTagName                          green
+  htmlLink                             plain_fg
+  htmlComment                          muted
+  htmlCommentPart                      muted
+  htmlCSSStyleComment                  lime
+  htmlitalic                           plain_fg,                 none,       gui: :italic
+  htmlboldunderlineitalic              plain_fg,                 none,       gui: 'italic,bold,underline'
+  htmlbolditalic                       plain_fg,                 none,       gui: 'italic,bold'
+  htmlunderlineitalic                  plain_fg,                 none,       gui: 'italic,underline'
+  htmlbold                             plain_fg,                 none,       gui: :bold
+  htmlboldunderline                    plain_fg,                 none,       gui: 'bold,underline'
+  htmlunderline                        plain_fg,                 none,       gui: :underline
 
 # CSS
-  cssTagName                           "FFFFFF"
-  cssAttributeSelector                 "DDDDDD"
-  cssSelectorOp                        "DDDDDD"
-  cssSelectorOp2                       "DDDDDD"
-  cssColorProp                         "FFC912"
-  cssBoxProp                           "FFC912"
-  cssTextAttr                          "009cff"
-  cssDefinition                        "009cff"
-  cssFunctionName                      "009cff"
-  cssURL                               "009cff"
-  cssBoxAttr                           "B04DFF"
-  cssCommonAttr                        "B04DFF"
-  cssStringQQ                          "00c900"
-  cssColor                             "00c900"
-  cssDefinition                        "B04DFF"
-  cssRenderProp                        "009cff"
-  cssTextProp                          "FFC912"
-  cssTableProp                         "FFC912"
-  cssFontProp                          "FFC912"
-  cssFontAttr                          "009cff"
-  cssColorAttr                         "009cff"
-  cssGeneratedContentProp              "FFC912"
+  cssAttributeSelector    green
+  cssBackgroundProp       green
+  cssBorderAttr           light_blue
+  cssBorderProp           green
+  cssBoxAttr              light_blue
+  cssBackgroundAttr       light_blue
+  cssUIAttr               light_blue
+  cssBoxProp              green
+  cssBraces               plain_fg
+  cssColor                blue
+  cssColorAttr            light_blue
+  cssColorProp            green
+  cssCommonAttr           light_blue
+  cssDefinition           blue
+  cssDefinition           green
+  cssDimensionProp        green
+  cssFontAttr             light_blue
+  cssFontProp             green
+  cssFunctionName         yellow
+  cssGeneratedContentProp green
+  cssNoise                plain_fg
+  cssPositioningProp      green
+  cssPositioningAttr      yellow
+  cssPseudoClassId        yellow
+  cssRenderProp           green
+  cssTableProp            green
+  cssTagName              plain_fg
+  cssTextAttr             light_blue
+  cssTextProp             green
+  cssURL                  lime
 
 # Javascript
   javaScript                           "FFFFFF"
@@ -167,13 +186,5 @@ vim_colors "adCode2" do
   javaScriptStatement                  "FFC912"
   javaScriptNull                       "FF2BC5"
   javaScriptMember                     "00c900"
-
-## Git Gutter
-  GitGutterAdd        "33FF33", "113311"
-  GitGutterAddLine    none,     "062806"
-  GitGutterChange     "FFFF33", "403511"
-  GitGutterChangeLine none,     "242003"
-  GitGutterDelete     "FF3333", "331111"
-  GitGutterDeleteLine none,     "250505"
 
 end
