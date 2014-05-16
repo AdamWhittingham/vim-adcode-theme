@@ -26,7 +26,6 @@ vim_colors "adCode" do
 
   light_mute  = lighten(muted, 25)
 
-
 # Vim Elemets
   Normal       plain_fg,  plain_bg
   Visual       plain_fg,  "3C414C"
@@ -60,6 +59,10 @@ vim_colors "adCode" do
   GitGutterChangeLine none,     "242003"
   GitGutterDelete     "FF3333", "331111"
   GitGutterDeleteLine none,     "250505"
+
+## Quick Find window
+  qfFileName          light_blue
+  qfLineNr            yellow
 
 # Programming
   Boolean                             orange
