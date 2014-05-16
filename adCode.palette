@@ -5,47 +5,47 @@ vim_colors "adCode" do
   reset true
   background :dark
 
-  plain_fg    = "fafafa"
-  plain_bg    = "121212"
-  highlight   = "FA2050"
-  muted       = "303030"
-  warning     = "ff9800"
+  plain_fg     = "fafafa"
+  plain_bg     = "121212"
+  highlight    = "FA2050"
+  muted        = "303030"
+  warning      = "ff9800"
 
-  red         = "F45050"
-  orange      = "FFC525"
-  yellow      = "F0F040"
-  green       = "30C000"
-  lime        = "A0FF20"
-  blue        = "2599ff"
-  light_blue  = "50D0FF"
-  purple      = "8575F0"
-  light_purple= "A090FF"
-  teal        = "00CCCC"
-  magenta     = "dd0093"
-  pink        = "D555D5"
+  red          = "F45050"
+  orange       = "FFC525"
+  yellow       = "F0F040"
+  green        = "30C000"
+  lime         = "A0FF20"
+  blue         = "2599ff"
+  light_blue   = "50D0FF"
+  purple       = "8575F0"
+  light_purple = "A090FF"
+  teal         = "00CCCC"
+  magenta      = "dd0093"
+  pink         = "D555D5"
 
-  light_mute  = lighten(muted, 25)
+  light_mute   = lighten(muted,25)
 
 # Vim Elemets
-  Normal       plain_fg,  plain_bg
-  Visual       plain_fg,  "3C414C"
-  LineNr       lighten(muted, 10), lighten(plain_bg, 5)
-  Cursor       none,      "626262"
-  CursorLine   none,      muted
-  CursorLineNr yellow,    muted
-  Search       plain_fg,  highlight
-  SignColumn   none,      plain_bg
-  VertSplit    muted,     muted
+  Normal       plain_fg,          plain_bg
+  Visual       plain_fg,          "3C414C"
+  LineNr       lighten(muted,10), lighten(plain_bg,5)
+  Cursor       none,              "626262"
+  CursorLine   none,              muted
+  CursorLineNr yellow,            muted
+  Search       plain_fg,          highlight
+  SignColumn   none,              plain_bg
+  VertSplit    muted,             muted
 
 ## Status Bar
   StatusLine   "d3d3d5", muted
   StatusLineNC "939395", muted
 
-## Pop-out menus
-  PMenu      plain_fg,  muted
-  PMenuSbar  none,      muted
-  PMenuSel   plain_fg,  blue
-  PMenuThumb plain_bg,  blue
+##             Menus
+  PMenu        plain_fg, muted
+  PMenuSbar    none,     muted
+  PMenuSel     plain_fg, blue
+  PMenuThumb   plain_bg, blue
 
 ## NERD Tree
   NERDTreeCWD       lime
@@ -65,87 +65,87 @@ vim_colors "adCode" do
   qfLineNr            yellow
 
 # Programming
-  Boolean                             orange
-  Character                           green
-  Comment                             light_mute, none, gui: :italic
-  Conditional                         light_blue
-  Constant                            orange
-  Debug                               warning
-  Define                              plain_fg
-  Delimiter                           warning
-  Exception                           red
-  Float                               darken(teal, 10)
-  Function                            light_blue
-  Identifier                          "c6de10"
-  Include                             orange
-  Keyword                             "00c4ff"
-  Label                               "7e8aa2"
-  MatchParen                          "ffffff"
-  Number                              teal
-  Operator                            "7e8aa2"
-  Special                             "84ff00"
-  Statement                           "8c5fe6"
-  String                              lime
-  Structure                           "7e8aa2"
-  Title                               "f6f3e8"
-  Todo                                light_mute
-  Type                                "54c0ff"
-  Typedef                             "7e8aa2"
+  Boolean     orange
+  Character   green
+  Comment     light_mute,  none, gui: :italic
+  Conditional light_blue
+  Constant    orange
+  Debug       warning
+  Define      plain_fg
+  Delimiter   warning
+  Exception   red
+  Float       darken(teal, 10)
+  Function    light_blue
+  Identifier  "c6de10"
+  Include     orange
+  Keyword     "00c4ff"
+  Label       "7e8aa2"
+  MatchParen  "ffffff"
+  Number      teal
+  Operator    "7e8aa2"
+  Special     "84ff00"
+  Statement   "8c5fe6"
+  String      lime
+  Structure   "7e8aa2"
+  Title       "f6f3e8"
+  Todo        light_mute
+  Type        "54c0ff"
+  Typedef     "7e8aa2"
 
 # Ruby
-  rubyAccess                          darken(pink, 15),             none,    gui: :bold
-  rubyAttribute                       purple
-  rubyBlockParameter                  teal
-  rubyBlockParameterList              blue
-  rubyBoolean                         orange
-  rubyClass                           yellow,                       none,    gui: :italic
-  rubyClassDeclaration                yellow
-  rubyClassVariable                   light_blue
-  rubyConditional                     light_purple
-  rubyConstant                        orange
-  rubyControl                         pink
-  rubyDefine                          pink
-  rubyDoBlock                         none,                         none
-  rubyException                       warning
-  rubyFloat                           darken(teal, 10)
-  rubyFunction                        light_blue
-  rubyGlobalVariable                  orange
-  rubyInclude                         yellow
-  rubyInstanceVariable                green
-  rubyInteger                         teal
-  rubyMethodBlock                     none,                         none
-  rubyMethodDeclaration               light_blue
-  rubyModule                          lighten(orange, 20)
-  rubyPredefinedIdentifier            orange
-  rubyRegexp                          magenta
-  rubyRegexpAnchor                    darken(magenta, 10)
-  rubyRegexpDelimiter                 darken(magenta, 20)
-  rubyRegexpSpecial                   lighten(magenta, 10)
-  rubyRegexpQuantifier                lighten(magenta, 20)
-  rubyRailsTestMethod                 plain_fg
-  rubyString                          lime
-  rubyStringDelimiter                 green
-  rubySymbol                          blue
+  rubyAccess               darken(pink,     15),  none, gui:    :bold
+  rubyAttribute            purple
+  rubyBlockParameter       teal
+  rubyBlockParameterList   blue
+  rubyBoolean              orange
+  rubyClass                yellow,          none, gui:  :italic
+  rubyClassDeclaration     yellow
+  rubyClassVariable        light_blue
+  rubyConditional          light_purple
+  rubyConstant             orange
+  rubyControl              pink
+  rubyDefine               pink
+  rubyDoBlock              none,            none
+  rubyException            warning
+  rubyFloat                darken(teal,     10)
+  rubyFunction             light_blue
+  rubyGlobalVariable       orange
+  rubyInclude              yellow
+  rubyInstanceVariable     green
+  rubyInteger              teal
+  rubyMethodBlock          none,            none
+  rubyMethodDeclaration    light_blue
+  rubyModule               lighten(orange,  20)
+  rubyPredefinedIdentifier orange
+  rubyRegexp               magenta
+  rubyRegexpAnchor         darken(magenta,  10)
+  rubyRegexpDelimiter      darken(magenta,  20)
+  rubyRegexpSpecial        lighten(magenta, 10)
+  rubyRegexpQuantifier     lighten(magenta, 20)
+  rubyRailsTestMethod      plain_fg
+  rubyString               lime
+  rubyStringDelimiter      green
+  rubySymbol               blue
 
 # HTML
-  htmlTag                              green
-  htmlTagN                             green
-  htmlSpecialTagName                   green
-  htmlEndTag                           green
-  htmlArg                              blue
-  htmlString                           plain_fg
-  htmlTagName                          green
-  htmlLink                             plain_fg
-  htmlComment                          muted
-  htmlCommentPart                      muted
-  htmlCSSStyleComment                  lime
-  htmlitalic                           plain_fg,                 none,       gui: 'italic'
-  htmlboldunderlineitalic              plain_fg,                 none,       gui: 'italic,bold,underline'
-  htmlbolditalic                       plain_fg,                 none,       gui: 'italic,bold'
-  htmlunderlineitalic                  plain_fg,                 none,       gui: 'italic,underline'
-  htmlbold                             plain_fg,                 none,       gui: 'bold'
-  htmlboldunderline                    plain_fg,                 none,       gui: 'bold,underline'
-  htmlunderline                        plain_fg,                 none,       gui: 'underline'
+  htmlTag                 green
+  htmlTagN                green
+  htmlSpecialTagName      green
+  htmlEndTag              green
+  htmlArg                 blue
+  htmlString              plain_fg
+  htmlTagName             green
+  htmlLink                plain_fg
+  htmlComment             muted
+  htmlCommentPart         muted
+  htmlCSSStyleComment     lime
+  htmlitalic              plain_fg, none, gui: 'italic'
+  htmlboldunderlineitalic plain_fg, none, gui: 'italic,bold,underline'
+  htmlbolditalic          plain_fg, none, gui: 'italic,bold'
+  htmlunderlineitalic     plain_fg, none, gui: 'italic,underline'
+  htmlbold                plain_fg, none, gui: 'bold'
+  htmlboldunderline       plain_fg, none, gui: 'bold,underline'
+  htmlunderline           plain_fg, none, gui: 'underline'
 
 # CSS
   cssAttributeSelector    green
@@ -180,20 +180,20 @@ vim_colors "adCode" do
   cssURL                  lime
 
 # Javascript
-  javaScript                           "FFFFFF"
-  javaScriptGlobal                     "FFFFFF"
-  javaScriptNumber                     "00c99b"
-  javaScriptIdentifier                 "FFC912"
-  javaScriptOperator                   "FFC912"
-  javaScriptFunction                   "FFC912"
-  javaScriptStatement                  "FFC912"
-  javaScriptNull                       "FF2BC5"
-  javaScriptMember                     "00c900"
+  javaScript           "FFFFFF"
+  javaScriptGlobal     "FFFFFF"
+  javaScriptNumber     "00c99b"
+  javaScriptIdentifier "FFC912"
+  javaScriptOperator   "FFC912"
+  javaScriptFunction   "FFC912"
+  javaScriptStatement  "FFC912"
+  javaScriptNull       "FF2BC5"
+  javaScriptMember     "00c900"
 
 # Cucumber
   cucumberFeature         orange
   cucumberScenario        yellow
-  cucumberTags            pink,          none,       gui: :italic
+  cucumberTags            pink,        none, gui: :italic
   cucumberBackground      pink
   cucumberGiven           light_purple
   cucumberGivenAnd        light_purple
