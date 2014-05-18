@@ -16,10 +16,10 @@ vim_colors "adCode" do
   yellow       = "F0F040"
   green        = "30C000"
   lime         = "A0FF20"
-  blue         = "2599ff"
-  light_blue   = "50D0FF"
-  purple       = "8575F0"
-  light_purple = "A090FF"
+  blue         = "0080FF"
+  light_blue   = "3FCCFF"
+  purple       = "AA5Aff"
+  light_purple = "A898FF"
   teal         = "00CCCC"
   magenta      = "dd0093"
   pink         = "D555D5"
@@ -43,7 +43,7 @@ vim_colors "adCode" do
   StatusLine   "d3d3d5", muted
   StatusLineNC "939395", muted
 
-##             Menus
+## Menus
   PMenu        plain_fg, muted
   PMenuSbar    none,     muted
   PMenuSel     plain_fg, blue
@@ -53,6 +53,7 @@ vim_colors "adCode" do
   NERDTreeCWD       lime
   NERDTreeDir       blue
   NERDTreeDirSlash  blue
+  NERDTreeUp        light_blue
 
 ## Git Gutter
   GitGutterAdd        "33FF33", "115511"
@@ -78,9 +79,9 @@ vim_colors "adCode" do
   Exception   red
   Float       darken(teal, 10)
   Function    light_blue
-  Identifier  "c6de10"
+  Identifier  lime
   Include     orange
-  Keyword     "00c4ff"
+  Keyword     green
   Label       "7e8aa2"
   Number      teal
   Operator    "7e8aa2"
