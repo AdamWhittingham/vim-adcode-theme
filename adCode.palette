@@ -5,14 +5,14 @@ vim_colors "adCode" do
   reset true
   background :dark
 
-  plain_fg     = "fafafa"
+  plain_fg     = "FAFAFA"
   plain_bg     = "121212"
-  highlight    = "FA2050"
-  muted        = "303030"
-  warning      = "ff9800"
+  muted        = "3C414C"
+  vertical_div = lighten(plain_bg, 5)
+  warning      = "FF9800"
 
   red          = "F45050"
-  orange       = "FFC525"
+  orange       = "FFC912"
   yellow       = "F0F040"
   green        = "30C000"
   lime         = "A0FF20"
@@ -24,18 +24,20 @@ vim_colors "adCode" do
   magenta      = "dd0093"
   pink         = "D555D5"
 
+  highlight = orange
   light_mute   = lighten(muted,25)
 
 # Vim Elemets
   Normal       plain_fg,          plain_bg
-  Visual       plain_fg,          "3C414C"
-  LineNr       lighten(muted,10), lighten(plain_bg,5)
-  Cursor       none,              "626262"
-  CursorLine   none,              muted
+  Visual       none,              muted
+  LineNr       lighten(muted,10), vertical_div
+  Cursor       plain_fg,          "646464"
+  CursorLine   none,              "242424"
   CursorLineNr yellow,            muted
-  Search       plain_fg,          highlight
-  SignColumn   none,              plain_bg
-  VertSplit    muted,             muted
+  Search       plain_bg,          highlight, gui: 'italic,bold'
+  MatchParen   plain_bg,          highlight, gui: 'italic,bold'
+  SignColumn   plain_fg,          vertical_div
+  VertSplit    vertical_div,      vertical_div
 
 ## Status Bar
   StatusLine   "d3d3d5", muted
@@ -67,7 +69,7 @@ vim_colors "adCode" do
 # Programming
   Boolean     orange
   Character   green
-  Comment     light_mute,  none, gui: :italic
+  Comment     light_mute,  none, gui: 'italic'
   Conditional light_blue
   Constant    orange
   Debug       warning
@@ -80,7 +82,6 @@ vim_colors "adCode" do
   Include     orange
   Keyword     "00c4ff"
   Label       "7e8aa2"
-  MatchParen  "ffffff"
   Number      teal
   Operator    "7e8aa2"
   Special     "84ff00"
@@ -93,12 +94,12 @@ vim_colors "adCode" do
   Typedef     "7e8aa2"
 
 # Ruby
-  rubyAccess               darken(pink,     15),  none, gui:    :bold
+  rubyAccess               darken(pink, 15),  none, gui:    'bold'
   rubyAttribute            purple
   rubyBlockParameter       teal
   rubyBlockParameterList   blue
   rubyBoolean              orange
-  rubyClass                yellow,          none, gui:  :italic
+  rubyClass                yellow,          none, gui:  'italic'
   rubyClassDeclaration     yellow
   rubyClassVariable        light_blue
   rubyConditional          light_purple
@@ -180,20 +181,20 @@ vim_colors "adCode" do
   cssURL                  lime
 
 # Javascript
-  javaScript           "FFFFFF"
-  javaScriptGlobal     "FFFFFF"
-  javaScriptNumber     "00c99b"
-  javaScriptIdentifier "FFC912"
-  javaScriptOperator   "FFC912"
-  javaScriptFunction   "FFC912"
-  javaScriptStatement  "FFC912"
-  javaScriptNull       "FF2BC5"
-  javaScriptMember     "00c900"
+  javaScript              plain_fg
+  javaScriptGlobal        pink
+  javaScriptNumber        teal
+  javaScriptIdentifier    orange
+  javaScriptOperator      green
+  javaScriptFunction      yellow
+  javaScriptStatement     green
+  javaScriptNull          pink
+  javaScriptMember        green
 
 # Cucumber
   cucumberFeature         orange
   cucumberScenario        yellow
-  cucumberTags            pink,        none, gui: :italic
+  cucumberTags            pink,        none, gui: 'italic'
   cucumberBackground      pink
   cucumberGiven           light_purple
   cucumberGivenAnd        light_purple
