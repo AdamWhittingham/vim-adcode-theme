@@ -192,6 +192,16 @@ vim_colors "adCode" do
   javaScriptNull          pink
   javaScriptMember        green
 
+# CoffeeScript
+  coffeeConditional       light_purple
+  coffeeRepeat            purple
+  coffeeParens            plain_fg
+  coffeeParen             yellow
+  coffeeBrackets          plain_fg
+  coffeeBracket           orange
+  coffeeObjAssign         green
+  coffeeString            lime
+
 # Cucumber
   cucumberFeature         orange
   cucumberScenario        yellow
