@@ -56,12 +56,14 @@ vim_colors "adCode" do
   NERDTreeUp        light_blue
 
 ## Git Gutter
-  GitGutterAdd        "33FF33", "115511"
-  GitGutterAddLine    none,     "063806"
-  GitGutterChange     "FFFF33", "757500"
-  GitGutterChangeLine none,     "383805"
-  GitGutterDelete     "FF3333", "331111"
-  GitGutterDeleteLine none,     "380505"
+  GitGutterAdd              "33FF33",   "115511"
+  GitGutterAddLine          none,       "063806"
+  GitGutterChange           "FFFF33",   "757500"
+  GitGutterChangeLine       none,       "383805"
+  GitGutterDelete           "FF3333",   "331111"
+  GitGutterDeleteLine       none,       "380505"
+  GitGutterChangeDelete     "FFFF33",   "757500"
+  GitGutterChangeDeleteLine none,       "383805"
 
 ## Quick Find window
   qfFileName          light_blue
