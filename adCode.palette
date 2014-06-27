@@ -216,4 +216,11 @@ vim_colors "adCode" do
   cucumberThen            lime
   cucumberThenAnd         lime
 
+# SSH Config
+  sshConfigHostSect       blue,         gui: 'bold'
+  sshConfigHostPort       light_blue,   gui: 'bold'
+  sshConfigKeyword        light_purple
+  sshconfigPreferredAuth  orange
+  sshconfigNumber         lime
+
 end
