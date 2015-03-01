@@ -130,6 +130,7 @@ vim_colors "adCode" do
   rubyString               lime
   rubyStringDelimiter      green
   rubySymbol               blue
+  rubyReturn               purple
 
 # HTML
   htmlTag                 green
@@ -184,15 +185,22 @@ vim_colors "adCode" do
   cssURL                  lime
 
 # Javascript
-  javaScript              plain_fg
-  javaScriptGlobal        pink
-  javaScriptNumber        teal
-  javaScriptIdentifier    orange
-  javaScriptOperator      green
-  javaScriptFunction      yellow
-  javaScriptStatement     green
-  javaScriptNull          pink
-  javaScriptMember        green
+  jsRegexpOr              darken(magenta,  20)
+  jsRegexpAnd             darken(magenta,  20)
+  jsRegexpString          lighten(magenta, 10)
+  jsRegexpCharClass       magenta
+  jsFuncArgs              light_blue
+  jsGlobalObjects         orange
+  jsFloat                 teal
+  jsReturn                purple
+  jsStorageClass          light_blue
+  jsObjectKey             blue
+  jsStringS               green
+  jsStringD               lime
+  jsParens                light_purple
+  jsNoise                 light_purple
+  jsOperator              yellow
+  jsFuncAssignExpr        muted
 
 # CoffeeScript
   coffeeConditional       light_purple
