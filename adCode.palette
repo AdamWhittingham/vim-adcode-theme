@@ -6,13 +6,13 @@ vim_colors "adCode" do
   background :dark
 
   plain_fg     = "FAFAFA"
-  plain_bg     = "121212"
+  plain_bg     = "151718"
   muted        = "3C414C"
   vertical_div = lighten(plain_bg, 5)
   warning      = "FF9800"
 
   red          = "F45050"
-  orange       = "FFC912"
+  orange       = "FEC833"
   yellow       = "F0F040"
   green        = "30C000"
   lime         = "A0FF20"
@@ -35,7 +35,7 @@ vim_colors "adCode" do
   CursorLine   none,              "242424"
   CursorLineNr yellow,            muted
   Search       plain_bg,          highlight, gui: 'italic,bold'
-  MatchParen   plain_bg,          highlight, gui: 'italic,bold'
+  MatchParen   highlight,         plain_bg,  gui: 'bold'
   SignColumn   plain_fg,          vertical_div
   VertSplit    vertical_div,      vertical_div
 
