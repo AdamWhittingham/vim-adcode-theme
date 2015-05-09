@@ -11,18 +11,18 @@ vim_colors "adCode" do
   vertical_div = lighten(plain_bg, 5)
   warning      = "FF9800"
 
-  red          = "F45050"
+  red          = "CD3F44"
   orange       = "FEC833"
   yellow       = "F0F040"
-  green        = "30C000"
-  lime         = "A0FF20"
-  blue         = "0080FF"
-  light_blue   = "3FCCFF"
-  purple       = "AA5Aff"
-  light_purple = "A898FF"
-  teal         = "00CCCC"
-  magenta      = "dd0093"
-  pink         = "D555D5"
+  green        = "59DC4C"
+  lime         = "AFFF4B"
+  blue         = "1897DD"
+  light_blue   = "45C2FB"
+  purple       = "AA74FF"
+  light_purple = "9D72C0"
+  teal         = "58D3D1"
+  magenta      = "D05EA8"
+  pink         = "F480DB"
 
   highlight = orange
   light_mute   = lighten(muted,25)
@@ -85,7 +85,7 @@ vim_colors "adCode" do
   Include     orange
   Keyword     green
   Label       "7e8aa2"
-  Number      teal
+  Number      lime
   Operator    "7e8aa2"
   Special     "84ff00"
   Statement   "8c5fe6"
@@ -97,37 +97,38 @@ vim_colors "adCode" do
   Typedef     "7e8aa2"
 
 # Ruby
-  rubyAccess               darken(pink, 15),  none, gui:    'bold'
+  rubyAccess               pink,     none, gui:    'bold'
   rubyAttribute            purple
-  rubyBlockParameter       teal
+  rubyBlockParameter       light_blue
   rubyBlockParameterList   blue
   rubyBoolean              orange
-  rubyClass                yellow,          none, gui:  'italic'
-  rubyClassDeclaration     yellow
+  rubyClass                pink
   rubyClassVariable        light_blue
   rubyConditional          light_purple
-  rubyConstant             orange
-  rubyControl              pink
-  rubyDefine               pink
+  rubyConstant             yellow
+  rubyControl              teal
+  rubyDefine               light_mute
   rubyDoBlock              none,            none
-  rubyException            warning
-  rubyFloat                darken(teal,     10)
+  rubyException            red
+  rubyFloat                lime
   rubyFunction             light_blue
   rubyGlobalVariable       orange
-  rubyInclude              yellow
+  rubyInclude              light_purple
   rubyInstanceVariable     green
-  rubyInteger              teal
+  rubyInteger              lime
+  rubyInterpolation        lime
+  rubyInterpolationDelimiter lime
   rubyMethodBlock          none,            none
   rubyMethodDeclaration    light_blue
-  rubyModule               lighten(orange,  20)
+  rubyModule               lighten(pink, 10),          none, gui:  'italic'
   rubyPredefinedIdentifier orange
-  rubyRegexp               magenta
-  rubyRegexpAnchor         darken(magenta,  10)
-  rubyRegexpDelimiter      darken(magenta,  20)
-  rubyRegexpSpecial        lighten(magenta, 10)
-  rubyRegexpQuantifier     lighten(magenta, 20)
+  rubyRegexp               lime
+  rubyRegexpAnchor         green
+  rubyRegexpDelimiter      green
+  rubyRegexpSpecial        lime
+  rubyRegexpQuantifier     lime
   rubyRailsTestMethod      plain_fg
-  rubyString               lime
+  rubyString               green
   rubyStringDelimiter      green
   rubySymbol               blue
   rubyReturn               purple
@@ -228,7 +229,10 @@ vim_colors "adCode" do
   sshConfigHostSect       blue,         gui: 'bold'
   sshConfigHostPort       light_blue,   gui: 'bold'
   sshConfigKeyword        light_purple
-  sshconfigPreferredAuth  orange
+  sshconfigPreferredAuth  yellow
   sshconfigNumber         lime
+
+#NeoSnippet Templates
+  neoSnippetExpandSnippets muted, muted,      gui: 'underline'
 
 end
