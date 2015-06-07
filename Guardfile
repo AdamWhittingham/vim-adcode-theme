@@ -6,7 +6,7 @@ guard :shell do
       scheme_name = palette.gsub(/\.palette/, '')
       output = "~/.vim/colors/#{scheme_name}.vim"
       `palette #{palette} | sed -E '/^hi Normal / s/ctermbg=[0-9]+ /ctermbg=NONE/' > #{output}`
-      n "Vim colorscheme '#{scheme_name}' updated"
+      puts "#{Time.now}: colorscheme '#{scheme_name}' updated"
     end
   end
 end
