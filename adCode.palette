@@ -22,7 +22,7 @@ vim_colors "adCode" do
   light_purple = "9D72C0"
   teal         = "58D3D1"
   magenta      = "D05EA8"
-  pink         = "F480DB"
+  pink         = "DB73C3"
 
   highlight = orange
   light_mute   = lighten(muted,25)
@@ -107,7 +107,7 @@ vim_colors "adCode" do
   rubyConditional          light_purple
   rubyConstant             yellow
   rubyControl              teal
-  rubyDefine               light_mute
+  rubyDefine               purple
   rubyDoBlock              none,            none
   rubyException            red
   rubyFloat                lime
