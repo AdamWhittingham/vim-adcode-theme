@@ -55,6 +55,12 @@ vim_colors "adCode" do
   NERDTreeDirSlash  blue
   NERDTreeUp        light_blue
 
+## CtrlSF File Search
+  ctrlsfFilename    yellow
+  ctrlsfCuttingLine orange
+  ctrlsfLnumMatch   green
+  ctrlsfMatch       plain_bg, orange
+
 ## Git Gutter
   GitGutterAdd              "33FF33",   "115511"
   GitGutterAddLine          none,       "063806"
