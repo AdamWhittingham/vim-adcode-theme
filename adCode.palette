@@ -38,6 +38,8 @@ vim_colors "adCode" do
   MatchParen   highlight,         plain_bg,  gui: 'bold'
   SignColumn   plain_fg,          vertical_div
   VertSplit    vertical_div,      vertical_div
+  NonText      pink,                         gui: 'underline'
+  SpecialKey   pink,                         gui: 'underline'
 
 ## Status Bar
   StatusLine   "d3d3d5", muted
