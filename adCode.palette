@@ -34,12 +34,12 @@ vim_colors "adCode" do
   Cursor       plain_fg,          "646464"
   CursorLine   none,              "242424"
   CursorLineNr yellow,            muted
-  Search       plain_bg,          highlight, gui: 'italic,bold'
-  MatchParen   highlight,         plain_bg,  gui: 'bold'
+  Search       plain_bg,          highlight,    gui: 'italic,bold'
+  MatchParen   highlight,         plain_bg,     gui: 'bold'
   SignColumn   plain_fg,          vertical_div
   VertSplit    vertical_div,      vertical_div
-  NonText      pink,                         gui: 'underline'
-  SpecialKey   pink,                         gui: 'underline'
+  NonText      muted,                           gui: 'bold'
+  SpecialKey   warning,                         gui: 'bold'
 
 ## Status Bar
   StatusLine   "d3d3d5", muted
