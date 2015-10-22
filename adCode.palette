@@ -28,18 +28,20 @@ vim_colors "adCode" do
   light_mute   = lighten(muted,25)
 
 # Vim Elemets
-  Normal       plain_fg,          plain_bg
-  Visual       none,              muted
-  LineNr       lighten(muted,10), vertical_div
-  Cursor       plain_fg,          "646464"
-  CursorLine   none,              "242424"
-  CursorLineNr yellow,            muted
-  Search       plain_bg,          highlight,    gui: 'italic,bold'
-  MatchParen   highlight,         plain_bg,     gui: 'bold'
-  SignColumn   plain_fg,          vertical_div
-  VertSplit    vertical_div,      vertical_div
-  NonText      muted,                           gui: 'bold'
-  SpecialKey   warning,                         gui: 'bold'
+  Normal          plain_fg,      plain_bg
+  Visual          none,          muted
+  LineNr          lighten(muted, 10),       vertical_div
+  Cursor          plain_fg,      "646464"
+  CursorLine      none,          "242424"
+  CursorLineNr    yellow,        muted
+  Search          plain_bg,      highlight, gui: 'italic,bold'
+  MatchParen      highlight,     plain_bg,  gui: 'bold'
+  SignColumn      plain_fg,      vertical_div
+  VertSplit       vertical_div,  vertical_div
+  NonText         muted,                        gui: 'bold'
+  SpecialKey      muted,         warning,       gui: 'bold'
+  RedundantSpaces none,          red
+  BadSpaces       muted,         warning
 
 ## Status Bar
   StatusLine   "d3d3d5", muted
