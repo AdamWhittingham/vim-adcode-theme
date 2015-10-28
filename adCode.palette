@@ -245,4 +245,20 @@ vim_colors "adCode" do
 #NeoSnippet Templates
   neoSnippetExpandSnippets muted, muted,      gui: 'underline'
 
+# YAML
+  yamlKey                 blue
+  yamlScalar              plain_fg
+  yamlDelimiter           light_mute
+  yamlOperator            yellow
+
+# Ansible YAML
+  ansibleRepeat           blue
+  ansibleConditional      pink
+
+# Jinja2 Templates
+  jinjaVarBlock            green
+  jinjaVarDelim            green
+  jinjaVariable            green
+  jinjaAttribute           lime
+
 end
