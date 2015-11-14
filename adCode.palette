@@ -44,8 +44,8 @@ vim_colors "adCode" do
   BadSpaces       muted,         warning
 
 ## Status Bar
-  StatusLine   "d3d3d5", muted
-  StatusLineNC "939395", muted
+  StatusLine   muted, plain_fg
+  StatusLineNC vertical_div, muted
 
 ## Menus
   PMenu        plain_fg, muted
