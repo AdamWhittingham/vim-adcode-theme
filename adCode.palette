@@ -44,14 +44,24 @@ vim_colors "adCode" do
   BadSpaces       muted,         warning
 
 ## Status Bar
-  StatusLine   muted, plain_fg
-  StatusLineNC vertical_div, muted
+  StatusLine   plain_fg,         muted
+  StatusLineNC vertical_div,     muted
 
 ## Menus
   PMenu        plain_fg, muted
   PMenuSbar    none,     muted
   PMenuSel     plain_fg, blue
   PMenuThumb   plain_bg, blue
+
+## Startify
+  StartifyBracket muted
+  StartifyPath    blue
+  StartifySlash   muted
+  StartifyFile    light_blue
+  StartifyFooter  muted
+  StartifyHeader  green
+  StartifyNumber  orange
+  StartifySpecial light_blue
 
 ## NERD Tree
   NERDTreeCWD       lime
