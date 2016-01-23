@@ -121,12 +121,12 @@ vim_colors "adCode" do
   rubyAttribute            purple
   rubyBlockParameter       light_blue
   rubyBlockParameterList   blue
-  rubyBoolean              orange
+  rubyBoolean              yellow
   rubyClass                pink
   rubyClassVariable        light_blue
-  rubyConditional          light_purple
+  rubyConditional          teal
   rubyConstant             yellow
-  rubyControl              teal
+  rubyControl              pink
   rubyDefine               purple
   rubyDoBlock              none,            none
   rubyException            red
@@ -142,6 +142,7 @@ vim_colors "adCode" do
   rubyMethodDeclaration    light_blue
   rubyModule               lighten(pink, 10),          none, gui:  'italic'
   rubyPredefinedIdentifier orange
+  rubyPseudoVariable       yellow
   rubyRegexp               lime
   rubyRegexpAnchor         green
   rubyRegexpDelimiter      green
