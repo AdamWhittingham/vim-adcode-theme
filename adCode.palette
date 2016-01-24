@@ -69,6 +69,12 @@ vim_colors "adCode" do
   NERDTreeDirSlash  blue
   NERDTreeUp        light_blue
 
+## BufExplorer
+  bufExplorerCurFile light_blue
+  bufExplorerAltBuf  blue
+  bufExplorerHelp    muted
+  bufExplorerSortBy  green
+
 ## CtrlSF File Search
   ctrlsfFilename    yellow
   ctrlsfCuttingLine orange
