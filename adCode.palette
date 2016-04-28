@@ -160,6 +160,26 @@ vim_colors "adCode" do
   rubySymbol               blue
   rubyReturn               purple
 
+# Elixir
+  elixirAlias               yellow
+  elixirAtom                blue
+  elixirBlockDefinition     pink
+  elixirBoolean             orange
+  elixirDefine              pink
+  elixirFunctionDeclaration light_blue
+  elixirGuard               pink
+  elixirInclude             light_purple
+  elixirKeyword             pink
+  elixirModuleDefine        pink
+  elixirModuleDeclaration   yellow
+  elixirNumber              lime
+  elixirPrivateDefine       pink
+  elixirSigil               green
+  elixirSigilDelimiter      green
+  elixirStringDelimiter     green
+  elixirUnusedVariable      plain_fg
+  elixirVariable            yellow
+
 # HTML
   htmlTag                 green
   htmlTagN                green
