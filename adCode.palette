@@ -170,6 +170,8 @@ vim_colors "adCode" do
   elixirGuard               pink
   elixirInclude             light_purple
   elixirKeyword             pink
+  elixirMacroDeclaration    blue
+  elixirMacroDefine         pink
   elixirModuleDefine        pink
   elixirModuleDeclaration   yellow
   elixirNumber              lime
