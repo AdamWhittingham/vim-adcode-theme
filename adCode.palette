@@ -22,7 +22,7 @@ vim_colors "adCode" do
   light_purple = "9D72C0"
   teal         = "58D3D1"
   magenta      = "D05EA8"
-  pink         = "DB73C3"
+  pink         = "C318B3"
 
   highlight = orange
   light_mute   = lighten(muted,25)
