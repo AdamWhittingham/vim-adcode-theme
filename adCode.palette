@@ -159,6 +159,11 @@ vim_colors "adCode" do
   rubyStringDelimiter      green
   rubySymbol               blue
   rubyReturn               purple
+## Rspec
+  rspecBeforeAndAfter      purple
+  rspecGroupMethods        pink
+  rspecMatchers            teal, none, gui: 'bold'
+  rspecMocks               orange
 
 # Elixir
   elixirAlias               yellow
