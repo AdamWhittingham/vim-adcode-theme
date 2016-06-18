@@ -210,6 +210,11 @@ vim_colors "adCode" do
   htmlboldunderline       plain_fg, none, gui: 'bold,underline'
   htmlunderline           plain_fg, none, gui: 'underline'
 
+# XML
+  xmlTag                  light_blue
+  xmlEndTag               blue
+  xmlAttrib               purple
+
 # CSS
   cssAttributeSelector    green
   cssBackgroundProp       green
