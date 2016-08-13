@@ -5,29 +5,32 @@ vim_colors "adCode" do
   reset true
   background :dark
 
-  plain_fg     = "FAFAFA"
-  plain_bg     = "151718"
-  muted        = "3C414C"
-  vertical_div = lighten(plain_bg, 5)
-  warning      = "FF9800"
+  plain_fg     = "#FAFAFA"
+  plain_bg     = "#151718"
+  muted        = "#3C414C"
 
-  red          = "#CD3F44"
+  red          = "#FD3F44"
+  dark_orange  = "#FF9800"
   orange       = "#FFC423"
   yellow       = "#F0F040"
-  green        = "#60D05C"
   lime         = "#AFFF4B"
+  green        = "#60D05C"
+  teal         = "#00A787"
+  dark_teal    = "#008787"
+  dark_blue    = "#005787"
   blue         = "#1887FD"
-  light_blue   = "#45C2FB"
-  purple       = "#9D72C0"
-  light_purple = "#AA74FF"
-  teal         = "#00E0D0"
-  magenta      = "#D05EA8"
-  pink         = "#E080F0"
+  light_blue   = "#2FC3FF"
+  light_purple = "#AF9AFF"
+  purple       = "#AF70FF"
+  magenta      = "#DF20C0"
+  pink         = "#EA30D0"
 
-  [ red, orange, yellow, green, lime, blue, light_blue, light_purple, purple, teal, magenta, pink ].each{|colour| colour.sub!(/^#/, '')}
+  [ plain_fg, plain_bg, muted, red, dark_orange, orange, yellow, green, lime, dark_teal, dark_blue, blue, light_blue, light_purple, purple, teal, magenta, pink ].each{|colour| colour.sub!(/^#/, '')}
 
   highlight = orange
   light_mute   = lighten(muted,25)
+  vertical_div = lighten(plain_bg, 5)
+  warning = dark_orange
 
 # Vim Elemets
   Normal          plain_fg,      plain_bg
@@ -125,16 +128,16 @@ vim_colors "adCode" do
   Typedef     "7e8aa2"
 
 # Ruby
-  rubyAccess               pink,     none, gui:    'bold'
+  rubyAccess               magenta,     none, gui:    'italic'
   rubyAttribute            light_purple
-  rubyBlockParameter       light_blue
-  rubyBlockParameterList   blue
+  rubyBlockParameter       teal
+  rubyBlockParameterList   dark_teal
   rubyBoolean              yellow
-  rubyClass                pink
+  rubyClass                purple
   rubyClassVariable        light_blue
   rubyConditional          teal
   rubyConstant             yellow
-  rubyControl              teal
+  rubyControl              purple
   rubyDefine               light_purple
   rubyDoBlock              none,            none
   rubyException            red
@@ -142,14 +145,15 @@ vim_colors "adCode" do
   rubyFloat                lime
   rubyFunction             light_blue
   rubyGlobalVariable       orange
-  rubyInclude              purple
+  rubyInclude              light_purple
   rubyInstanceVariable     green
   rubyInteger              lime
   rubyInterpolation        lime
   rubyInterpolationDelimiter lime
+  rubyKeyword              teal
   rubyMethodBlock          none,            none
   rubyMethodDeclaration    light_blue
-  rubyModule               lighten(pink, 10),          none, gui:  'italic'
+  rubyModule               light_purple,    none, gui:  'italic'
   rubyPredefinedIdentifier orange
   rubyPseudoVariable       yellow
   rubyRegexp               lime
@@ -159,7 +163,7 @@ vim_colors "adCode" do
   rubyRegexpQuantifier     lime
   rubyRailsTestMethod      plain_fg
   rubyString               green
-  rubyStringDelimiter      green
+  rubyStringDelimiter      dark_teal
   rubySymbol               blue
   rubyReturn               light_purple
 ## Rspec
@@ -173,17 +177,17 @@ vim_colors "adCode" do
   elixirAtom                blue
   elixirBlockDefinition     pink
   elixirBoolean             orange
-  elixirDefine              pink
+  elixirDefine              light_purple
   elixirFunctionDeclaration light_blue
   elixirGuard               pink
   elixirInclude             purple
   elixirKeyword             pink
   elixirMacroDeclaration    light_blue
   elixirMacroDefine         pink
-  elixirModuleDefine        pink
+  elixirModuleDefine        light_purple
   elixirModuleDeclaration   yellow
   elixirNumber              lime
-  elixirPrivateDefine       pink
+  elixirPrivateDefine       purple
   elixirSigil               green
   elixirSigilDelimiter      green
   elixirStringDelimiter     green
