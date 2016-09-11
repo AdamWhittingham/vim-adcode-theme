@@ -1,29 +1,29 @@
-vim_colors "adCode" do
-  author "Adam Whittingham"
-  notes "A colourful scheme for bright programmers"
+vim_colors 'adCode' do
+  author 'Adam Whittingham'
+  notes 'A colourful scheme for bright programmers'
 
   reset true
   background :dark
 
-  plain_fg     = "#FAFAFA"
-  plain_bg     = "#151718"
-  muted        = "#3C414C"
+  plain_fg     = '#FAFAFA'
+  plain_bg     = '#151718'
+  muted        = '#3C414C'
 
-  red          = "#FD3F44"
-  dark_orange  = "#FF9800"
-  orange       = "#FFC423"
-  yellow       = "#F0F040"
-  lime         = "#AFFF4B"
-  green        = "#60D05C"
-  teal         = "#00A787"
-  dark_teal    = "#008787"
-  dark_blue    = "#005787"
-  blue         = "#1887FD"
-  light_blue   = "#2FC3FF"
-  light_purple = "#AF9AFF"
-  purple       = "#AF70FF"
-  magenta      = "#DF20C0"
-  pink         = "#EA30D0"
+  red          = '#FD3F44'
+  dark_orange  = '#FF9800'
+  orange       = '#FFC423'
+  yellow       = '#F0F040'
+  lime         = '#AFFF4B'
+  green        = '#60D05C'
+  teal         = '#00A787'
+  dark_teal    = '#008787'
+  dark_blue    = '#005787'
+  blue         = '#1887FD'
+  light_blue   = '#2FC3FF'
+  light_purple = '#AF9AFF'
+  purple       = '#AF70FF'
+  magenta      = '#DF20C0'
+  pink         = '#EA30D0'
 
   [ plain_fg, plain_bg, muted, red, dark_orange, orange, yellow, green, lime, dark_teal, dark_blue, blue, light_blue, light_purple, purple, teal, magenta, pink ].each{|colour| colour.sub!(/^#/, '')}
 
@@ -36,8 +36,8 @@ vim_colors "adCode" do
   Normal          plain_fg,      plain_bg
   Visual          none,          muted
   LineNr          lighten(muted, 10),       vertical_div
-  Cursor          plain_fg,      "646464"
-  CursorLine      none,          "242424"
+  Cursor          plain_fg,      '646464'
+  CursorLine      none,          '242424'
   CursorLineNr    yellow,        muted
   Search          plain_bg,      highlight, gui: 'italic,bold'
   MatchParen      highlight,     plain_bg,  gui: 'bold'
@@ -87,14 +87,14 @@ vim_colors "adCode" do
   ctrlsfMatch       plain_bg, orange
 
 ## Git Gutter
-  GitGutterAdd              "33FF33",   "115511"
-  GitGutterAddLine          none,       "063806"
-  GitGutterChange           "FFFF33",   "757500"
-  GitGutterChangeLine       none,       "383805"
-  GitGutterDelete           "FF3333",   "331111"
-  GitGutterDeleteLine       none,       "380505"
-  GitGutterChangeDelete     "FFFF33",   "757500"
-  GitGutterChangeDeleteLine none,       "383805"
+  GitGutterAdd              '33FF33',   '115511'
+  GitGutterAddLine          none,       '063806'
+  GitGutterChange           'FFFF33',   '757500'
+  GitGutterChangeLine       none,       '383805'
+  GitGutterDelete           'FF3333',   '331111'
+  GitGutterDeleteLine       none,       '380505'
+  GitGutterChangeDelete     'FFFF33',   '757500'
+  GitGutterChangeDeleteLine none,       '383805'
 
 ## Quick Find window
   qfFileName          light_blue
@@ -115,17 +115,17 @@ vim_colors "adCode" do
   Identifier  lime
   Include     orange
   Keyword     green
-  Label       "7e8aa2"
+  Label       '7e8aa2'
   Number      lime
-  Operator    "7e8aa2"
-  Special     "84ff00"
-  Statement   "8c5fe6"
+  Operator    '7e8aa2'
+  Special     '84ff00'
+  Statement   '8c5fe6'
   String      lime
-  Structure   "7e8aa2"
-  Title       "f6f3e8"
+  Structure   '7e8aa2'
+  Title       'f6f3e8'
   Todo        light_mute
-  Type        "54c0ff"
-  Typedef     "7e8aa2"
+  Type        '54c0ff'
+  Typedef     '7e8aa2'
 
 # Ruby
   rubyAccess               magenta,     none, gui:    'italic'
