@@ -73,6 +73,8 @@ vim_colors 'adCode' do
   NERDTreeDir       blue
   NERDTreeDirSlash  blue
   NERDTreeUp        light_blue
+  NERDTreeOpenable  teal
+  NERDTreeClosable  dark_teal
 
 ## BufExplorer
   bufExplorerCurFile light_blue
