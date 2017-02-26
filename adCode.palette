@@ -6,26 +6,25 @@ vim_colors 'adCode' do
   background :dark
 
   plain_fg     = '#FAFAFA'
-  plain_bg     = '#090909'
+  plain_bg     = '#202020'
   muted        = '#3C414C'
 
   red          = '#FD3F44'
   dark_orange  = '#FF9800'
   orange       = '#FFC423'
-  yellow       = '#F0F040'
+  yellow       = '#FFFF40'
   lime         = '#AFFF4B'
-  green        = '#60D05C'
+  green        = '#60FA5C'
   teal         = '#00A787'
   dark_teal    = '#008787'
-  dark_blue    = '#005787'
-  blue         = '#1887FD'
-  light_blue   = '#2FC3FF'
-  light_purple = '#AF9AFF'
-  purple       = '#AF70FF'
-  magenta      = '#DF20C0'
+  blue         = '#00B0FF'
+  light_blue   = '#8FBFFF'
+  light_purple = '#AFA0FF'
+  purple       = '#AF80FF'
+  magenta      = '#EF20C0'
   pink         = '#EA30D0'
 
-  [ plain_fg, plain_bg, muted, red, dark_orange, orange, yellow, green, lime, dark_teal, dark_blue, blue, light_blue, light_purple, purple, teal, magenta, pink ].each{|colour| colour.sub!(/^#/, '')}
+  [ plain_fg, plain_bg, muted, red, dark_orange, orange, yellow, green, lime, dark_teal, blue, light_blue, light_purple, purple, teal, magenta, pink ].each{|colour| colour.sub!(/^#/, '')}
 
   highlight = orange
   light_mute   = lighten(muted,25)
@@ -165,7 +164,7 @@ vim_colors 'adCode' do
   rubyRegexpQuantifier     lime
   rubyRailsTestMethod      plain_fg
   rubyString               green
-  rubyStringDelimiter      dark_teal
+  rubyStringDelimiter      teal
   rubySymbol               blue
   rubyReturn               light_purple
 ## Rspec
