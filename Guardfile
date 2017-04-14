@@ -12,6 +12,7 @@ guard :shell do
       sed_statusbar_fg = '/^hi StatusLine / s/ctermfg=[0-9]+ /ctermfg=238 /'
       sed = "sed -E '#{sed_normal}' | sed -E '#{sed_statusbar_bg}' | sed -E '#{sed_statusbar_fg}'"
       `palette #{palette} | #{sed} > #{vim_output}`
+      puts "#{Time.now}: colorscheme '#{scheme_name}' updated"
       `palette #{palette} | #{sed} > #{nvim_output}`
       puts "#{Time.now}: colorscheme '#{scheme_name}' updated"
     end
