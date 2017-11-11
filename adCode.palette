@@ -9,27 +9,27 @@ vim_colors 'adCode' do
   plain_bg     = '#202020'
   muted        = '#3C414C'
 
-  red          = '#FD3F44'
+  red          = '#FF5370'
   dark_orange  = '#FF9800'
-  orange       = '#FFC423'
+  orange       = '#FFC86B'
   yellow       = '#FFFF40'
   lime         = '#AFFF4B'
-  green        = '#60FA5C'
+  green        = '#60E95C'
   teal         = '#00A787'
   dark_teal    = '#008787'
   blue         = '#00B0FF'
-  light_blue   = '#8FBFFF'
+  light_blue   = '#89DDFF'
   light_purple = '#AFA0FF'
   purple       = '#AF80FF'
+  pink         = '#c792ea'
   magenta      = '#EF20C0'
-  pink         = '#EA30D0'
 
   [ plain_fg, plain_bg, muted, red, dark_orange, orange, yellow, green, lime, dark_teal, blue, light_blue, light_purple, purple, teal, magenta, pink ].each{|colour| colour.sub!(/^#/, '')}
 
-  highlight = orange
+  highlight    = orange
   light_mute   = lighten(muted,25)
   vertical_div = lighten(plain_bg, 5)
-  warning = dark_orange
+  warning      = dark_orange
 
 # Vim Elemets
   Normal          plain_fg,      plain_bg
@@ -38,7 +38,7 @@ vim_colors 'adCode' do
   Cursor          plain_fg,      '646464'
   CursorLine      none,          '242424'
   CursorLineNr    yellow,        muted
-  Search          plain_bg,      highlight, gui: 'italic,bold'
+  Search          plain_bg,      highlight, gui: 'italic,bold', cterm: 'italic'
   MatchParen      highlight,     plain_bg,  gui: 'bold'
   SignColumn      plain_fg,      vertical_div
   VertSplit       vertical_div,  vertical_div
@@ -104,7 +104,7 @@ vim_colors 'adCode' do
 # Programming
   Boolean     orange
   Character   green
-  Comment     light_mute,  none, gui: 'italic'
+  Comment     light_mute,  none, gui: 'italic', cterm: 'italic'
   Conditional light_blue
   Constant    orange
   Debug       warning
@@ -129,17 +129,17 @@ vim_colors 'adCode' do
   Typedef     '7e8aa2'
 
 # Ruby
-  rubyAccess               magenta,     none, gui:    'italic'
+  rubyAccess               magenta,     none, gui:    'italic', cterm: 'italic'
   rubyAttribute            light_purple
   rubyBlockParameter       teal
   rubyBlockParameterList   dark_teal
   rubyBoolean              yellow
-  rubyClass                purple
+  rubyClass                magenta
   rubyClassVariable        light_blue
   rubyConditional          teal
   rubyConstant             yellow
   rubyControl              purple
-  rubyComment              light_mute,  none,  gui: 'italic'
+  rubyComment              light_mute,  none,  gui: 'italic', cterm: 'italic'
   rubyDefine               light_purple
   rubyDoBlock              none,            none
   rubyException            red
@@ -153,9 +153,10 @@ vim_colors 'adCode' do
   rubyInterpolation        lime
   rubyInterpolationDelimiter lime
   rubyKeyword              teal
+  rubyMacro                light_purple,    none, gui:  'italic'
   rubyMethodBlock          none,            none
   rubyMethodDeclaration    light_blue
-  rubyModule               light_purple,    none, gui:  'italic'
+  rubyModule               purple,    none, gui:  'italic'
   rubyPredefinedIdentifier orange
   rubyPseudoVariable       yellow
   rubyRegexp               lime
@@ -255,10 +256,10 @@ vim_colors 'adCode' do
   cssURL                  lime
 
 # Javascript
-  jsRegexpOr              darken(magenta,  20)
-  jsRegexpAnd             darken(magenta,  20)
-  jsRegexpString          lighten(magenta, 10)
-  jsRegexpCharClass       magenta
+  jsRegexpOr              magenta
+  jsRegexpAnd             magenta
+  jsRegexpString          magenta
+  jsRegexpCharClass       pink
   jsFuncArgs              light_blue
   jsGlobalObjects         orange
   jsFloat                 teal
