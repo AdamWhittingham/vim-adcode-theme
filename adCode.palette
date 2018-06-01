@@ -6,7 +6,7 @@ vim_colors 'adCode' do
   background :dark
 
   plain_fg     = '#FAFAFA'
-  plain_bg     = '#202020'
+  plain_bg     = '#101020'
   muted        = '#3C414C'
 
   red          = '#FF5370'
@@ -38,6 +38,7 @@ vim_colors 'adCode' do
   Cursor          plain_fg,      '646464'
   CursorLine      none,          '242424'
   CursorLineNr    yellow,        muted
+  CursorColumn    none,          '303030'
   Search          plain_bg,      highlight, gui: 'italic,bold', cterm: 'italic'
   MatchParen      highlight,     plain_bg,  gui: 'bold'
   SignColumn      plain_fg,      vertical_div
