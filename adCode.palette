@@ -9,19 +9,19 @@ vim_colors 'adCode' do
   plain_bg     = '#101020'
   muted        = '#3C414C'
 
-  red          = '#FF5370'
+  red          = '#CF152D'
   dark_orange  = '#FF9800'
-  orange       = '#FFC86B'
+  orange       = '#FEF919'
   yellow       = '#FFFF40'
   lime         = '#AFFF4B'
   green        = '#60E95C'
   teal         = '#00A787'
   dark_teal    = '#008787'
-  blue         = '#00B0FF'
+  blue         = '#10B0FF'
   light_blue   = '#89DDFF'
-  light_purple = '#AFA0FF'
-  purple       = '#AF80FF'
-  pink         = '#c792ea'
+  purple       = '#9F20FF'
+  light_purple = '#E080FF'
+  pink         = '#EF62EA'
   magenta      = '#EF20C0'
 
   [ plain_fg, plain_bg, muted, red, dark_orange, orange, yellow, green, lime, dark_teal, blue, light_blue, light_purple, purple, teal, magenta, pink ].each{|colour| colour.sub!(/^#/, '')}
@@ -208,9 +208,9 @@ vim_colors 'adCode' do
   htmlString              plain_fg
   htmlTagName             green
   htmlLink                plain_fg
-  htmlComment             muted
-  htmlCommentPart         muted
-  htmlCSSStyleComment     lime
+  htmlComment             muted, gui:    'italic', cterm: 'italic'
+  htmlCommentPart         muted, gui:    'italic', cterm: 'italic'
+  htmlCSSStyleComment     lime, gui:    'italic', cterm: 'italic'
   htmlitalic              plain_fg, none, gui: 'italic'
   htmlboldunderlineitalic plain_fg, none, gui: 'italic,bold,underline'
   htmlbolditalic          plain_fg, none, gui: 'italic,bold'
