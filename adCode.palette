@@ -6,7 +6,7 @@ vim_colors 'adCode' do
   background :dark
 
   plain_fg     = '#FAFAFA'
-  plain_bg     = '#101020'
+  plain_bg     = '#0A0A2A'
   muted        = '#3C414C'
 
   red          = '#CF152D'
