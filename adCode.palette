@@ -6,12 +6,12 @@ vim_colors 'adCode' do
   background :dark
 
   plain_fg     = '#FAFAFA'
-  plain_bg     = '#0A0A2A'
+  plain_bg     = '#0A0A1A'
   muted        = '#3C414C'
 
-  red          = '#CF152D'
+  red          = '#e9475a'
   dark_orange  = '#FF9800'
-  orange       = '#FEF919'
+  orange       = '#ffb633'
   yellow       = '#FFFF40'
   lime         = '#AFFF4B'
   green        = '#60E95C'
@@ -19,14 +19,33 @@ vim_colors 'adCode' do
   dark_teal    = '#008787'
   blue         = '#10B0FF'
   light_blue   = '#89DDFF'
-  purple       = '#9F20FF'
+  purple       = '#7b68ff'
   light_purple = '#E080FF'
-  pink         = '#EF62EA'
-  magenta      = '#EF20C0'
+  pink         = '#f4628d'
+  magenta      = '#9c4ac0'
+  highlight    = '#F8D454'
 
-  [ plain_fg, plain_bg, muted, red, dark_orange, orange, yellow, green, lime, dark_teal, blue, light_blue, light_purple, purple, teal, magenta, pink ].each{|colour| colour.sub!(/^#/, '')}
+  [
+    plain_fg,
+    plain_bg,
+    muted,
+    red,
+    dark_orange,
+    orange,
+    yellow,
+    green,
+    lime,
+    dark_teal,
+    blue,
+    light_blue,
+    light_purple,
+    purple,
+    teal,
+    magenta,
+    pink,
+    highlight,
+  ].each { |colour| colour.sub!(/^#/, '') }
 
-  highlight    = orange
   light_mute   = lighten(muted,25)
   vertical_div = lighten(plain_bg, 5)
   warning      = dark_orange
@@ -39,12 +58,12 @@ vim_colors 'adCode' do
   CursorLine      none,          '242424'
   CursorLineNr    yellow,        muted
   CursorColumn    none,          '303030'
-  Search          plain_bg,      highlight, gui: 'italic,bold', cterm: 'italic'
-  MatchParen      highlight,     plain_bg,  gui: 'bold'
+  Search          plain_bg,      highlight, gui: :bold
+  MatchParen      highlight,     plain_bg,  gui: :bold
   SignColumn      plain_fg,      vertical_div
   VertSplit       vertical_div,  vertical_div
-  NonText         muted,                        gui: 'bold'
-  SpecialKey      muted,         warning,       gui: 'bold'
+  NonText         muted,                        gui: :bold
+  SpecialKey      muted,         warning,       gui: :bold
   RedundantSpaces none,          red
   BadSpaces       muted,         warning
 
@@ -76,24 +95,22 @@ vim_colors 'adCode' do
   NERDTreeOpenable  teal
   NERDTreeClosable  dark_teal
 
+## NetRW
+  netrwData	   blue
+  netrwSymLink green
+
 ## BufExplorer
   bufExplorerCurFile light_blue
   bufExplorerAltBuf  blue
   bufExplorerHelp    muted
   bufExplorerSortBy  green
 
-## CtrlSF File Search
-  ctrlsfFilename    yellow
-  ctrlsfCuttingLine orange
-  ctrlsfLnumMatch   green
-  ctrlsfMatch       plain_bg, orange
-
 ## Git Gutter
   GitGutterAdd              '33FF33',   '115511'
   GitGutterAddLine          none,       '063806'
   GitGutterChange           'FFFF33',   '757500'
   GitGutterChangeLine       none,       '383805'
-  GitGutterDelete           'FF3333',   '331111'
+  GitGutterDelete           red,        '331111'
   GitGutterDeleteLine       none,       '380505'
   GitGutterChangeDelete     'FFFF33',   '757500'
   GitGutterChangeDeleteLine none,       '383805'
@@ -130,18 +147,19 @@ vim_colors 'adCode' do
   Typedef     '7e8aa2'
 
 # Ruby
-  rubyAccess               magenta,     none, gui:    'italic', cterm: 'italic'
+  rubyAccess               purple,     none, gui: :italic
   rubyAttribute            light_purple
   rubyBlockParameter       teal
   rubyBlockParameterList   dark_teal
-  rubyBoolean              yellow
-  rubyClass                magenta
+  rubyBoolean              yellow, none
+  rubyClass                magenta, gui: :italic
+  rubyClassName            yellow, gui: :bold
   rubyClassVariable        light_blue
   rubyConditional          teal
   rubyConstant             yellow
-  rubyControl              purple
-  rubyComment              light_mute,  none,  gui: 'italic', cterm: 'italic'
-  rubyDefine               light_purple
+  rubyControl              teal
+  rubyComment              light_mute,  none,  gui: :italic
+  rubyDefine               purple
   rubyDoBlock              none,            none
   rubyException            red
   rubyExceptional          orange
@@ -154,7 +172,7 @@ vim_colors 'adCode' do
   rubyInterpolation        lime
   rubyInterpolationDelimiter lime
   rubyKeyword              teal
-  rubyMacro                light_purple,    none, gui:  'italic'
+  rubyMacro                magenta,    none, gui:  'italic'
   rubyMethodBlock          none,            none
   rubyMethodDeclaration    light_blue
   rubyModule               purple,    none, gui:  'italic'
@@ -169,7 +187,7 @@ vim_colors 'adCode' do
   rubyString               green
   rubyStringDelimiter      teal
   rubySymbol               blue
-  rubyReturn               light_purple, none, gui: 'bold'
+  rubyReturn               magenta, none, gui: 'bold'
   rubyTodo                 orange,       none, gui: 'bold'
 ## Rspec
   rspecBeforeAndAfter      light_purple
@@ -273,28 +291,6 @@ vim_colors 'adCode' do
   jsNoise                 purple
   jsOperator              yellow
   jsFuncAssignExpr        muted
-
-# CoffeeScript
-  coffeeConditional       purple
-  coffeeRepeat            light_purple
-  coffeeParens            plain_fg
-  coffeeParen             yellow
-  coffeeBrackets          plain_fg
-  coffeeBracket           orange
-  coffeeObjAssign         green
-  coffeeString            lime
-
-# Cucumber
-  cucumberFeature         orange
-  cucumberScenario        yellow
-  cucumberTags            pink,        none, gui: 'italic'
-  cucumberBackground      pink
-  cucumberGiven           purple
-  cucumberGivenAnd        purple
-  cucumberWhen            light_blue
-  cucumberWhenAnd         light_blue
-  cucumberThen            lime
-  cucumberThenAnd         lime
 
 # SSH Config
   sshConfigHostSect       blue,         gui: 'bold'
