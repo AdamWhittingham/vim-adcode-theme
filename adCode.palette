@@ -189,9 +189,10 @@ vim_colors 'adCode' do
   rubySymbol               blue
   rubyReturn               magenta, none, gui: 'bold'
   rubyTodo                 orange,       none, gui: 'bold'
+
 ## Rspec
   rspecBeforeAndAfter      light_purple
-  rspecGroupMethods        pink
+  rspecGroupMethods        light_purple
   rspecMatchers            teal, none, gui: 'bold'
   rspecMocks               orange
 
