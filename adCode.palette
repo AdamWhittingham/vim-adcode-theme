@@ -6,8 +6,8 @@ vim_colors 'adCode' do
   background :dark
 
   plain_fg     = '#FAFAFA'
-  plain_bg     = '#0A0A1A'
-  muted        = '#3C414C'
+  plain_bg     = '#070707'
+  muted        = '#8C8CAF'
 
   red          = '#e9475a'
   dark_orange  = '#FF9800'
@@ -17,12 +17,13 @@ vim_colors 'adCode' do
   green        = '#60E95C'
   teal         = '#00A787'
   dark_teal    = '#008787'
+  dark_blue    = '#2050BF'
   blue         = '#10B0FF'
   light_blue   = '#89DDFF'
-  purple       = '#7b68ff'
+  purple       = '#8078FF'
   light_purple = '#E080FF'
   pink         = '#f4628d'
-  magenta      = '#9c4ac0'
+  magenta      = '#AA60FF'
   highlight    = '#F8D454'
 
   [
@@ -36,6 +37,7 @@ vim_colors 'adCode' do
     green,
     lime,
     dark_teal,
+    dark_blue,
     blue,
     light_blue,
     light_purple,
@@ -53,12 +55,12 @@ vim_colors 'adCode' do
 # Vim Elemets
   Normal          plain_fg,      plain_bg
   Visual          none,          muted
-  LineNr          lighten(muted, 10),       vertical_div
+  LineNr          muted,         vertical_div
   Cursor          plain_fg,      '646464'
-  CursorLine      none,          '242424'
-  CursorLineNr    yellow,        muted
+  CursorLine      none,          lighten(plain_bg, 10)
+  CursorLineNr    yellow,        lighten(plain_bg, 10), gui: :bold
   CursorColumn    none,          '303030'
-  Search          plain_bg,      highlight, gui: :bold
+  Search          highlight,     plain_bg, gui: :underline
   MatchParen      highlight,     plain_bg,  gui: :bold
   SignColumn      plain_fg,      vertical_div
   VertSplit       vertical_div,  vertical_div
@@ -72,9 +74,9 @@ vim_colors 'adCode' do
   StatusLineNC vertical_div,     muted
 
 ## Menus
-  PMenu        plain_fg, muted
+  PMenu        plain_fg, lighten(plain_bg, 5)
   PMenuSbar    none,     muted
-  PMenuSel     plain_fg, blue
+  PMenuSel     plain_fg, dark_blue
   PMenuThumb   plain_bg, blue
 
 ## Startify
@@ -119,7 +121,7 @@ vim_colors 'adCode' do
   qfFileName          light_blue
   qfLineNr            yellow
 
-# Programming
+## Programming
   Boolean     orange
   Character   green
   Comment     light_mute,  none, gui: 'italic', cterm: 'italic'
@@ -143,8 +145,14 @@ vim_colors 'adCode' do
   Structure   '7e8aa2'
   Title       'f6f3e8'
   Todo        orange
-  Type        '54c0ff'
+  Type        blue
   Typedef     '7e8aa2'
+
+# TreeSitter
+  TSKeyword purple, gui: 'italic', cterm: 'italic'
+  TSType blue
+  TSParameter magenta
+  TSComment muted, gui: 'italic', cterm: 'italic'
 
 # Ruby
   rubyAccess               purple,     none, gui: :italic
@@ -299,9 +307,6 @@ vim_colors 'adCode' do
   sshConfigKeyword        purple
   sshconfigPreferredAuth  yellow
   sshconfigNumber         lime
-
-#NeoSnippet Templates
-  neoSnippetExpandSnippets muted, muted,      gui: 'underline'
 
 # YAML
   yamlKey                 blue
