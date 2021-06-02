@@ -128,7 +128,7 @@ vim_colors 'adCode' do
   StatusLineNC vertical_div,     muted
 
 # Menus
-  PMenu        plain_fg, lighten(plain_bg, 5)
+  PMenu        plain_fg, visual
   PMenuSbar    none,     muted
   PMenuSel     plain_fg, dark_blue
   PMenuThumb   plain_bg, blue
