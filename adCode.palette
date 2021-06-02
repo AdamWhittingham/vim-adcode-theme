@@ -27,6 +27,7 @@ vim_colors 'adCode' do
   pink         = '#F4628D'
   magenta      = '#CCA0FF'
   highlight    = '#F8D454'
+  visual       = '#003050'
 
   [
     plain_fg,
@@ -50,22 +51,23 @@ vim_colors 'adCode' do
     magenta,
     pink,
     highlight,
+    visual,
   ].each { |colour| colour.sub!(/^#/, '') }
 
-  light_mute   = lighten(muted,25)
+  comment   = lighten(muted,25)
   vertical_div = lighten(plain_bg, 5)
   warning      = dark_orange
   gutter       = lighten(plain_bg, 5)
 
 # Vim Elemets
   Normal          plain_fg,      plain_bg
-  Visual          none,          muted
+  Visual          none,          visual
   LineNr          muted,         vertical_div
   Cursor          plain_fg,      white
   CursorLine      none,          gutter
-  CursorLineNr    yellow,        gutter,                gui: :bold
+  CursorLineNr    green,         gutter,                gui: :bold
   CursorColumn    none,          '303030'
-  Search          highlight,     plain_bg,              gui: :underline
+  Search          plain_bg,      highlight,             gui: :bold
   MatchParen      highlight,     plain_bg,              gui: :bold
   SignColumn      plain_fg,      vertical_div
   VertSplit       vertical_div,  vertical_div
@@ -77,7 +79,7 @@ vim_colors 'adCode' do
 # Programming
   Boolean     orange
   Character   green
-  Comment     light_mute,  none, gui: 'italic', cterm: 'italic'
+  Comment     comment,  none, gui: 'italic', cterm: 'italic'
   Conditional light_blue
   Constant    orange
   Debug       warning
@@ -186,7 +188,7 @@ vim_colors 'adCode' do
   rubyConditional          teal
   rubyConstant             yellow
   rubyControl              teal
-  rubyComment              light_mute,  none,  gui: :italic
+  rubyComment              comment,  none,  gui: :italic
   rubyDefine               purple
   rubyDoBlock              none,            none
   rubyException            red
