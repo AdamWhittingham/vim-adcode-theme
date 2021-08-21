@@ -14,15 +14,15 @@ vim_colors 'adCode' do
   dark_orange  = '#FF9800'
   orange       = '#FFB633'
   yellow       = '#FFFF40'
-  lime         = '#9ef01a'
-  green        = '#40CF40'
+  lime         = '#8FF03a'
+  green        = '#50BF40'
   light_green  = '#A0FF80'
   teal         = '#06B0B0'
-  dark_teal    = '#008787'
+  dark_teal    = '#008387'
   dark_blue    = '#2050BF'
   blue         = '#40B0FF'
   light_blue   = '#89DDFF'
-  purple       = '#6860FF'
+  purple       = '#7060FF'
   light_purple = '#A088FF'
   pink         = '#F4628D'
   magenta      = '#CCA0FF'
@@ -113,6 +113,7 @@ vim_colors 'adCode' do
   TSLabel light_green
   TSField teal
   TSNumber green
+  TSFloat lime
   TSOperator plain_fg
   TSParameter teal
   TSPunctBracket green
@@ -163,9 +164,9 @@ vim_colors 'adCode' do
   bufExplorerSortBy  green
 
 ## Git Gutter
-  GitGutterAdd              '33FF33'
+  GitGutterAdd              green
   GitGutterAddLine          none,       '063806'
-  GitGutterChange           'FFFF33'
+  GitGutterChange           yellow
   GitGutterChangeLine       none,       '383805'
   GitGutterDelete           red
   GitGutterDeleteLine       none,       '380505'
