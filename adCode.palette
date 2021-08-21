@@ -14,7 +14,7 @@ vim_colors 'adCode' do
   dark_orange  = '#FF9800'
   orange       = '#FFB633'
   yellow       = '#FFFF40'
-  lime         = '#B8FF00'
+  lime         = '#9ef01a'
   green        = '#40CF40'
   light_green  = '#A0FF80'
   teal         = '#06B0B0'
@@ -23,7 +23,7 @@ vim_colors 'adCode' do
   blue         = '#40B0FF'
   light_blue   = '#89DDFF'
   purple       = '#6860FF'
-  light_purple = '#DAA0FF'
+  light_purple = '#A088FF'
   pink         = '#F4628D'
   magenta      = '#CCA0FF'
   highlight    = '#F8D454'
@@ -111,11 +111,12 @@ vim_colors 'adCode' do
   TSFunction light_blue
   TSKeyword purple, gui: :italic, cterm: :italic
   TSLabel light_green
+  TSField teal
   TSNumber green
   TSOperator plain_fg
   TSParameter teal
-  TSPunctBracket lime
-  TSPunctSpecial lime
+  TSPunctBracket green
+  TSPunctSpecial green
   TSPunctDelimiter white
   TSString green
   TSStringRegex lime
@@ -162,13 +163,13 @@ vim_colors 'adCode' do
   bufExplorerSortBy  green
 
 ## Git Gutter
-  GitGutterAdd              '33FF33',   '115511'
+  GitGutterAdd              '33FF33'
   GitGutterAddLine          none,       '063806'
-  GitGutterChange           'FFFF33',   '757500'
+  GitGutterChange           'FFFF33'
   GitGutterChangeLine       none,       '383805'
-  GitGutterDelete           red,        '331111'
+  GitGutterDelete           red
   GitGutterDeleteLine       none,       '380505'
-  GitGutterChangeDelete     'FFFF33',   '757500'
+  GitGutterChangeDelete     orange
   GitGutterChangeDeleteLine none,       '383805'
 
 # Quick Find window
