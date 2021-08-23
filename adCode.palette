@@ -14,16 +14,16 @@ vim_colors 'adCode' do
   dark_orange  = '#FF9800'
   orange       = '#FFB633'
   yellow       = '#FFFF40'
-  lime         = '#8FF03a'
-  green        = '#50BF40'
+  lime         = '#8FFF3a'
+  green        = '#50DF40'
   light_green  = '#A0FF80'
   teal         = '#06B0B0'
   dark_teal    = '#008387'
   dark_blue    = '#2050BF'
   blue         = '#40B0FF'
   light_blue   = '#89DDFF'
-  purple       = '#7060FF'
-  light_purple = '#A088FF'
+  purple       = '#6633cc'
+  light_purple = '#9000FF'
   pink         = '#F4628D'
   magenta      = '#CCA0FF'
   highlight    = '#F8D454'
@@ -109,7 +109,8 @@ vim_colors 'adCode' do
   TSConstant blue
   TSException red
   TSFunction light_blue
-  TSKeyword purple, gui: :italic, cterm: :italic
+  TSKeyword light_purple, gui: :italic, cterm: :italic
+  TSKeywordFunction light_purple, gui: :italic, cterm: :italic
   TSLabel light_green
   TSField teal
   TSNumber green
