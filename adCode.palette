@@ -6,7 +6,7 @@ vim_colors 'adCode' do
   background :dark
 
   plain_fg     = '#FAFAFA'
-  plain_bg     = '#070707'
+  plain_bg     = '#07071A'
   muted        = '#8C8CAF'
 
   white        = '#FFFFFF'
@@ -22,8 +22,8 @@ vim_colors 'adCode' do
   dark_blue    = '#2050BF'
   blue         = '#40B0FF'
   light_blue   = '#89DDFF'
-  purple       = '#6633cc'
-  light_purple = '#9000FF'
+  purple       = '#6655DD'
+  light_purple = '#9C4FFF'
   pink         = '#F4628D'
   magenta      = '#CCA0FF'
   highlight    = '#F8D454'
@@ -84,7 +84,7 @@ vim_colors 'adCode' do
   Constant    orange
   Debug       warning
   Define      plain_fg
-  Delimiter   light_blue
+  Delimiter   dark_blue
   Exception   red
   Float       darken(teal, 10)
   Function    light_blue
@@ -94,8 +94,8 @@ vim_colors 'adCode' do
   Label       '7e8aa2'
   Number      lime
   Operator    '7e8aa2'
-  Special     '84ff00'
-  Statement   '8c5fe6'
+  Special     blue
+  Statement   light_purple
   String      lime
   Structure   '7e8aa2'
   Title       'f6f3e8'
