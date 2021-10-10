@@ -28,6 +28,9 @@ vim_colors 'adCode' do
   magenta      = '#CCA0FF'
   highlight    = '#F8D454'
   visual       = '#003050'
+  statusline   = '#030303'
+  statusline_outer  = '#202848'
+  statusline_inner  = '#203080'
 
   [
     plain_fg,
@@ -43,6 +46,7 @@ vim_colors 'adCode' do
     lime,
     dark_teal,
     dark_blue,
+    statusline_outer,
     blue,
     light_blue,
     light_purple,
@@ -52,6 +56,9 @@ vim_colors 'adCode' do
     pink,
     highlight,
     visual,
+    statusline,
+    statusline_outer,
+    statusline_inner,
   ].each { |colour| colour.sub!(/^#/, '') }
 
   comment   = lighten(muted,25)
@@ -75,6 +82,20 @@ vim_colors 'adCode' do
   SpecialKey      muted,         warning,               gui: :bold
   RedundantSpaces none,          red
   BadSpaces       muted,         red
+
+# Statusline
+  StatusLine   plain_fg,         statusline
+  StatusLineNC vertical_div,     muted
+
+  StatusLeft1 plain_fg, statusline_outer
+  StatusLeft1End statusline_outer, statusline_inner
+  StatusLeft2 plain_fg, statusline_inner
+  StatusLeft2End statusline_inner, statusline
+
+  StatusRight1Start statusline_inner, statusline
+  StatusRight1 plain_fg, statusline_inner
+  StatusRight2Start statusline_outer, statusline_inner
+  StatusRight2 plain_fg, statusline_outer
 
 # Programming
   Boolean     orange
@@ -125,10 +146,6 @@ vim_colors 'adCode' do
   TSSymbol blue
   TSType blue
   TSWarning orange, gui: :bold
-
-# Status Bar
-  StatusLine   plain_fg,         muted
-  StatusLineNC vertical_div,     muted
 
 # Menus
   PMenu        plain_fg, visual
