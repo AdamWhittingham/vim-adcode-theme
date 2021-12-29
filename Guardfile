@@ -1,7 +1,6 @@
 require 'guard/plugin'
 require 'fileutils'
 
-
 guard :shell do
   watch(/\.palette$/) do |scheme_files|
     Array(scheme_files).each do |palette_file|
@@ -13,6 +12,7 @@ guard :shell do
       italic_sed = "sed -E 's/gui=ITALIC/& cterm=ITALIC/g'"
       bold_sed = "sed -E 's/gui=BOLD/& cterm=BOLD/g'"
       `palette #{palette} | #{italic_sed} | #{bold_sed} > #{vim_output}`
+      `cp #{vim_output} #{local_output}`
       puts "#{Time.now}: colorscheme '#{scheme_name}' updated"
     end
     nil

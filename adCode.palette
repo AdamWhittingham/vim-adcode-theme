@@ -17,6 +17,7 @@ vim_colors 'adCode' do
   lime         = '#8FFF3a'
   green        = '#50DF40'
   light_green  = '#A0FF80'
+  dark_green   = '#107020'
   teal         = '#06B0B0'
   dark_teal    = '#008387'
   dark_blue    = '#2050BF'
@@ -24,13 +25,18 @@ vim_colors 'adCode' do
   light_blue   = '#89DDFF'
   purple       = '#6655DD'
   light_purple = '#9C4FFF'
+  dark_purple  = '#203080'
+  very_dark_purple  = '#202848'
   pink         = '#F4628D'
   magenta      = '#CCA0FF'
   highlight    = '#F8D454'
   visual       = '#003050'
-  statusline   = '#030303'
-  statusline_outer  = '#202848'
-  statusline_inner  = '#203080'
+
+  statusline   = very_dark_purple
+  statusline_a  = dark_blue
+  statusline_b  = dark_purple
+  statusline_c  = very_dark_purple
+  statusline_d  = dark_teal
 
   [
     plain_fg,
@@ -46,7 +52,6 @@ vim_colors 'adCode' do
     lime,
     dark_teal,
     dark_blue,
-    statusline_outer,
     blue,
     light_blue,
     light_purple,
@@ -57,8 +62,10 @@ vim_colors 'adCode' do
     highlight,
     visual,
     statusline,
-    statusline_outer,
-    statusline_inner,
+    statusline_a,
+    statusline_b,
+    statusline_c,
+    statusline_d,
   ].each { |colour| colour.sub!(/^#/, '') }
 
   comment   = lighten(muted,25)
@@ -84,18 +91,20 @@ vim_colors 'adCode' do
   BadSpaces       muted,         red
 
 # Statusline
-  StatusLine   plain_fg,         statusline
+  StatusLine   plain_fg
   StatusLineNC vertical_div,     muted
 
-  StatusLeft1 plain_fg, statusline_outer
-  StatusLeft1End statusline_outer, statusline_inner
-  StatusLeft2 plain_fg, statusline_inner
-  StatusLeft2End statusline_inner, statusline
+  StatusAEnds statusline_a
+  StatusA plain_fg, statusline_a
 
-  StatusRight1Start statusline_inner, statusline
-  StatusRight1 plain_fg, statusline_inner
-  StatusRight2Start statusline_outer, statusline_inner
-  StatusRight2 plain_fg, statusline_outer
+  StatusBEnds statusline_b
+  StatusB plain_fg, statusline_b
+
+  StatusCEnds statusline_c
+  StatusC plain_fg, statusline_c
+
+  StatusDEnds statusline_d
+  StatusD plain_fg, statusline_d
 
 # Programming
   Boolean     orange
@@ -184,12 +193,22 @@ vim_colors 'adCode' do
 ## Git Gutter
   GitGutterAdd              green
   GitGutterAddLine          none,       '063806'
+  GitSignsAdd               green
+  GitSignsAddLn             none,       '063806'
+
   GitGutterChange           yellow
   GitGutterChangeLine       none,       '383805'
+  GitSignsChange            yellow
+  GitSignsChangeLn          none,       '383805'
+
   GitGutterDelete           red
   GitGutterDeleteLine       none,       '380505'
+  GitSignsDelete            red
+  GitSignsDeleteLn          none,       '380505'
   GitGutterChangeDelete     orange
   GitGutterChangeDeleteLine none,       '383805'
+  GitSignsChangeDelete      orange
+  GitSignsChangeDeleteLn    none,       '383805'
 
 # Quick Find window
   qfFileName          light_blue
