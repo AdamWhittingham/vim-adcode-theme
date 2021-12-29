@@ -1,6 +1,13 @@
-AdCode
-======
-A colourful Vim theme for bright developers!
+Vim-AdCode
+==========
+
+A colourful Vim/Nvim theme for bright developers.
+
+![Screenshot](docs/screenshot.png)
+
+Uses blue/purple for most things so that values and constants really ✨**pop**✨!
+
+Used in [my Vim/Neovim config](https://github.com/AdamWhittingham/vim-config), with support for several popular plugins.
 
 Contributing
 ------------
@@ -9,6 +16,6 @@ The config is built using Palette(https://github.com/joshuaclayton/palette) for 
 
 To make changes:
 
-1. Edit `adCode.palette`
-2. Generate the vim config using `palette adCode.palette > ~/.vim/colors/adCode.vim`
-3. Load up Vim and try it out!
+1. Run `make dev` to begin watching for changes
+2. Edit `adCode.palette`
+3. Reload the colorscheme in Vim to try out your changes.
