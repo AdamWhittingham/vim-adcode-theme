@@ -205,6 +205,7 @@ vim_colors 'adCode' do
   GitGutterDeleteLine       none,       '380505'
   GitSignsDelete            red
   GitSignsDeleteLn          none,       '380505'
+
   GitGutterChangeDelete     orange
   GitGutterChangeDeleteLine none,       '383805'
   GitSignsChangeDelete      orange
