@@ -1,7 +1,7 @@
 Vim-AdCode
 ==========
 
-A colourful Vim/Nvim theme for bright developers.
+A colourful Vim/Nvim theme for **bright** developers who aren't afraid of some **colour**!
 
 ![Screenshot](docs/screenshot.png)
 
@@ -18,4 +18,4 @@ To make changes:
 
 1. Run `make dev` to begin watching for changes
 2. Edit `adCode.palette`
-3. Reload the colorscheme in Vim to try out your changes.
+3. Reload the colorscheme in Vim to try out your changes. Take a look in the `tests` directory for some code to check.
