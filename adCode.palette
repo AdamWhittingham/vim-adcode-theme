@@ -22,7 +22,7 @@ vim_colors 'adCode' do
   dark_teal    = '#008387'
   dark_blue    = '#2050BF'
   blue         = '#40B0FF'
-  light_blue   = '#89DDFF'
+  light_blue   = '#6FCFFF'
   purple       = '#6655DD'
   light_purple = '#9C4FFF'
   dark_purple  = '#203080'
@@ -105,6 +105,11 @@ vim_colors 'adCode' do
 
   StatusDEnds statusline_d
   StatusD plain_fg, statusline_d
+
+# Indentation guidelines
+  IndentBlanklineChar very_dark_purple
+  IndentBlanklineContextChar purple
+  IndentBlanklineContextStart none, very_dark_purple, gui: 'nocombine', cterm: 'bold'
 
 # Programming
   Boolean     orange
@@ -214,6 +219,12 @@ vim_colors 'adCode' do
 # Quick Find window
   qfFileName          light_blue
   qfLineNr            yellow
+
+# LSP
+  DiagnosticSignError red
+  DiagnosticSignWarn orange
+  DiagnosticSignInfo light_blue
+  DiagnosticSignHint white
 
 # Language Specific
 ## Ruby
