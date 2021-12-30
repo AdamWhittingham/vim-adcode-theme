@@ -144,6 +144,7 @@ vim_colors 'adCode' do
   TSConstant blue
   TSException red
   TSFunction light_blue
+  TSInclude yellow
   TSKeyword light_purple, gui: :italic, cterm: :italic
   TSKeywordFunction light_purple, gui: :italic, cterm: :italic
   TSLabel light_green

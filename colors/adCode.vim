@@ -76,6 +76,7 @@ hi TSConditional               guifg=#CCA0FF ctermfg=183  gui=NONE cterm=NONE
 hi TSConstant                  guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi TSException                 guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
 hi TSFunction                  guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
+hi TSInclude                   guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi TSKeyword                   guifg=#9C4FFF ctermfg=135  gui=ITALIC cterm=ITALIC cterm=NONE
 hi TSKeywordFunction           guifg=#9C4FFF ctermfg=135  gui=ITALIC cterm=ITALIC cterm=NONE
 hi TSLabel                     guifg=#A0FF80 ctermfg=156  gui=NONE cterm=NONE
