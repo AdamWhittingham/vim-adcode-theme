@@ -1,0 +1,6 @@
+.foo {
+  background: #bada55;
+  color: #222222;
+  display: flex;
+  min-width: 2em;
+}
