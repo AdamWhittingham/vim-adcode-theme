@@ -23,14 +23,14 @@ hi Visual                      guifg=NONE    ctermfg=NONE guibg=#003050 ctermbg=
 hi LineNr                      guifg=#8C8CAF ctermfg=103  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi Cursor                      guifg=#FAFAFA ctermfg=231  guibg=#FFFFFF ctermbg=231  gui=NONE cterm=NONE
 hi CursorLine                  guifg=NONE    ctermfg=NONE guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
-hi CursorLineNr                guifg=#50DF40 ctermfg=77   guibg=#0C0C2E ctermbg=233  gui=BOLD cterm=BOLD cterm=BOLD
+hi CursorLineNr                guifg=#50DF40 ctermfg=77   guibg=#0C0C2E ctermbg=233  gui=BOLD cterm=BOLD
 hi CursorColumn                guifg=NONE    ctermfg=NONE guibg=#303030 ctermbg=236  gui=NONE cterm=NONE
-hi Search                      guifg=#07071A ctermfg=232  guibg=#F8D454 ctermbg=221  gui=BOLD cterm=BOLD cterm=BOLD
-hi MatchParen                  guifg=#F8D454 ctermfg=221  guibg=#07071A ctermbg=232  gui=BOLD cterm=BOLD cterm=BOLD
+hi Search                      guifg=#07071A ctermfg=232  guibg=#F8D454 ctermbg=221  gui=BOLD cterm=BOLD
+hi MatchParen                  guifg=#F8D454 ctermfg=221  guibg=#07071A ctermbg=232  gui=BOLD cterm=BOLD
 hi SignColumn                  guifg=#FAFAFA ctermfg=231  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi VertSplit                   guifg=#0C0C2E ctermfg=233  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
-hi NonText                     guifg=#8C8CAF ctermfg=103  gui=BOLD cterm=BOLD cterm=BOLD
-hi SpecialKey                  guifg=#8C8CAF ctermfg=103  guibg=#FF9800 ctermbg=208  gui=BOLD cterm=BOLD cterm=BOLD
+hi NonText                     guifg=#8C8CAF ctermfg=103  gui=BOLD cterm=BOLD
+hi SpecialKey                  guifg=#8C8CAF ctermfg=103  guibg=#FF9800 ctermbg=208  gui=BOLD cterm=BOLD
 hi RedundantSpaces             guifg=NONE    ctermfg=NONE guibg=#E9475A ctermbg=167  gui=NONE cterm=NONE
 hi BadSpaces                   guifg=#8C8CAF ctermfg=103  guibg=#E9475A ctermbg=167  gui=NONE cterm=NONE
 hi StatusLine                  guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
@@ -48,7 +48,7 @@ hi IndentBlanklineContextChar  guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
 hi IndentBlanklineContextStart guifg=NONE    ctermfg=NONE guibg=#202848 ctermbg=235  gui=NOCOMBINE cterm=NOCOMBINE
 hi Boolean                     guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi Character                   guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
-hi Comment                     guifg=#D7D7E3 ctermfg=188  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
+hi Comment                     guifg=#D7D7E3 ctermfg=188  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=NONE
 hi Conditional                 guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi Constant                    guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi Debug                       guifg=#FF9800 ctermfg=208  gui=NONE cterm=NONE
@@ -71,14 +71,14 @@ hi Title                       guifg=#F6F3E8 ctermfg=255  gui=NONE cterm=NONE
 hi Todo                        guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi Type                        guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi Typedef                     guifg=#7E8AA2 ctermfg=103  gui=NONE cterm=NONE
-hi TSComment                   guifg=#8C8CAF ctermfg=103  gui=ITALIC cterm=ITALIC cterm=NONE
+hi TSComment                   guifg=#8C8CAF ctermfg=103  gui=ITALIC cterm=NONE
 hi TSConditional               guifg=#CCA0FF ctermfg=183  gui=NONE cterm=NONE
 hi TSConstant                  guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi TSException                 guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
 hi TSFunction                  guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi TSInclude                   guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
-hi TSKeyword                   guifg=#9C4FFF ctermfg=135  gui=ITALIC cterm=ITALIC cterm=NONE
-hi TSKeywordFunction           guifg=#9C4FFF ctermfg=135  gui=ITALIC cterm=ITALIC cterm=NONE
+hi TSKeyword                   guifg=#9C4FFF ctermfg=135  gui=ITALIC cterm=NONE
+hi TSKeywordFunction           guifg=#9C4FFF ctermfg=135  gui=ITALIC cterm=NONE
 hi TSLabel                     guifg=#A0FF80 ctermfg=156  gui=NONE cterm=NONE
 hi TSField                     guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
 hi TSNumber                    guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
@@ -92,7 +92,7 @@ hi TSString                    guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
 hi TSStringRegex               guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
 hi TSSymbol                    guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi TSType                      guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
-hi TSWarning                   guifg=#FFB633 ctermfg=215  gui=BOLD cterm=BOLD cterm=BOLD
+hi TSWarning                   guifg=#FFB633 ctermfg=215  gui=BOLD cterm=BOLD
 hi PMenu                       guifg=#FAFAFA ctermfg=231  guibg=#003050 ctermbg=23   gui=NONE cterm=NONE
 hi PMenuSbar                   guifg=NONE    ctermfg=NONE guibg=#8C8CAF ctermbg=103  gui=NONE cterm=NONE
 hi PMenuSel                    guifg=#FAFAFA ctermfg=231  guibg=#2050BF ctermbg=25   gui=NONE cterm=NONE
@@ -139,18 +139,18 @@ hi DiagnosticSignError         guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
 hi DiagnosticSignWarn          guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi DiagnosticSignInfo          guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi DiagnosticSignHint          guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
-hi rubyAccess                  guifg=#6655DD ctermfg=62   guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
+hi rubyAccess                  guifg=#6655DD ctermfg=62   guibg=NONE    ctermbg=NONE gui=ITALIC cterm=NONE
 hi rubyAttribute               guifg=#9C4FFF ctermfg=135  gui=NONE cterm=NONE
 hi rubyBlockParameter          guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
 hi rubyBlockParameterList      guifg=#008387 ctermfg=30   gui=NONE cterm=NONE
 hi rubyBoolean                 guifg=#FFFF40 ctermfg=227  guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
-hi rubyClass                   guifg=#CCA0FF ctermfg=183  gui=ITALIC cterm=ITALIC cterm=NONE
-hi rubyClassName               guifg=#FFFF40 ctermfg=227  gui=BOLD cterm=BOLD cterm=BOLD
+hi rubyClass                   guifg=#CCA0FF ctermfg=183  gui=ITALIC cterm=NONE
+hi rubyClassName               guifg=#FFFF40 ctermfg=227  gui=BOLD cterm=BOLD
 hi rubyClassVariable           guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi rubyConditional             guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
 hi rubyConstant                guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi rubyControl                 guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
-hi rubyComment                 guifg=#D7D7E3 ctermfg=188  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
+hi rubyComment                 guifg=#D7D7E3 ctermfg=188  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=NONE
 hi rubyDefine                  guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
 hi rubyDoBlock                 guifg=NONE    ctermfg=NONE guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
 hi rubyException               guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
@@ -164,10 +164,10 @@ hi rubyInteger                 guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
 hi rubyInterpolation           guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
 hi rubyInterpolationDelimiter  guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
 hi rubyKeyword                 guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
-hi rubyMacro                   guifg=#CCA0FF ctermfg=183  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
+hi rubyMacro                   guifg=#CCA0FF ctermfg=183  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=NONE
 hi rubyMethodBlock             guifg=NONE    ctermfg=NONE guibg=NONE    ctermbg=NONE gui=NONE cterm=NONE
 hi rubyMethodDeclaration       guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
-hi rubyModule                  guifg=#6655DD ctermfg=62   guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
+hi rubyModule                  guifg=#6655DD ctermfg=62   guibg=NONE    ctermbg=NONE gui=ITALIC cterm=NONE
 hi rubyPredefinedIdentifier    guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi rubyPseudoVariable          guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi rubyRegexp                  guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
@@ -179,11 +179,11 @@ hi rubyRailsTestMethod         guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
 hi rubyString                  guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
 hi rubyStringDelimiter         guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
 hi rubySymbol                  guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
-hi rubyReturn                  guifg=#CCA0FF ctermfg=183  guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD cterm=BOLD
-hi rubyTodo                    guifg=#FFB633 ctermfg=215  guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD cterm=BOLD
+hi rubyReturn                  guifg=#CCA0FF ctermfg=183  guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD
+hi rubyTodo                    guifg=#FFB633 ctermfg=215  guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD
 hi rspecBeforeAndAfter         guifg=#9C4FFF ctermfg=135  gui=NONE cterm=NONE
 hi rspecGroupMethods           guifg=#9C4FFF ctermfg=135  gui=NONE cterm=NONE
-hi rspecMatchers               guifg=#06B0B0 ctermfg=37   guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD cterm=BOLD
+hi rspecMatchers               guifg=#06B0B0 ctermfg=37   guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD
 hi rspecMocks                  guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi elixirAlias                 guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi elixirAtom                  guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
@@ -213,15 +213,15 @@ hi htmlArg                     guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi htmlString                  guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
 hi htmlTagName                 guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
 hi htmlLink                    guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
-hi htmlComment                 guifg=#8C8CAF ctermfg=103  gui=ITALIC cterm=ITALIC cterm=NONE
-hi htmlCommentPart             guifg=#8C8CAF ctermfg=103  gui=ITALIC cterm=ITALIC cterm=NONE
-hi htmlCSSStyleComment         guifg=#8FFF3A ctermfg=119  gui=ITALIC cterm=ITALIC cterm=NONE
-hi htmlitalic                  guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
-hi htmlboldunderlineitalic     guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC,BOLD,UNDERLINE cterm=NONE
-hi htmlbolditalic              guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC,BOLD cterm=NONE
-hi htmlunderlineitalic         guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC,UNDERLINE cterm=NONE
-hi htmlbold                    guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD cterm=BOLD
-hi htmlboldunderline           guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD,UNDERLINE cterm=BOLD,UNDERLINE
+hi htmlComment                 guifg=#8C8CAF ctermfg=103  gui=ITALIC cterm=NONE
+hi htmlCommentPart             guifg=#8C8CAF ctermfg=103  gui=ITALIC cterm=NONE
+hi htmlCSSStyleComment         guifg=#8FFF3A ctermfg=119  gui=ITALIC cterm=NONE
+hi htmlitalic                  guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=NONE
+hi htmlboldunderlineitalic     guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=ITALIC,BOLD,UNDERLINE cterm=NONE
+hi htmlbolditalic              guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=ITALIC,BOLD cterm=NONE
+hi htmlunderlineitalic         guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=ITALIC,UNDERLINE cterm=NONE
+hi htmlbold                    guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD
+hi htmlboldunderline           guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=BOLD,UNDERLINE cterm=BOLD,UNDERLINE
 hi htmlunderline               guifg=#FAFAFA ctermfg=231  guibg=NONE    ctermbg=NONE gui=UNDERLINE cterm=UNDERLINE
 hi xmlTag                      guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi xmlEndTag                   guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
@@ -272,8 +272,8 @@ hi jsParens                    guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
 hi jsNoise                     guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
 hi jsOperator                  guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi jsFuncAssignExpr            guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
-hi sshConfigHostSect           guifg=#40B0FF ctermfg=75   gui=BOLD cterm=BOLD cterm=BOLD
-hi sshConfigHostPort           guifg=#6FCFFF ctermfg=81   gui=BOLD cterm=BOLD cterm=BOLD
+hi sshConfigHostSect           guifg=#40B0FF ctermfg=75   gui=BOLD cterm=BOLD
+hi sshConfigHostPort           guifg=#6FCFFF ctermfg=81   gui=BOLD cterm=BOLD
 hi sshConfigKeyword            guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
 hi sshconfigPreferredAuth      guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi sshconfigNumber             guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
