@@ -136,20 +136,22 @@ hi bufExplorerHelp             guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
 hi bufExplorerSortBy           guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
 hi GitGutterAdd                guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
 hi GitGutterAddLine            guifg=NONE    ctermfg=NONE guibg=#063806 ctermbg=22   gui=NONE cterm=NONE
-hi GitSignsAdd                 guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
-hi GitSignsAddLn               guifg=NONE    ctermfg=NONE guibg=#063806 ctermbg=22   gui=NONE cterm=NONE
+hi DiffAdd                     guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
+hi DiffAddLn                   guifg=NONE    ctermfg=NONE guibg=#063806 ctermbg=22   gui=NONE cterm=NONE
 hi GitGutterChange             guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi GitGutterChangeLine         guifg=NONE    ctermfg=NONE guibg=#383805 ctermbg=237  gui=NONE cterm=NONE
-hi GitSignsChange              guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
-hi GitSignsChangeLn            guifg=NONE    ctermfg=NONE guibg=#383805 ctermbg=237  gui=NONE cterm=NONE
+hi DiffChange                  guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
+hi DiffChangeLn                guifg=NONE    ctermfg=NONE guibg=#383805 ctermbg=237  gui=NONE cterm=NONE
 hi GitGutterDelete             guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
 hi GitGutterDeleteLine         guifg=NONE    ctermfg=NONE guibg=#380505 ctermbg=52   gui=NONE cterm=NONE
-hi GitSignsDelete              guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
-hi GitSignsDeleteLn            guifg=NONE    ctermfg=NONE guibg=#380505 ctermbg=52   gui=NONE cterm=NONE
+hi DiffDelete                  guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
+hi DiffDeleteLn                guifg=NONE    ctermfg=NONE guibg=#380505 ctermbg=52   gui=NONE cterm=NONE
 hi GitGutterChangeDelete       guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi GitGutterChangeDeleteLine   guifg=NONE    ctermfg=NONE guibg=#383805 ctermbg=237  gui=NONE cterm=NONE
-hi GitSignsChangeDelete        guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
-hi GitSignsChangeDeleteLn      guifg=NONE    ctermfg=NONE guibg=#383805 ctermbg=237  gui=NONE cterm=NONE
+hi DiffChangeDelete            guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
+hi DiffChangeDeleteLn          guifg=NONE    ctermfg=NONE guibg=#383805 ctermbg=237  gui=NONE cterm=NONE
+hi DiffAdded                   guifg=#50DF40 ctermfg=77   guibg=#063806 ctermbg=22   gui=NONE cterm=NONE
+hi DiffRemoved                 guifg=#E9475A ctermfg=167  guibg=#380505 ctermbg=52   gui=NONE cterm=NONE
 hi qfFileName                  guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi qfLineNr                    guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi DiagnosticSignError         guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE

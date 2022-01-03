@@ -213,26 +213,31 @@ vim_colors 'adCode' do
   bufExplorerHelp    muted
   bufExplorerSortBy  green
 
-## Git Gutter
+## Gitsigns
   GitGutterAdd              green
   GitGutterAddLine          none,       '063806'
-  GitSignsAdd               green
-  GitSignsAddLn             none,       '063806'
+  DiffAdd               green
+  DiffAddLn             none,       '063806'
 
   GitGutterChange           yellow
   GitGutterChangeLine       none,       '383805'
-  GitSignsChange            yellow
-  GitSignsChangeLn          none,       '383805'
+  DiffChange            yellow
+  DiffChangeLn          none,       '383805'
 
   GitGutterDelete           red
   GitGutterDeleteLine       none,       '380505'
-  GitSignsDelete            red
-  GitSignsDeleteLn          none,       '380505'
+  DiffDelete            red
+  DiffDeleteLn          none,       '380505'
 
   GitGutterChangeDelete     orange
   GitGutterChangeDeleteLine none,       '383805'
-  GitSignsChangeDelete      orange
-  GitSignsChangeDeleteLn    none,       '383805'
+  DiffChangeDelete      orange
+  DiffChangeDeleteLn    none,       '383805'
+
+  ### Gitsigns preview window
+  DiffAdded             green,       '063806'
+  DiffRemoved           red,       '380505'
+
 
 # Quick Find window
   qfFileName          light_blue
