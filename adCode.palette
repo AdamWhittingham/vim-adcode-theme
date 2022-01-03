@@ -107,22 +107,22 @@ vim_colors 'adCode' do
   StatusD plain_fg, statusline_d
 
 # Start page
-  White        = white
-  Red          = red
-  DarkOrange  = dark_orange
-  Orange       = orange
-  Yellow       = yellow
-  Lime         = lime
-  Green        = green
-  LightGreen  = light_green
-  DarkGreen   = dark_green
-  Teal         = teal
-  DarkTeal    = dark_teal
-  DarkBlue    = dark_blue
-  Blue         = blue
-  LightBlue   = light_blue
-  Purple       = purple
-  LightPurple = light_purple
+  White        white
+  Red          red
+  DarkOrange  dark_orange
+  Orange       orange
+  Yellow       yellow
+  Lime         lime
+  Green        green
+  LightGreen  light_green
+  DarkGreen   dark_green
+  Teal         teal
+  DarkTeal    dark_teal
+  DarkBlue    dark_blue
+  Blue         blue
+  LightBlue   light_blue
+  Purple       purple
+  LightPurple light_purple
 
 # Indentation guidelines
   IndentBlanklineChar very_dark_purple

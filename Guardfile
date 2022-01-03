@@ -16,12 +16,12 @@ guard :shell do
       nvim_output = "~/.config/nvim/colors/#{scheme_name}.vim"
 
       `palette #{palette} | #{italic_sed} | #{bold_sed} > #{repo_output}`
-			print "."
+      print "."
 
       `cp #{repo_output} #{vim_output}`
-			print "."
+      print "."
       `cp #{repo_output} #{nvim_output}`
-			print "."
+      print "."
       puts "updated"
     end
     nil
