@@ -107,22 +107,31 @@ vim_colors 'adCode' do
   StatusD plain_fg, statusline_d
 
 # Start page
-  White        white
-  Red          red
-  DarkOrange  dark_orange
-  Orange       orange
-  Yellow       yellow
-  Lime         lime
-  Green        green
-  LightGreen  light_green
-  DarkGreen   dark_green
-  Teal         teal
-  DarkTeal    dark_teal
-  DarkBlue    dark_blue
-  Blue         blue
-  LightBlue   light_blue
-  Purple       purple
-  LightPurple light_purple
+  StartifyBracket muted
+  StartifyPath    blue
+  StartifySlash   muted
+  StartifyFile    light_blue
+  StartifyFooter  muted
+  StartifyHeader  green
+  StartifyNumber  orange
+  StartifySpecial light_blue
+  StartLogo1 '14067E'
+  StartLogo2 '15127B'
+  StartLogo3 '171F78'
+  StartLogo4 '182B75'
+  StartLogo5 '193872'
+  StartLogo6 '1A446E'
+  StartLogo7 '1C506B'
+  StartLogo8 '1D5D68'
+  StartLogo9 '1E6965'
+  StartLogo10 '1F7562'
+  StartLogo11 '21825F'
+  StartLogo12 '228E5C'
+  StartLogo13 '239B59'
+  StartLogo14 '24A755'
+  StartLogo15 '26B352'
+  StartLogo16 '27C04F'
+  StartLogo17 '28CC4C'
 
 # Indentation guidelines
   IndentBlanklineChar very_dark_purple
@@ -185,16 +194,6 @@ vim_colors 'adCode' do
   PMenuSbar    none,     muted
   PMenuSel     plain_fg, dark_blue
   PMenuThumb   plain_bg, blue
-
-# Startify
-  StartifyBracket muted
-  StartifyPath    blue
-  StartifySlash   muted
-  StartifyFile    light_blue
-  StartifyFooter  muted
-  StartifyHeader  green
-  StartifyNumber  orange
-  StartifySpecial light_blue
 
 # NERD Tree
   NERDTreeCWD       lime
