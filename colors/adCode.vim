@@ -29,20 +29,10 @@ hi Search                      guifg=#07071A ctermfg=232  guibg=#F8D454 ctermbg=
 hi MatchParen                  guifg=#F8D454 ctermfg=221  guibg=#07071A ctermbg=232  gui=BOLD cterm=BOLD cterm=BOLD
 hi SignColumn                  guifg=#FAFAFA ctermfg=231  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi VertSplit                   guifg=#0C0C2E ctermfg=233  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
-hi NonText                     guifg=#8C8CAF ctermfg=103  gui=BOLD cterm=BOLD cterm=BOLD
+hi NonText                     guifg=#283048 ctermfg=236  gui=BOLD cterm=BOLD cterm=BOLD
 hi SpecialKey                  guifg=#8C8CAF ctermfg=103  guibg=#FF9800 ctermbg=208  gui=BOLD cterm=BOLD cterm=BOLD
 hi RedundantSpaces             guifg=NONE    ctermfg=NONE guibg=#E9475A ctermbg=167  gui=NONE cterm=NONE
 hi BadSpaces                   guifg=#8C8CAF ctermfg=103  guibg=#E9475A ctermbg=167  gui=NONE cterm=NONE
-hi StatusLine                  guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
-hi StatusLineNC                guifg=#0C0C2E ctermfg=233  guibg=#8C8CAF ctermbg=103  gui=NONE cterm=NONE
-hi StatusAEnds                 guifg=#2050BF ctermfg=25   gui=NONE cterm=NONE
-hi StatusA                     guifg=#FAFAFA ctermfg=231  guibg=#2050BF ctermbg=25   gui=NONE cterm=NONE
-hi StatusBEnds                 guifg=#203080 ctermfg=24   gui=NONE cterm=NONE
-hi StatusB                     guifg=#FAFAFA ctermfg=231  guibg=#203080 ctermbg=24   gui=NONE cterm=NONE
-hi StatusCEnds                 guifg=#202848 ctermfg=235  gui=NONE cterm=NONE
-hi StatusC                     guifg=#FAFAFA ctermfg=231  guibg=#202848 ctermbg=235  gui=NONE cterm=NONE
-hi StatusDEnds                 guifg=#008387 ctermfg=30   gui=NONE cterm=NONE
-hi StatusD                     guifg=#FAFAFA ctermfg=231  guibg=#008387 ctermbg=30   gui=NONE cterm=NONE
 hi StartifyBracket             guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
 hi StartifyPath                guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi StartifySlash               guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
@@ -68,9 +58,9 @@ hi StartLogo14                 guifg=#24A755 ctermfg=35   gui=NONE cterm=NONE
 hi StartLogo15                 guifg=#26B352 ctermfg=35   gui=NONE cterm=NONE
 hi StartLogo16                 guifg=#27C04F ctermfg=35   gui=NONE cterm=NONE
 hi StartLogo17                 guifg=#28CC4C ctermfg=41   gui=NONE cterm=NONE
-hi IndentBlanklineChar         guifg=#202848 ctermfg=235  gui=NONE cterm=NONE
+hi IndentBlanklineChar         guifg=#283048 ctermfg=236  gui=NONE cterm=NONE
 hi IndentBlanklineContextChar  guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
-hi IndentBlanklineContextStart guifg=NONE    ctermfg=NONE guibg=#202848 ctermbg=235  gui=NOCOMBINE cterm=NOCOMBINE
+hi IndentBlanklineContextStart guifg=NONE    ctermfg=NONE guibg=#283048 ctermbg=236  gui=NOCOMBINE cterm=NOCOMBINE
 hi Boolean                     guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi Character                   guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
 hi Comment                     guifg=#D7D7E3 ctermfg=188  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE

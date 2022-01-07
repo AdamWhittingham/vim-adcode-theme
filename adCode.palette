@@ -8,6 +8,7 @@ vim_colors 'adCode' do
   plain_fg     = '#FAFAFA'
   plain_bg     = '#07071A'
   muted        = '#8C8CAF'
+  super_muted  = '#283048'
 
   white        = '#FFFFFF'
   red          = '#E9475A'
@@ -26,22 +27,16 @@ vim_colors 'adCode' do
   purple       = '#6655DD'
   light_purple = '#9C4FFF'
   dark_purple  = '#203080'
-  very_dark_purple  = '#202848'
   pink         = '#F4628D'
   magenta      = '#CCA0FF'
   highlight    = '#F8D454'
   visual       = '#003050'
 
-  statusline   = very_dark_purple
-  statusline_a  = dark_blue
-  statusline_b  = dark_purple
-  statusline_c  = very_dark_purple
-  statusline_d  = dark_teal
-
   [
     plain_fg,
     plain_bg,
     muted,
+    super_muted,
     white,
     red,
     dark_orange,
@@ -61,11 +56,6 @@ vim_colors 'adCode' do
     pink,
     highlight,
     visual,
-    statusline,
-    statusline_a,
-    statusline_b,
-    statusline_c,
-    statusline_d,
   ].each { |colour| colour.sub!(/^#/, '') }
 
   comment   = lighten(muted,25)
@@ -85,26 +75,10 @@ vim_colors 'adCode' do
   MatchParen      highlight,     plain_bg,              gui: :bold
   SignColumn      plain_fg,      vertical_div
   VertSplit       vertical_div,  vertical_div
-  NonText         muted,                                gui: :bold
+  NonText         super_muted,                                gui: :bold
   SpecialKey      muted,         warning,               gui: :bold
   RedundantSpaces none,          red
   BadSpaces       muted,         red
-
-# Statusline
-  StatusLine   plain_fg
-  StatusLineNC vertical_div,     muted
-
-  StatusAEnds statusline_a
-  StatusA plain_fg, statusline_a
-
-  StatusBEnds statusline_b
-  StatusB plain_fg, statusline_b
-
-  StatusCEnds statusline_c
-  StatusC plain_fg, statusline_c
-
-  StatusDEnds statusline_d
-  StatusD plain_fg, statusline_d
 
 # Start page
   StartifyBracket muted
@@ -134,9 +108,9 @@ vim_colors 'adCode' do
   StartLogo17 '28CC4C'
 
 # Indentation guidelines
-  IndentBlanklineChar very_dark_purple
+  IndentBlanklineChar super_muted
   IndentBlanklineContextChar purple
-  IndentBlanklineContextStart none, very_dark_purple, gui: 'nocombine', cterm: 'bold'
+  IndentBlanklineContextStart none, super_muted, gui: 'nocombine', cterm: 'bold'
 
 # Programming
   Boolean     orange
