@@ -169,6 +169,22 @@ vim_colors 'adCode' do
   PMenuSel     plain_fg, dark_blue
   PMenuThumb   plain_bg, blue
 
+## CMP
+  CmpItemKindText muted
+  CmpItemKindMethod purple
+  CmpItemKindFunction light_blue
+  CmpItemKindConstructor blue
+  CmpItemKindField light_green
+  CmpItemKindVariable green
+  CmpItemKindClass yellow
+  CmpItemKindInterface orange
+  CmpItemKindValue teal
+  CmpItemKindEnum teal
+  CmpItemKindKeyword purple
+  CmpItemKindSnippet lime
+  CmpItemKindFile plain_fg
+  CmpItemKindFolder plain_fg
+
 # NERD Tree
   NERDTreeCWD       lime
   NERDTreeDir       blue

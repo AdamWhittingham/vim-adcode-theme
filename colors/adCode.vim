@@ -112,6 +112,20 @@ hi PMenu                       guifg=#FAFAFA ctermfg=231  guibg=#003050 ctermbg=
 hi PMenuSbar                   guifg=NONE    ctermfg=NONE guibg=#8C8CAF ctermbg=103  gui=NONE cterm=NONE
 hi PMenuSel                    guifg=#FAFAFA ctermfg=231  guibg=#2050BF ctermbg=25   gui=NONE cterm=NONE
 hi PMenuThumb                  guifg=#07071A ctermfg=232  guibg=#40B0FF ctermbg=75   gui=NONE cterm=NONE
+hi CmpItemKindText             guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
+hi CmpItemKindMethod           guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
+hi CmpItemKindFunction         guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
+hi CmpItemKindConstructor      guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
+hi CmpItemKindField            guifg=#A0FF80 ctermfg=156  gui=NONE cterm=NONE
+hi CmpItemKindVariable         guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
+hi CmpItemKindClass            guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
+hi CmpItemKindInterface        guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
+hi CmpItemKindValue            guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
+hi CmpItemKindEnum             guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
+hi CmpItemKindKeyword          guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
+hi CmpItemKindSnippet          guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
+hi CmpItemKindFile             guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
+hi CmpItemKindFolder           guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
 hi NERDTreeCWD                 guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
 hi NERDTreeDir                 guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi NERDTreeDirSlash            guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
