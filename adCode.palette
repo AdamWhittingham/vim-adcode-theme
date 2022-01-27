@@ -111,7 +111,7 @@ vim_colors 'adCode' do
 
 # Indentation guidelines
   IndentBlanklineChar super_muted
-  IndentBlanklineContextChar purple
+  IndentBlanklineContextChar dark_purple
   IndentBlanklineContextStart none, super_muted, gui: 'nocombine', cterm: 'bold'
 
 # Programming

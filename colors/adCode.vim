@@ -59,7 +59,7 @@ hi StartLogo15                 guifg=#26B352 ctermfg=35   gui=NONE cterm=NONE
 hi StartLogo16                 guifg=#27C04F ctermfg=35   gui=NONE cterm=NONE
 hi StartLogo17                 guifg=#28CC4C ctermfg=41   gui=NONE cterm=NONE
 hi IndentBlanklineChar         guifg=#283048 ctermfg=236  gui=NONE cterm=NONE
-hi IndentBlanklineContextChar  guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
+hi IndentBlanklineContextChar  guifg=#203080 ctermfg=24   gui=NONE cterm=NONE
 hi IndentBlanklineContextStart guifg=NONE    ctermfg=NONE guibg=#283048 ctermbg=236  gui=NOCOMBINE cterm=NOCOMBINE
 hi Boolean                     guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi Character                   guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
