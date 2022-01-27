@@ -126,6 +126,15 @@ hi CmpItemKindKeyword          guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
 hi CmpItemKindSnippet          guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
 hi CmpItemKindFile             guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
 hi CmpItemKindFolder           guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
+hi TelescopeBorder             guifg=#283048 ctermfg=236  gui=NONE cterm=NONE
+hi TelescopeNormal             guifg=#FAFAFA ctermfg=231  guibg=#07071A ctermbg=232  gui=NONE cterm=NONE
+hi TelescopePreviewTitle       guifg=#FFFFFF ctermfg=231  guibg=#283048 ctermbg=236  gui=NONE cterm=NONE
+hi TelescopeResultsTitle       guifg=#FFFFFF ctermfg=231  guibg=#283048 ctermbg=236  gui=NONE cterm=NONE
+hi TelescopeSelection          guifg=#FFFFFF ctermfg=231  guibg=#003050 ctermbg=23   gui=NONE cterm=NONE
+hi TelescopePromptBorder       guifg=#203080 ctermfg=24   gui=NONE cterm=NONE
+hi TelescopePromptTitle        guifg=#FFFFFF ctermfg=231  guibg=#203080 ctermbg=24   gui=NONE cterm=NONE
+hi TelescopePromptNormal       guifg=#FFFFFF ctermfg=231  guibg=#07071A ctermbg=232  gui=NONE cterm=NONE
+hi TelescopePromptPrefix       guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
 hi NERDTreeCWD                 guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
 hi NERDTreeDir                 guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi NERDTreeDirSlash            guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE

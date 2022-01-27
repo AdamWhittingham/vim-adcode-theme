@@ -56,6 +56,8 @@ vim_colors 'adCode' do
     pink,
     highlight,
     visual,
+    dark_purple,
+    dark_green,
   ].each { |colour| colour.sub!(/^#/, '') }
 
   comment   = lighten(muted,25)
@@ -184,6 +186,17 @@ vim_colors 'adCode' do
   CmpItemKindSnippet lime
   CmpItemKindFile plain_fg
   CmpItemKindFolder plain_fg
+
+## Telescope
+  TelescopeBorder super_muted
+  TelescopeNormal plain_fg, plain_bg
+  TelescopePreviewTitle white, super_muted
+  TelescopeResultsTitle white, super_muted
+  TelescopeSelection white, visual
+  TelescopePromptBorder dark_purple
+  TelescopePromptTitle white, dark_purple
+  TelescopePromptNormal white, plain_bg
+  TelescopePromptPrefix lime
 
 # NERD Tree
   NERDTreeCWD       lime
