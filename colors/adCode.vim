@@ -148,7 +148,7 @@ hi packerWorking               guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi packerSuccess               guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
 hi packerFail                  guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
 hi packerHash                  guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
-hi packerRelDate               guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
+hi packerRelDate               guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
 hi packerProgress              guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
 hi packerOutput                guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
 hi packerTimeTrivial           guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE

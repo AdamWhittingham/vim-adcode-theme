@@ -212,7 +212,7 @@ vim_colors 'adCode' do
   packerSuccess green
   packerFail red
   packerHash yellow
-  packerRelDate green
+  packerRelDate muted
   packerProgress purple
   packerOutput plain_fg
 
