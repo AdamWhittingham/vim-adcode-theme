@@ -9,6 +9,7 @@ vim_colors 'adCode' do
   plain_bg     = '#07071A'
   muted        = '#8C8CAF'
   super_muted  = '#283048'
+  float_bg     = '#0A1840'
 
   white        = '#FFFFFF'
   red          = '#E9475A'
@@ -35,6 +36,7 @@ vim_colors 'adCode' do
   [
     plain_fg,
     plain_bg,
+    float_bg,
     muted,
     super_muted,
     white,
@@ -81,6 +83,8 @@ vim_colors 'adCode' do
   SpecialKey      warning,                              gui: :bold
   RedundantSpaces none,          red
   BadSpaces       muted,         red
+  NormalFloat     plain_fg, float_bg
+  FloatBorder     muted, float_bg
 
 # Start page
   StartifyBracket muted
@@ -265,7 +269,7 @@ vim_colors 'adCode' do
   DiagnosticSignWarn orange
   DiagnosticSignInfo light_blue
   DiagnosticSignHint white
-  LspSignatureActiveParameter light_blue, none, gui: :italic
+  LspSignatureActiveParameter light_blue
 
 # Language Specific
 ## Ruby
