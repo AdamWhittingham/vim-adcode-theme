@@ -265,6 +265,7 @@ vim_colors 'adCode' do
   DiagnosticSignWarn orange
   DiagnosticSignInfo light_blue
   DiagnosticSignHint white
+  LspSignatureActiveParameter light_blue, none, gui: :italic
 
 # Language Specific
 ## Ruby

@@ -185,6 +185,7 @@ hi DiagnosticSignError         guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
 hi DiagnosticSignWarn          guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi DiagnosticSignInfo          guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi DiagnosticSignHint          guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
+hi LspSignatureActiveParameter guifg=#6FCFFF ctermfg=81   guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
 hi rubyAccess                  guifg=#6655DD ctermfg=62   guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
 hi rubyAttribute               guifg=#9C4FFF ctermfg=135  gui=NONE cterm=NONE
 hi rubyBlockParameter          guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
