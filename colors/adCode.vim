@@ -30,7 +30,7 @@ hi MatchParen                  guifg=#F8D454 ctermfg=221  guibg=#07071A ctermbg=
 hi SignColumn                  guifg=#FAFAFA ctermfg=231  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi VertSplit                   guifg=#0C0C2E ctermfg=233  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi NonText                     guifg=#283048 ctermfg=236  gui=BOLD cterm=BOLD cterm=BOLD
-hi SpecialKey                  guifg=#8C8CAF ctermfg=103  guibg=#FF9800 ctermbg=208  gui=BOLD cterm=BOLD cterm=BOLD
+hi SpecialKey                  guifg=#FF9800 ctermfg=208  gui=BOLD cterm=BOLD cterm=BOLD
 hi RedundantSpaces             guifg=NONE    ctermfg=NONE guibg=#E9475A ctermbg=167  gui=NONE cterm=NONE
 hi BadSpaces                   guifg=#8C8CAF ctermfg=103  guibg=#E9475A ctermbg=167  gui=NONE cterm=NONE
 hi StartifyBracket             guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
@@ -135,12 +135,26 @@ hi TelescopePromptBorder       guifg=#203080 ctermfg=24   gui=NONE cterm=NONE
 hi TelescopePromptTitle        guifg=#FFFFFF ctermfg=231  guibg=#203080 ctermbg=24   gui=NONE cterm=NONE
 hi TelescopePromptNormal       guifg=#FFFFFF ctermfg=231  guibg=#07071A ctermbg=232  gui=NONE cterm=NONE
 hi TelescopePromptPrefix       guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
-hi NERDTreeCWD                 guifg=#8FFF3A ctermfg=119  gui=NONE cterm=NONE
-hi NERDTreeDir                 guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
-hi NERDTreeDirSlash            guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
-hi NERDTreeUp                  guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
-hi NERDTreeOpenable            guifg=#06B0B0 ctermfg=37   gui=NONE cterm=NONE
-hi NERDTreeClosable            guifg=#008387 ctermfg=30   gui=NONE cterm=NONE
+hi packerStatus                guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
+hi packerStatusCommit          guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
+hi packerStatusSuccess         guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
+hi packerStatusFail            guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
+hi packerPackageName           guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
+hi packerPackageNotLoaded      guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
+hi packerString                guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
+hi packerBool                  guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
+hi packerBreakingChange        guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
+hi packerWorking               guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
+hi packerSuccess               guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
+hi packerFail                  guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
+hi packerHash                  guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
+hi packerRelDate               guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
+hi packerProgress              guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
+hi packerOutput                guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
+hi packerTimeTrivial           guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
+hi packerTimeLow               guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
+hi packerTimeMedium            guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
+hi packerTimeHigh              guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi netrwData                   guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi netrwSymLink                guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
 hi bufExplorerCurFile          guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE

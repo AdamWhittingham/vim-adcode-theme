@@ -77,8 +77,8 @@ vim_colors 'adCode' do
   MatchParen      highlight,     plain_bg,              gui: :bold
   SignColumn      plain_fg,      vertical_div
   VertSplit       vertical_div,  vertical_div
-  NonText         super_muted,                                gui: :bold
-  SpecialKey      muted,         warning,               gui: :bold
+  NonText         super_muted,                          gui: :bold
+  SpecialKey      warning,                              gui: :bold
   RedundantSpaces none,          red
   BadSpaces       muted,         red
 
@@ -198,13 +198,28 @@ vim_colors 'adCode' do
   TelescopePromptNormal white, plain_bg
   TelescopePromptPrefix lime
 
-# NERD Tree
-  NERDTreeCWD       lime
-  NERDTreeDir       blue
-  NERDTreeDirSlash  blue
-  NERDTreeUp        light_blue
-  NERDTreeOpenable  teal
-  NERDTreeClosable  dark_teal
+# Packer
+  packerStatus purple
+  packerStatusCommit yellow
+  packerStatusSuccess green
+  packerStatusFail red
+  packerPackageName plain_fg
+  packerPackageNotLoaded yellow
+  packerString blue
+  packerBool blue
+  packerBreakingChange red
+  packerWorking blue
+  packerSuccess green
+  packerFail red
+  packerHash yellow
+  packerRelDate green
+  packerProgress purple
+  packerOutput plain_fg
+
+  packerTimeTrivial muted
+  packerTimeLow plain_fg
+  packerTimeMedium yellow
+  packerTimeHigh orange
 
 # NetRW
   netrwData	   blue
