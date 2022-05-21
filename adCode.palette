@@ -271,6 +271,10 @@ vim_colors 'adCode' do
   DiagnosticSignHint white
   LspSignatureActiveParameter light_blue
 
+# Yanky
+  YankyPut none, dark_purple
+  YankyYanked none, dark_purple
+
 # Language Specific
 ## Ruby
   rubyAccess               purple,     none, gui: :italic
