@@ -157,6 +157,11 @@ hi packerTimeTrivial           guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
 hi packerTimeLow               guifg=#FAFAFA ctermfg=231  gui=NONE cterm=NONE
 hi packerTimeMedium            guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi packerTimeHigh              guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
+hi DapBreakpoint               guifg=#FFB633 ctermfg=215  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
+hi DapBreakpointConditional    guifg=#FFFF40 ctermfg=227  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
+hi DapBreakpointRejected       guifg=#E9475A ctermfg=167  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
+hi DapStopped                  guifg=#50DF40 ctermfg=77   guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
+hi DapStoppedLine              guifg=NONE    ctermfg=NONE guibg=#283048 ctermbg=236  gui=ITALIC cterm=ITALIC cterm=NONE
 hi netrwData                   guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi netrwSymLink                guifg=#50DF40 ctermfg=77   gui=NONE cterm=NONE
 hi bufExplorerCurFile          guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE

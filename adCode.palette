@@ -225,6 +225,13 @@ vim_colors 'adCode' do
   packerTimeMedium yellow
   packerTimeHigh orange
 
+# DAP
+  DapBreakpoint orange, vertical_div
+  DapBreakpointConditional yellow, vertical_div
+  DapBreakpointRejected red, vertical_div
+  DapStopped green, vertical_div
+  DapStoppedLine none, super_muted, gui: :italic
+
 # NetRW
   netrwData	   blue
   netrwSymLink green
