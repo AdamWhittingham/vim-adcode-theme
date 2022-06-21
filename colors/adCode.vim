@@ -35,6 +35,7 @@ hi RedundantSpaces             guifg=NONE    ctermfg=NONE guibg=#E9475A ctermbg=
 hi BadSpaces                   guifg=#8C8CAF ctermfg=103  guibg=#E9475A ctermbg=167  gui=NONE cterm=NONE
 hi NormalFloat                 guifg=#FAFAFA ctermfg=231  guibg=#0A1840 ctermbg=234  gui=NONE cterm=NONE
 hi FloatBorder                 guifg=#8C8CAF ctermfg=103  guibg=#0A1840 ctermbg=234  gui=NONE cterm=NONE
+hi Folded                      guifg=#2050BF ctermfg=25   guibg=#0A1840 ctermbg=234  gui=NONE cterm=NONE
 hi StartifyBracket             guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
 hi StartifyPath                guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi StartifySlash               guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE

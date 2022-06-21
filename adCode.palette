@@ -1,3 +1,5 @@
+# vi: ft=ruby
+
 vim_colors 'adCode' do
   author 'Adam Whittingham'
   notes 'A colourful scheme for bright programmers'
@@ -62,7 +64,7 @@ vim_colors 'adCode' do
     dark_green,
   ].each { |colour| colour.sub!(/^#/, '') }
 
-  comment   = lighten(muted,25)
+  comment      = lighten(muted,25)
   vertical_div = lighten(plain_bg, 5)
   warning      = dark_orange
   gutter       = lighten(plain_bg, 5)
@@ -85,6 +87,7 @@ vim_colors 'adCode' do
   BadSpaces       muted,         red
   NormalFloat     plain_fg, float_bg
   FloatBorder     muted, float_bg
+  Folded          dark_blue, float_bg
 
 # Start page
   StartifyBracket muted
