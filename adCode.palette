@@ -88,6 +88,7 @@ vim_colors 'adCode' do
   NormalFloat     plain_fg, float_bg
   FloatBorder     muted, float_bg
   Folded          dark_blue, float_bg
+  InactiveWindow  none, lighten(plain_bg, 5)
 
 # Start page
   StartifyBracket muted
@@ -115,6 +116,7 @@ vim_colors 'adCode' do
   StartLogo15 '26B352'
   StartLogo16 '27C04F'
   StartLogo17 '28CC4C'
+  StartLogo18 '29D343'
 
 # Indentation guidelines
   IndentBlanklineChar super_muted

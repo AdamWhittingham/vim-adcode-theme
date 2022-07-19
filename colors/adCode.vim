@@ -36,6 +36,7 @@ hi BadSpaces                   guifg=#8C8CAF ctermfg=103  guibg=#E9475A ctermbg=
 hi NormalFloat                 guifg=#FAFAFA ctermfg=231  guibg=#0A1840 ctermbg=234  gui=NONE cterm=NONE
 hi FloatBorder                 guifg=#8C8CAF ctermfg=103  guibg=#0A1840 ctermbg=234  gui=NONE cterm=NONE
 hi Folded                      guifg=#2050BF ctermfg=25   guibg=#0A1840 ctermbg=234  gui=NONE cterm=NONE
+hi InactiveWindow              guifg=NONE    ctermfg=NONE guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi StartifyBracket             guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
 hi StartifyPath                guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi StartifySlash               guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
@@ -61,6 +62,7 @@ hi StartLogo14                 guifg=#24A755 ctermfg=35   gui=NONE cterm=NONE
 hi StartLogo15                 guifg=#26B352 ctermfg=35   gui=NONE cterm=NONE
 hi StartLogo16                 guifg=#27C04F ctermfg=35   gui=NONE cterm=NONE
 hi StartLogo17                 guifg=#28CC4C ctermfg=41   gui=NONE cterm=NONE
+hi StartLogo18                 guifg=#29D343 ctermfg=41   gui=NONE cterm=NONE
 hi IndentBlanklineChar         guifg=#283048 ctermfg=236  gui=NONE cterm=NONE
 hi IndentBlanklineContextChar  guifg=#203080 ctermfg=24   gui=NONE cterm=NONE
 hi IndentBlanklineContextStart guifg=NONE    ctermfg=NONE guibg=#283048 ctermbg=236  gui=NOCOMBINE cterm=NOCOMBINE
