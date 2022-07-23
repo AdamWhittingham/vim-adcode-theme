@@ -35,6 +35,10 @@ vim_colors 'adCode' do
   highlight    = '#F8D454'
   visual       = '#003050'
 
+  bg_red       = '#200E21'
+  bg_orange    = '#231A1D'
+  bg_light_blue= '#131D33'
+
   [
     plain_fg,
     plain_bg,
@@ -62,6 +66,9 @@ vim_colors 'adCode' do
     visual,
     dark_purple,
     dark_green,
+    bg_red,
+    bg_orange,
+    bg_light_blue,
   ].each { |colour| colour.sub!(/^#/, '') }
 
   comment      = lighten(muted,25)
@@ -277,9 +284,12 @@ vim_colors 'adCode' do
   qfLineNr            yellow
 
 # LSP
-  DiagnosticSignError red
-  DiagnosticSignWarn orange
-  DiagnosticSignInfo light_blue
+  DiagnosticSignError red, gutter
+  DiagnosticVirtualTextError red, bg_red
+  DiagnosticSignWarn orange, gutter
+  DiagnosticVirtualTextWarn orange, bg_orange
+  DiagnosticSignInfo light_blue, gutter
+  DiagnosticVirtualTextInfo light_blue, bg_light_blue
   DiagnosticSignHint white
   LspSignatureActiveParameter light_blue
 

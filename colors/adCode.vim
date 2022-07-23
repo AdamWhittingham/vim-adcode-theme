@@ -191,9 +191,12 @@ hi DiffAdded                   guifg=#50DF40 ctermfg=77   guibg=#063806 ctermbg=
 hi DiffRemoved                 guifg=#E9475A ctermfg=167  guibg=#380505 ctermbg=52   gui=NONE cterm=NONE
 hi qfFileName                  guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi qfLineNr                    guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
-hi DiagnosticSignError         guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
-hi DiagnosticSignWarn          guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
-hi DiagnosticSignInfo          guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
+hi DiagnosticSignError         guifg=#E9475A ctermfg=167  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
+hi DiagnosticVirtualTextError  guifg=#E9475A ctermfg=167  guibg=#200E21 ctermbg=234  gui=NONE cterm=NONE
+hi DiagnosticSignWarn          guifg=#FFB633 ctermfg=215  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
+hi DiagnosticVirtualTextWarn   guifg=#FFB633 ctermfg=215  guibg=#231A1D ctermbg=234  gui=NONE cterm=NONE
+hi DiagnosticSignInfo          guifg=#6FCFFF ctermfg=81   guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
+hi DiagnosticVirtualTextInfo   guifg=#6FCFFF ctermfg=81   guibg=#131D33 ctermbg=234  gui=NONE cterm=NONE
 hi DiagnosticSignHint          guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi LspSignatureActiveParameter guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi YankyPut                    guifg=NONE    ctermfg=NONE guibg=#203080 ctermbg=24   gui=NONE cterm=NONE
