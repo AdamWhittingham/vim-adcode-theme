@@ -159,7 +159,7 @@ vim_colors 'adCode' do
   Typedef     '7e8aa2'
 
 # TreeSitter
-  TSComment muted, gui: 'italic', cterm: 'italic'
+  TSComment muted, none, gui: 'italic', cterm: 'italic'
   TSConditional magenta
   TSConstant blue
   TSException red
@@ -298,7 +298,7 @@ vim_colors 'adCode' do
   DiagnosticVirtualTextInfo light_blue, bg_light_blue
   DiagnosticSignHint white
   LspSignatureActiveParameter light_blue
-  LspReferenceText highlight, bg_light_blue, gui: :bold
+  LspReferenceText none, bg_light_blue, gui: :bold
   LspReferenceRead highlight, bg_light_blue, gui: :bold
   LspReferenceWrite highlight, bg_light_blue, gui: :bold
 

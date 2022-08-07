@@ -90,7 +90,7 @@ hi Title                       guifg=#F6F3E8 ctermfg=255  gui=NONE cterm=NONE
 hi Todo                        guifg=#FFB633 ctermfg=215  gui=NONE cterm=NONE
 hi Type                        guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi Typedef                     guifg=#7E8AA2 ctermfg=103  gui=NONE cterm=NONE
-hi TSComment                   guifg=#8C8CAF ctermfg=103  gui=ITALIC cterm=ITALIC cterm=NONE
+hi TSComment                   guifg=#8C8CAF ctermfg=103  guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
 hi TSConditional               guifg=#CCA0FF ctermfg=183  gui=NONE cterm=NONE
 hi TSConstant                  guifg=#40B0FF ctermfg=75   gui=NONE cterm=NONE
 hi TSException                 guifg=#E9475A ctermfg=167  gui=NONE cterm=NONE
@@ -201,7 +201,7 @@ hi DiagnosticSignInfo          guifg=#6FCFFF ctermfg=81   guibg=#0C0C2E ctermbg=
 hi DiagnosticVirtualTextInfo   guifg=#6FCFFF ctermfg=81   guibg=#131D33 ctermbg=234  gui=NONE cterm=NONE
 hi DiagnosticSignHint          guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi LspSignatureActiveParameter guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
-hi LspReferenceText            guifg=#F8D454 ctermfg=221  guibg=#131D33 ctermbg=234  gui=BOLD cterm=BOLD cterm=BOLD
+hi LspReferenceText            guifg=NONE    ctermfg=NONE guibg=#131D33 ctermbg=234  gui=BOLD cterm=BOLD cterm=BOLD
 hi LspReferenceRead            guifg=#F8D454 ctermfg=221  guibg=#131D33 ctermbg=234  gui=BOLD cterm=BOLD cterm=BOLD
 hi LspReferenceWrite           guifg=#F8D454 ctermfg=221  guibg=#131D33 ctermbg=234  gui=BOLD cterm=BOLD cterm=BOLD
 hi YankyPut                    guifg=NONE    ctermfg=NONE guibg=#203080 ctermbg=24   gui=NONE cterm=NONE
