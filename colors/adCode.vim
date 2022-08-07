@@ -25,7 +25,6 @@ hi Cursor                      guifg=#FAFAFA ctermfg=231  guibg=#FFFFFF ctermbg=
 hi CursorLine                  guifg=NONE    ctermfg=NONE guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi CursorLineNr                guifg=#50DF40 ctermfg=77   guibg=#0C0C2E ctermbg=233  gui=BOLD cterm=BOLD cterm=BOLD
 hi CursorColumn                guifg=NONE    ctermfg=NONE guibg=#303030 ctermbg=236  gui=NONE cterm=NONE
-hi Search                      guifg=#07071A ctermfg=232  guibg=#F8D454 ctermbg=221  gui=BOLD cterm=BOLD cterm=BOLD
 hi MatchParen                  guifg=#F8D454 ctermfg=221  guibg=#07071A ctermbg=232  gui=BOLD cterm=BOLD cterm=BOLD
 hi SignColumn                  guifg=#FAFAFA ctermfg=231  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi VertSplit                   guifg=#0C0C2E ctermfg=233  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
@@ -191,6 +190,9 @@ hi DiffAdded                   guifg=#50DF40 ctermfg=77   guibg=#063806 ctermbg=
 hi DiffRemoved                 guifg=#E9475A ctermfg=167  guibg=#380505 ctermbg=52   gui=NONE cterm=NONE
 hi qfFileName                  guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
 hi qfLineNr                    guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
+hi SpellBad                    guifg=#E9475A ctermfg=167  guibg=#200E21 ctermbg=234  gui=UNDERCURL cterm=UNDERCURL
+hi SpellCap                    guifg=#FFB633 ctermfg=215  guibg=#231A1D ctermbg=234  gui=UNDERCURL cterm=UNDERCURL
+hi Search                      guifg=#50DF40 ctermfg=77   guibg=#103030 ctermbg=236  gui=BOLD cterm=BOLD cterm=BOLD
 hi DiagnosticSignError         guifg=#E9475A ctermfg=167  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi DiagnosticVirtualTextError  guifg=#E9475A ctermfg=167  guibg=#200E21 ctermbg=234  gui=NONE cterm=NONE
 hi DiagnosticSignWarn          guifg=#FFB633 ctermfg=215  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
@@ -199,6 +201,9 @@ hi DiagnosticSignInfo          guifg=#6FCFFF ctermfg=81   guibg=#0C0C2E ctermbg=
 hi DiagnosticVirtualTextInfo   guifg=#6FCFFF ctermfg=81   guibg=#131D33 ctermbg=234  gui=NONE cterm=NONE
 hi DiagnosticSignHint          guifg=#FFFFFF ctermfg=231  gui=NONE cterm=NONE
 hi LspSignatureActiveParameter guifg=#6FCFFF ctermfg=81   gui=NONE cterm=NONE
+hi LspReferenceText            guifg=#F8D454 ctermfg=221  guibg=#131D33 ctermbg=234  gui=BOLD cterm=BOLD cterm=BOLD
+hi LspReferenceRead            guifg=#F8D454 ctermfg=221  guibg=#131D33 ctermbg=234  gui=BOLD cterm=BOLD cterm=BOLD
+hi LspReferenceWrite           guifg=#F8D454 ctermfg=221  guibg=#131D33 ctermbg=234  gui=BOLD cterm=BOLD cterm=BOLD
 hi YankyPut                    guifg=NONE    ctermfg=NONE guibg=#203080 ctermbg=24   gui=NONE cterm=NONE
 hi YankyYanked                 guifg=NONE    ctermfg=NONE guibg=#203080 ctermbg=24   gui=NONE cterm=NONE
 hi rubyAccess                  guifg=#6655DD ctermfg=62   guibg=NONE    ctermbg=NONE gui=ITALIC cterm=ITALIC cterm=NONE
@@ -334,6 +339,7 @@ hi jsParens                    guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
 hi jsNoise                     guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE
 hi jsOperator                  guifg=#FFFF40 ctermfg=227  gui=NONE cterm=NONE
 hi jsFuncAssignExpr            guifg=#8C8CAF ctermfg=103  gui=NONE cterm=NONE
+hi TSTitle                     guifg=#A0FF80 ctermfg=156  gui=BOLD cterm=BOLD cterm=BOLD
 hi sshConfigHostSect           guifg=#40B0FF ctermfg=75   gui=BOLD cterm=BOLD cterm=BOLD
 hi sshConfigHostPort           guifg=#6FCFFF ctermfg=81   gui=BOLD cterm=BOLD cterm=BOLD
 hi sshConfigKeyword            guifg=#6655DD ctermfg=62   gui=NONE cterm=NONE

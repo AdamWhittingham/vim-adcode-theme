@@ -37,6 +37,7 @@ vim_colors 'adCode' do
 
   bg_red       = '#200E21'
   bg_orange    = '#231A1D'
+  bg_green     = '#103030'
   bg_light_blue= '#131D33'
 
   [
@@ -68,6 +69,7 @@ vim_colors 'adCode' do
     dark_green,
     bg_red,
     bg_orange,
+    bg_green,
     bg_light_blue,
   ].each { |colour| colour.sub!(/^#/, '') }
 
@@ -84,7 +86,6 @@ vim_colors 'adCode' do
   CursorLine      none,          gutter
   CursorLineNr    green,         gutter,                gui: :bold
   CursorColumn    none,          '303030'
-  Search          plain_bg,      highlight,             gui: :bold
   MatchParen      highlight,     plain_bg,              gui: :bold
   SignColumn      plain_fg,      vertical_div
   VertSplit       vertical_div,  vertical_div
@@ -283,6 +284,11 @@ vim_colors 'adCode' do
   qfFileName          light_blue
   qfLineNr            yellow
 
+# Spelling and Search
+  SpellBad red, bg_red, gui: :undercurl
+  SpellCap orange, bg_orange, gui: :undercurl
+  Search green, bg_green, gui: :bold
+
 # LSP
   DiagnosticSignError red, gutter
   DiagnosticVirtualTextError red, bg_red
@@ -292,6 +298,9 @@ vim_colors 'adCode' do
   DiagnosticVirtualTextInfo light_blue, bg_light_blue
   DiagnosticSignHint white
   LspSignatureActiveParameter light_blue
+  LspReferenceText highlight, bg_light_blue, gui: :bold
+  LspReferenceRead highlight, bg_light_blue, gui: :bold
+  LspReferenceWrite highlight, bg_light_blue, gui: :bold
 
 # Yanky
   YankyPut none, dark_purple
@@ -444,6 +453,9 @@ vim_colors 'adCode' do
   jsNoise                 purple
   jsOperator              yellow
   jsFuncAssignExpr        muted
+
+## Markdown
+  TSTitle                 light_green, gui: :bold
 
 ## SSH Config
   sshConfigHostSect       blue,         gui: 'bold'
