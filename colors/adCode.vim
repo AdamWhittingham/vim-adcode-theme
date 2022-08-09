@@ -25,7 +25,7 @@ hi Cursor                      guifg=#FAFAFA ctermfg=231  guibg=#FFFFFF ctermbg=
 hi CursorLine                  guifg=NONE    ctermfg=NONE guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi CursorLineNr                guifg=#50DF40 ctermfg=77   guibg=#0C0C2E ctermbg=233  gui=BOLD cterm=BOLD cterm=BOLD
 hi CursorColumn                guifg=NONE    ctermfg=NONE guibg=#303030 ctermbg=236  gui=NONE cterm=NONE
-hi MatchParen                  guifg=#F8D454 ctermfg=221  gui=BOLD cterm=BOLD cterm=BOLD
+hi MatchParen                  guifg=#E9475A ctermfg=167  guibg=NONE    ctermbg=NONE gui=BOLD cterm=BOLD cterm=BOLD
 hi SignColumn                  guifg=#FAFAFA ctermfg=231  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi VertSplit                   guifg=#0C0C2E ctermfg=233  guibg=#0C0C2E ctermbg=233  gui=NONE cterm=NONE
 hi NonText                     guifg=#283048 ctermfg=236  gui=BOLD cterm=BOLD cterm=BOLD

@@ -86,7 +86,7 @@ vim_colors 'adCode' do
   CursorLine      none,          gutter
   CursorLineNr    green,         gutter,                gui: :bold
   CursorColumn    none,          '303030'
-  MatchParen      highlight,                            gui: :bold
+  MatchParen      highlight,     none,                  gui: :bold
   SignColumn      plain_fg,      vertical_div
   VertSplit       vertical_div,  vertical_div
   NonText         super_muted,                          gui: :bold
@@ -255,30 +255,30 @@ vim_colors 'adCode' do
   bufExplorerHelp    muted
   bufExplorerSortBy  green
 
-## Gitsigns
- GitGutterAdd green, vertical_div
- GitGutterAddLine none, '063806'
- DiffAdd green, vertical_div
- DiffAddLn none, '063806'
+  ## Gitsigns
+  GitGutterAdd green, vertical_div
+  GitGutterAddLine none, '063806'
+  DiffAdd green, vertical_div
+  DiffAddLn none, '063806'
 
- GitGutterChange yellow, vertical_div
- GitGutterChangeLine none, '383805'
- DiffChange yellow, vertical_div
- DiffChangeLn none, '383805'
+  GitGutterChange yellow, vertical_div
+  GitGutterChangeLine none, '383805'
+  DiffChange yellow, vertical_div
+  DiffChangeLn none, '383805'
 
- GitGutterDelete red, vertical_div
- GitGutterDeleteLine none, '380505'
- DiffDelete red, vertical_div
- DiffDeleteLn none, '380505'
+  GitGutterDelete red, vertical_div
+  GitGutterDeleteLine none, '380505'
+  DiffDelete red, vertical_div
+  DiffDeleteLn none, '380505'
 
- GitGutterChangeDelete orange, vertical_div
- GitGutterChangeDeleteLine none, '383805'
- DiffChangeDelete orange, vertical_div
- DiffChangeDeleteLn none, '383805'
+  GitGutterChangeDelete orange, vertical_div
+  GitGutterChangeDeleteLine none, '383805'
+  DiffChangeDelete orange, vertical_div
+  DiffChangeDeleteLn none, '383805'
 
- ### Gitsigns preview window
- DiffAdded green, '063806'
- DiffRemoved red, '380505'
+  ### Gitsigns preview window
+  DiffAdded green, '063806'
+  DiffRemoved red, '380505'
 
 # Quick Find window
   qfFileName          light_blue
