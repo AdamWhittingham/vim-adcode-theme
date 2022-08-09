@@ -86,7 +86,7 @@ vim_colors 'adCode' do
   CursorLine      none,          gutter
   CursorLineNr    green,         gutter,                gui: :bold
   CursorColumn    none,          '303030'
-  MatchParen      highlight,     plain_bg,              gui: :bold
+  MatchParen      highlight,                            gui: :bold
   SignColumn      plain_fg,      vertical_div
   VertSplit       vertical_div,  vertical_div
   NonText         super_muted,                          gui: :bold
@@ -287,7 +287,7 @@ vim_colors 'adCode' do
 # Spelling and Search
   SpellBad red, bg_red, gui: :undercurl
   SpellCap orange, bg_orange, gui: :undercurl
-  Search green, bg_green, gui: :bold
+  Search highlight, bg_orange, gui: :bold
 
 # LSP
   DiagnosticSignError red, gutter
@@ -299,8 +299,8 @@ vim_colors 'adCode' do
   DiagnosticSignHint white
   LspSignatureActiveParameter light_blue
   LspReferenceText none, bg_light_blue, gui: :bold
-  LspReferenceRead highlight, bg_light_blue, gui: :bold
-  LspReferenceWrite highlight, bg_light_blue, gui: :bold
+  LspReferenceRead blue, bg_light_blue, gui: :bold
+  LspReferenceWrite blue, bg_light_blue, gui: :bold
 
 # Yanky
   YankyPut none, dark_purple
