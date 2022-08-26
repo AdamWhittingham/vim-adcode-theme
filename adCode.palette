@@ -158,6 +158,11 @@ vim_colors 'adCode' do
   Type        blue
   Typedef     '7e8aa2'
 
+## Testing
+  TestRunning orange, gutter
+  TestPassed green, gutter
+  TsostFailed red, gutter
+
 # TreeSitter
   TSComment muted, none, gui: 'italic', cterm: 'italic'
   TSConditional magenta
