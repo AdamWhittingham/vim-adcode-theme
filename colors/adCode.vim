@@ -18,19 +18,21 @@ hi Folded guifg=#2050BF guibg=#0A1840
 hi InactiveWindow guifg=none guibg=#0c0c2c
 hi Boolean guifg=#FFB633
 hi Character guifg=#50DF40
-hi Comment guifg=#8C8CAF guibg=none gui=italic
+hi Comment guifg=#a8a8c3 guibg=none gui=italic
 hi Conditional guifg=#CC40AF
 hi Constant guifg=#40B0FF
 hi Debug guifg=#FF9800
 hi Define guifg=#FAFAFA
 hi Delimiter guifg=#2050BF
 hi Exception guifg=#E9475A
+hi @exception guifg=#E9475A
 hi Field guifg=#06B0B0
 hi Float guifg=#8FFF3a
 hi Function guifg=#6FCFFF
 hi Identifier guifg=#8FFF3a
 hi Include guifg=#FFFF40
 hi Keyword guifg=#9C4FFF gui=italic
+hi @keyword.return guifg=#F4628D gui=italic
 hi KeywordFunction guifg=#9C4FFF gui=italic
 hi Label guifg=#A0FF80
 hi Number guifg=#50DF40
@@ -45,6 +47,7 @@ hi String guifg=#50DF40
 hi StringRegex guifg=#8FFF3a
 hi Structure guifg=#7e8aa2
 hi Symbol guifg=#40B0FF
+hi @symbol guifg=#40B0FF
 hi Title guifg=#f6f3e8
 hi Todo guifg=#FFB633
 hi Type guifg=#40B0FF
