@@ -4,8 +4,10 @@ BAR = "Baaa"
 
 module Foolishness
   class Foo
-    def initialize(first_arg, optional_arg: true)
-      1 + 1 > 1.9 || raise "Reality has failed"
+    include Bar
+
+    def beep(first_arg, optional_arg: true)
+      1 + 1 > 1.9 || raise("Reality  has failed")
     end
 
     private def bar
@@ -13,7 +15,7 @@ module Foolishness
         puts Time.now.getutc, "#bar has been invoked"
       end
 
-      return {bar: :bar, "bar": BAR}
+      return {bar: :bar, "bar" => BAR}
     end
   end
 end
