@@ -3,7 +3,7 @@ window.BAR = "Baaa"
 const initialize = (first_arg, optional_arg=true) => {
 				if(1 + 1 > 1.9){
 								return // All is well
-				}else{
+				} else {
 								throw "Reality has failed";
 				}
 }

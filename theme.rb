@@ -6,31 +6,31 @@ plain_bg     = '#07071A'
 muted        = '#8C8CAF'
 super_muted  = '#283048'
 float_bg     = '#0A1840'
-none         = "none"
+none         = 'none'
 
-comment      = '#a8a8c3'
-vertical_div = '#0c0c2c'
-gutter = '#0c0c2c'
+vertical_div = '#0C0C2C'
+gutter = '#0C0C2C'
+cursor_column = '#10084A'
 
 white        = '#FFFFFF'
 red          = '#E9475A'
 dark_orange  = '#FF9800'
 orange       = '#FFB633'
 yellow       = '#FFFF40'
-lime         = '#8FFF3a'
-green        = '#50DF40'
+lime         = '#9FFF5A'
 light_green  = '#A0FF80'
+green        = '#50DF40'
 dark_green   = '#107020'
-teal         = '#06B0B0'
-dark_teal    = '#008387'
-dark_blue    = '#2050BF'
+teal         = '#16C0B0'
+dark_teal    = '#107090'
+dark_blue    = '#2070FF'
 blue         = '#40B0FF'
-light_blue   = '#6FCFFF'
-purple       = '#6655DD'
-light_purple = '#9C4FFF'
-dark_purple  = '#203080'
-pink         = '#F4628D'
-magenta      = '#CC40AF'
+light_blue   = '#7FCFFF'
+light_purple = '#9F60FF'
+purple       = '#7050FF'
+dark_purple  = '#5040E0'
+pink         = '#F06080'
+magenta      = '#C030C0'
 highlight    = '#F8D454'
 visual       = '#003050'
 
@@ -65,18 +65,18 @@ def resolve_style(opts)
   end
 end
 
-VALID_OPTS = [
-		:bold,
-		:underline,
-		:undercurl,	  # curly underline
-		:underdouble,	# double underline
-		:underdotted,	# dotted underline
-		:underdashed,	# dashed underline
-		:strikethrough,
-		:reverse,
-		:italic,
-		:standout,
-		:nocombine,	#override attributes instead of combining them
+VALID_OPTS = %i[
+  bold
+  underline
+  undercurl
+  underdouble
+  underdotted
+  underdashed
+  strikethrough
+  reverse
+  italic
+  standout
+  nocombine
 ].freeze
 
 def resolve_opt!(opt)
@@ -90,67 +90,81 @@ end
 #               Core               #
 ####################################
 # Core Vim Elemets
-hi("Normal"          , fg: plain_fg,      bg: plain_bg)
-hi("Visual"          ,                    bg: visual)
-hi("LineNr"          , fg: muted,         bg: vertical_div)
-hi("Cursor"          , fg: plain_fg,      bg: white)
-hi("CursorLine"      , fg: none,          bg: gutter)
-hi("CursorLineNr"    , fg: green,         bg: gutter,       styles: :bold)
-hi("CursorColumn"    , fg: none,          bg: '#303030')
-hi("MatchParen"      , fg: highlight,     bg: none,         styles: :bold)
-hi("SignColumn"      , fg: plain_fg,      bg: vertical_div)
-hi("VertSplit"       , fg: vertical_div,  bg: vertical_div)
-hi("NonText"         , fg: super_muted,                     styles: :bold)
-hi("SpecialKey"      , fg: dark_orange,                     styles: :bold)
-hi("RedundantSpaces" , fg: none,          bg: red)
-hi("BadSpaces"       , fg: muted,         bg: red)
-hi("NormalFloat"     , fg: plain_fg,      bg: float_bg)
-hi("FloatBorder"     , fg: muted,         bg: float_bg)
-hi("Folded"          , fg: dark_blue,     bg: float_bg)
-hi("InactiveWindow"  , fg: none,          bg: vertical_div)
+hi('Normal',               fg: plain_fg,      bg: plain_bg)
+hi('Visual',                                  bg: visual)
+hi('LineNr',               fg: muted,         bg: vertical_div)
+hi('Cursor',               fg: plain_fg,      bg: white)
+hi('CursorLine',           fg: none,          bg: gutter)
+hi('CursorLineNr',         fg: green,         bg: gutter,       styles: :bold)
+hi('CursorColumn',         fg: none,          bg: cursor_column)
+hi('MatchParen',           fg: highlight,     bg: none,         styles: :bold)
+hi('SignColumn',           fg: plain_fg,      bg: vertical_div)
+hi('VertSplit',            fg: vertical_div,  bg: vertical_div)
+hi('NonText',              fg: super_muted,                     styles: :bold)
+hi('SpecialKey',           fg: dark_orange,                     styles: :bold)
+hi('RedundantSpaces',      fg: none,          bg: red)
+hi('BadSpaces',            fg: muted,         bg: red)
+hi('NormalFloat',          fg: plain_fg,      bg: float_bg)
+hi('FloatBorder',          fg: muted,         bg: float_bg)
+hi('Folded',               fg: dark_blue,     bg: float_bg)
+hi('InactiveWindow',       fg: none,          bg: vertical_div)
 
 ####################################
 #            Programming           #
 ####################################
-# Types
-hi("Boolean",          fg: orange)
-hi("Character",        fg: green)
-hi("Comment",          fg: comment, bg: none, styles: :italic)
-hi("Conditional",      fg: magenta)
-hi("Constant",         fg: blue)
-hi("Debug",            fg: dark_orange)
-hi("Define",           fg: plain_fg)
-hi("Delimiter",        fg: dark_blue)
-hi("Exception",        fg: red)
-hi("@exception",       fg: red)
-hi("Field",            fg: teal)
-hi("Float",            fg: lime)
-hi("Function",         fg: light_blue)
-hi("Identifier",       fg: lime)
-hi("Include",          fg: yellow)
-hi("Keyword",          fg: light_purple, styles: :italic)
-hi("@keyword.return",  fg: pink,       styles: :italic)
-hi("KeywordFunction",  fg: light_purple, styles: :italic)
-hi("Label",            fg: light_green)
-hi("Number",           fg: green)
-hi("Operator",         fg: plain_fg)
-hi("Parameter",        fg: teal)
-hi("PunctBracket",     fg: green)
-hi("PunctDelimiter",   fg: white)
-hi("PunctSpecial",     fg: green)
-hi("Special",          fg: blue)
-hi("Statement",        fg: light_purple)
-hi("String",           fg: green)
-hi("StringRegex",      fg: lime)
-hi("Structure",        fg: '#7e8aa2')
-hi("Symbol",           fg: blue)
-hi("@symbol",          fg: blue)
-hi("Title",            fg: '#f6f3e8')
-hi("Todo",             fg: orange)
-hi("Type",             fg: blue)
-hi("Typedef",          fg: '#7e8aa2')
-hi("Warning",          fg: orange, styles: :bold)
-hi("bracket",          fg: white)
+# Vim Syntax groups
+hi("Boolean",              fg: orange)
+hi("Character",            fg: green)
+hi("Comment",              fg: muted, bg: none, styles: :italic)
+hi("Conditional",          fg: magenta)
+hi("Constant",             fg: blue)
+hi("Debug",                fg: dark_orange)
+hi("Define",               fg: plain_fg)
+hi("Delimiter",            fg: dark_blue)
+hi("Exception",            fg: red)
+hi("Field",                fg: teal)
+hi("Float",                fg: lime)
+hi("Function",             fg: light_blue)
+hi("Identifier",           fg: lime)
+hi("Include",              fg: yellow)
+hi("Keyword",              fg: light_purple, styles: :italic)
+hi("KeywordFunction",      fg: light_purple, styles: :italic)
+hi("Label",                fg: light_green)
+hi("Number",               fg: green)
+hi("Operator",             fg: plain_fg)
+hi("Parameter",            fg: teal)
+hi("PunctBracket",         fg: green)
+hi("PunctDelimiter",       fg: white)
+hi("PunctSpecial",         fg: green)
+hi("Special",              fg: blue)
+hi("Statement",            fg: light_purple)
+hi("String",               fg: green)
+hi("StringRegex",          fg: teal)
+hi("Structure",            fg: blue)
+hi("Symbol",               fg: blue)
+hi("Title",                fg: blue)
+hi("Todo",                 fg: orange)
+hi("Type",                 fg: blue)
+hi("Typedef",              fg: blue)
+hi("Warning",              fg: orange, styles: :bold)
+hi("bracket",              fg: plain_fg)
+
+# Treesitter Syntax groups
+hi("@comment",             fg: muted)
+hi("@conditional",         fg: purple)
+hi("@exception",           fg: red)
+hi("@function",            fg: light_blue, styles: :bold)
+hi("@function.call",       fg: light_blue)
+hi("@keyword.return",      fg: magenta,    styles: :italic)
+hi("@parameter",           fg: white)
+hi("@property",            fg: light_blue)
+hi("@punctuation.bracket", fg: plain_fg)
+hi("@punctuation.delimiter", fg: light_blue)
+hi("@punctuation.special", fg: light_purple)
+hi("@string",              fg: teal)
+hi("@symbol",              fg: light_blue)
+hi("@variable",            fg: plain_fg)
+hi("@variable.builtin",    fg: plain_fg, style: :italic)
 
 ####################################
 #               Text               #
@@ -332,7 +346,7 @@ __END__
   "rubyConditional"          teal
   "rubyConstant"             yellow
   "rubyControl"              teal
-  "rubyComment"              comment,  none,  gui: :italic
+  "rubyComment"              muted,  none,  gui: :italic
   "rubyDefine"               purple
   "rubyDoBlock"              none,            none
   "rubyException"            red

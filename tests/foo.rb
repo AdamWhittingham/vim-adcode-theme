@@ -11,7 +11,9 @@ module Foolishness
     end
 
     private def bar
-      if [1,2,3,4].sample > 3
+      if remainder = [1,2,3,4].sample > 3
+        forty = 40
+        remainder = forty - remainder
         puts Time.now.getutc, "#bar has been invoked"
       end
 

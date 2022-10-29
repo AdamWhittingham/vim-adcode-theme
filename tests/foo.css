@@ -1,3 +1,8 @@
+#bar{
+  border-radius: 50%;
+  border: 1em 0.75rem;
+}
+
 .foo {
   background: #bada55;
   color: #222222;
