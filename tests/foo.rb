@@ -14,10 +14,12 @@ module Foolishness
       if remainder = [1,2,3,4].sample > 3
         forty = 40
         remainder = forty - remainder
-        puts Time.now.getutc, "#bar has been invoked"
+        puts Time.now.getutc, "#bar has been invoked - #{remainder}"
       end
 
-      return {bar: :bar, "bar" => BAR}
+      return { bar: :bar, "bar" => BAR } if forty / 10 == 40
+
+      100 % remainder
     end
   end
 end

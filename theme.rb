@@ -34,8 +34,8 @@ magenta      = '#C030C0'
 highlight    = '#F8D454'
 visual       = '#003050'
 
-bg_red       = '#200E21'
-bg_orange    = '#231A1D'
+bg_red       = '#300E21'
+bg_orange    = '#331A1D'
 bg_green     = '#103030'
 bg_light_blue= '#131D33'
 
@@ -43,15 +43,16 @@ diff_add_bg  = '#063806'
 diff_del_bg  = '#380505'
 diff_moddel_bg  = '#383805'
 
-def hi(name, fg: nil, bg: nil, styles: [])
-  puts vim_hi(name, fg: fg, bg: bg, styles: Array(styles))
+def hi(name, fg: nil, bg: nil, styles: [], guisp: nil)
+  puts vim_hi(name, fg: fg, bg: bg, styles: Array(styles), guisp: guisp)
 end
 
-def vim_hi(name, fg: nil, bg: nil, styles: [])
+def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil)
   out = ["hi"]
   out << name
   out << "guifg=#{fg}" if fg
   out << "guibg=#{bg}" if bg
+  out << "guisp=#{guisp}" if guisp
   out << resolve_style(styles)
   out.compact.join(" ")
 end
@@ -218,8 +219,8 @@ hi("qfFileName",    fg: light_blue)
 hi("qfLineNr",      fg: yellow)
 
 # Spelling and Search
-hi("SpellBad", fg: red,       bg: bg_red,    styles: :undercurl)
-hi("SpellCap", fg: orange,    bg: bg_orange, styles: :undercurl)
+hi("SpellBad",                bg: bg_red,    styles: :undercurl, guisp: red)
+hi("SpellCap",                bg: bg_orange, styles: :undercurl, guisp: orange)
 hi("Search",   fg: highlight, bg: bg_orange, styles: :bold)
 
 # LSP
