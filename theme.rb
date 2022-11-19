@@ -34,8 +34,8 @@ magenta      = '#C030C0'
 highlight    = '#F8D454'
 visual       = '#003050'
 
-bg_red       = '#300E21'
-bg_orange    = '#331A1D'
+bg_red       = '#200C20'
+bg_orange    = '#231A1D'
 bg_green     = '#103030'
 bg_light_blue= '#131D33'
 
@@ -60,7 +60,7 @@ end
 def resolve_style(opts)
   return unless opts
 
-  valid_opts = Array(opts).map {|opt| resolve_opt!(opt)}
+  valid_opts = Array(opts).map { |opt| resolve_opt!(opt) }
   if valid_opts.any?
     "gui=#{valid_opts.join(',')}"
   end

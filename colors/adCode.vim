@@ -104,13 +104,13 @@ hi PMenuSel guifg=#FAFAFA guibg=#2070FF
 hi PMenuThumb guifg=#07071A guibg=#40B0FF
 hi qfFileName guifg=#7FCFFF
 hi qfLineNr guifg=#FFFF40
-hi SpellBad guibg=#300E21 guisp=#E9475A gui=undercurl
-hi SpellCap guibg=#331A1D guisp=#FFB633 gui=undercurl
-hi Search guifg=#F8D454 guibg=#331A1D gui=bold
+hi SpellBad guibg=#200C20 guisp=#E9475A gui=undercurl
+hi SpellCap guibg=#231A1D guisp=#FFB633 gui=undercurl
+hi Search guifg=#F8D454 guibg=#231A1D gui=bold
 hi DiagnosticSignError guifg=#E9475A guibg=#0C0C2C
-hi DiagnosticVirtualTextError guifg=#E9475A guibg=#300E21
+hi DiagnosticVirtualTextError guifg=#E9475A guibg=#200C20
 hi DiagnosticSignWarn guifg=#FFB633 guibg=#0C0C2C
-hi DiagnosticVirtualTextWarn guifg=#FFB633 guibg=#331A1D
+hi DiagnosticVirtualTextWarn guifg=#FFB633 guibg=#231A1D
 hi DiagnosticSignInfo guifg=#7FCFFF guibg=#0C0C2C
 hi DiagnosticVirtualTextInfo guifg=#7FCFFF guibg=#131D33
 hi DiagnosticSignHint guifg=#FFFFFF
