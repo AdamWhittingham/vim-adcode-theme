@@ -50,11 +50,61 @@ end
 def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil)
   out = ["hi"]
   out << name
-  out << "guifg=#{fg}" if fg
-  out << "guibg=#{bg}" if bg
+
+  if fg
+    out << "fg=#{cterm(fg)}"
+    out << "guifg=#{fg}"
+  end
+
+  if bg
+    out << "bg=#{cterm(bg)}"
+    out << "guibg=#{bg}"
+  end
+
   out << "guisp=#{guisp}" if guisp
   out << resolve_style(styles)
   out.compact.join(" ")
+end
+
+XT_VALUES = [0, 95, 135, 175, 215, 255].freeze # the set of possible RGB values in XTerm
+RESERVED_COLORS = 16
+
+@cterm_cache = {}
+
+def cterm(hex)
+  return hex if hex == 'none'
+  return unless hex.length == 7
+
+  cached = @cterm_cache[hex]
+  return cached if cached
+
+  r = hex[1..2].to_i(16)
+  g = hex[3..4].to_i(16)
+  b = hex[5..6].to_i(16)
+  c = [r, g, b]
+
+  lookup = (0..239).map do |n| # Create the array of Xterm triplets
+    if n < 216
+      [
+        XT_VALUES[n / 36],
+        XT_VALUES[(n % 36) / 6],
+        XT_VALUES[n % 6]
+      ]
+    else
+      [n * 10 - 2152] * 3 # create a uniform triplet
+    end
+  end
+
+  # Map from triplets to Manhattan distance
+  lookup.map! do |t|
+    t.zip(c).map do |xterm_channel, hex_channel|
+      (xterm_channel - hex_channel).abs
+    end.sum
+  end
+
+  cterm = lookup.rindex(lookup.min) + RESERVED_COLORS
+  @cterm_cache[hex] = cterm
+  cterm
 end
 
 def resolve_style(opts)

@@ -1,191 +1,191 @@
-hi Normal guifg=#FAFAFA guibg=#07071A
-hi Visual guibg=#003050
-hi LineNr guifg=#8C8CAF guibg=#0C0C2C
-hi Cursor guifg=#FAFAFA guibg=#FFFFFF
-hi CursorLine guifg=none guibg=#0C0C2C
-hi CursorLineNr guifg=#50DF40 guibg=#0C0C2C gui=bold
-hi CursorColumn guifg=none guibg=#10084A
-hi MatchParen guifg=#F8D454 guibg=none gui=bold
-hi SignColumn guifg=#FAFAFA guibg=#0C0C2C
-hi VertSplit guifg=#0C0C2C guibg=#0C0C2C
-hi NonText guifg=#283048 gui=bold
-hi SpecialKey guifg=#FF9800 gui=bold
-hi RedundantSpaces guifg=none guibg=#E9475A
-hi BadSpaces guifg=#8C8CAF guibg=#E9475A
-hi NormalFloat guifg=#FAFAFA guibg=#0A1840
-hi FloatBorder guifg=#8C8CAF guibg=#0A1840
-hi Folded guifg=#2070FF guibg=#0A1840
-hi InactiveWindow guifg=none guibg=#0C0C2C
-hi Boolean guifg=#FFB633
-hi Character guifg=#50DF40
-hi Comment guifg=#8C8CAF guibg=none gui=italic
-hi Conditional guifg=#C030C0
-hi Constant guifg=#40B0FF
-hi Debug guifg=#FF9800
-hi Define guifg=#FAFAFA
-hi Delimiter guifg=#2070FF
-hi Exception guifg=#E9475A
-hi Field guifg=#16C0B0
-hi Float guifg=#9FFF5A
-hi Function guifg=#7FCFFF
-hi Identifier guifg=#9FFF5A
-hi Include guifg=#FFFF40
-hi Keyword guifg=#9F60FF gui=italic
-hi KeywordFunction guifg=#9F60FF gui=italic
-hi Label guifg=#A0FF80
-hi Number guifg=#50DF40
-hi Operator guifg=#FAFAFA
-hi Parameter guifg=#16C0B0
-hi PunctBracket guifg=#50DF40
-hi PunctDelimiter guifg=#FFFFFF
-hi PunctSpecial guifg=#50DF40
-hi Special guifg=#40B0FF
-hi Statement guifg=#9F60FF
-hi String guifg=#50DF40
-hi StringRegex guifg=#16C0B0
-hi Structure guifg=#40B0FF
-hi Symbol guifg=#40B0FF
-hi Title guifg=#40B0FF
-hi Todo guifg=#FFB633
-hi Type guifg=#40B0FF
-hi Typedef guifg=#40B0FF
-hi Warning guifg=#FFB633 gui=bold
-hi bracket guifg=#FAFAFA
-hi @comment guifg=#8C8CAF
-hi @conditional guifg=#9F60FF
-hi @exception guifg=#E9475A
-hi @function guifg=#7FCFFF gui=bold
-hi @function.call guifg=#7FCFFF
-hi @keyword guifg=#7050FF gui=italic
-hi @keyword.return guifg=#C030C0 gui=italic
-hi @operator guifg=#FFFFFF
-hi @parameter guifg=#FAFAFA
-hi @property guifg=#7FCFFF
-hi @punctuation.bracket guifg=#2070FF
-hi @punctuation.delimiter guifg=#7FCFFF
-hi @punctuation.special guifg=#9F60FF
-hi @label guifg=#16C0B0
-hi @string guifg=#9FFF5A
-hi @string.escape guifg=#50DF40
-hi @string.regex guifg=#9FFF5A
-hi @symbol guifg=#16C0B0
-hi @variable guifg=#FAFAFA
-hi @variable.builtin guifg=#FAFAFA gui=italic
+hi Normal fg=231 guifg=#FAFAFA bg=232 guibg=#07071A
+hi Visual bg=23 guibg=#003050
+hi LineNr fg=103 guifg=#8C8CAF bg=233 guibg=#0C0C2C
+hi Cursor fg=231 guifg=#FAFAFA bg=231 guibg=#FFFFFF
+hi CursorLine fg=none guifg=none bg=233 guibg=#0C0C2C
+hi CursorLineNr fg=77 guifg=#50DF40 bg=233 guibg=#0C0C2C gui=bold
+hi CursorColumn fg=none guifg=none bg=17 guibg=#10084A
+hi MatchParen fg=221 guifg=#F8D454 bg=none guibg=none gui=bold
+hi SignColumn fg=231 guifg=#FAFAFA bg=233 guibg=#0C0C2C
+hi VertSplit fg=233 guifg=#0C0C2C bg=233 guibg=#0C0C2C
+hi NonText fg=236 guifg=#283048 gui=bold
+hi SpecialKey fg=208 guifg=#FF9800 gui=bold
+hi RedundantSpaces fg=none guifg=none bg=167 guibg=#E9475A
+hi BadSpaces fg=103 guifg=#8C8CAF bg=167 guibg=#E9475A
+hi NormalFloat fg=231 guifg=#FAFAFA bg=234 guibg=#0A1840
+hi FloatBorder fg=103 guifg=#8C8CAF bg=234 guibg=#0A1840
+hi Folded fg=27 guifg=#2070FF bg=234 guibg=#0A1840
+hi InactiveWindow fg=none guifg=none bg=233 guibg=#0C0C2C
+hi Boolean fg=215 guifg=#FFB633
+hi Character fg=77 guifg=#50DF40
+hi Comment fg=103 guifg=#8C8CAF bg=none guibg=none gui=italic
+hi Conditional fg=133 guifg=#C030C0
+hi Constant fg=75 guifg=#40B0FF
+hi Debug fg=208 guifg=#FF9800
+hi Define fg=231 guifg=#FAFAFA
+hi Delimiter fg=27 guifg=#2070FF
+hi Exception fg=167 guifg=#E9475A
+hi Field fg=37 guifg=#16C0B0
+hi Float fg=155 guifg=#9FFF5A
+hi Function fg=117 guifg=#7FCFFF
+hi Identifier fg=155 guifg=#9FFF5A
+hi Include fg=227 guifg=#FFFF40
+hi Keyword fg=135 guifg=#9F60FF gui=italic
+hi KeywordFunction fg=135 guifg=#9F60FF gui=italic
+hi Label fg=156 guifg=#A0FF80
+hi Number fg=77 guifg=#50DF40
+hi Operator fg=231 guifg=#FAFAFA
+hi Parameter fg=37 guifg=#16C0B0
+hi PunctBracket fg=77 guifg=#50DF40
+hi PunctDelimiter fg=231 guifg=#FFFFFF
+hi PunctSpecial fg=77 guifg=#50DF40
+hi Special fg=75 guifg=#40B0FF
+hi Statement fg=135 guifg=#9F60FF
+hi String fg=77 guifg=#50DF40
+hi StringRegex fg=37 guifg=#16C0B0
+hi Structure fg=75 guifg=#40B0FF
+hi Symbol fg=75 guifg=#40B0FF
+hi Title fg=75 guifg=#40B0FF
+hi Todo fg=215 guifg=#FFB633
+hi Type fg=75 guifg=#40B0FF
+hi Typedef fg=75 guifg=#40B0FF
+hi Warning fg=215 guifg=#FFB633 gui=bold
+hi bracket fg=231 guifg=#FAFAFA
+hi @comment fg=103 guifg=#8C8CAF
+hi @conditional fg=135 guifg=#9F60FF
+hi @exception fg=167 guifg=#E9475A
+hi @function fg=117 guifg=#7FCFFF gui=bold
+hi @function.call fg=117 guifg=#7FCFFF
+hi @keyword fg=63 guifg=#7050FF gui=italic
+hi @keyword.return fg=133 guifg=#C030C0 gui=italic
+hi @operator fg=231 guifg=#FFFFFF
+hi @parameter fg=231 guifg=#FAFAFA
+hi @property fg=117 guifg=#7FCFFF
+hi @punctuation.bracket fg=27 guifg=#2070FF
+hi @punctuation.delimiter fg=117 guifg=#7FCFFF
+hi @punctuation.special fg=135 guifg=#9F60FF
+hi @label fg=37 guifg=#16C0B0
+hi @string fg=155 guifg=#9FFF5A
+hi @string.escape fg=77 guifg=#50DF40
+hi @string.regex fg=155 guifg=#9FFF5A
+hi @symbol fg=37 guifg=#16C0B0
+hi @variable fg=231 guifg=#FAFAFA
+hi @variable.builtin fg=231 guifg=#FAFAFA gui=italic
 hi @text.title gui=bold,italic
-hi StartifyBracket guifg=#8C8CAF
-hi StartifyPath guifg=#40B0FF
-hi StartifySlash guifg=#8C8CAF
-hi StartifyFile guifg=#7FCFFF
-hi StartifyFooter guifg=#8C8CAF
-hi StartifyHeader guifg=#50DF40
-hi StartifyNumber guifg=#FFB633
-hi StartifySpecial guifg=#7FCFFF
-hi StartLogo1 guifg=#14067E
-hi StartLogo2 guifg=#15127B
-hi StartLogo3 guifg=#171F78
-hi StartLogo4 guifg=#182B75
-hi StartLogo5 guifg=#193872
-hi StartLogo6 guifg=#1A446E
-hi StartLogo7 guifg=#1C506B
-hi StartLogo8 guifg=#1D5D68
-hi StartLogo9 guifg=#1E6965
-hi StartLogo10 guifg=#1F7562
-hi StartLogo11 guifg=#21825F
-hi StartLogo12 guifg=#228E5C
-hi StartLogo13 guifg=#239B59
-hi StartLogo14 guifg=#24A755
-hi StartLogo15 guifg=#26B352
-hi StartLogo16 guifg=#27C04F
-hi StartLogo17 guifg=#28CC4C
-hi StartLogo18 guifg=#29D343
-hi PMenu guifg=#FAFAFA guibg=#003050
-hi PMenuSbar guifg=none guibg=#8C8CAF
-hi PMenuSel guifg=#FAFAFA guibg=#2070FF
-hi PMenuThumb guifg=#07071A guibg=#40B0FF
-hi qfFileName guifg=#7FCFFF
-hi qfLineNr guifg=#FFFF40
-hi SpellBad guibg=#200C20 guisp=#E9475A gui=undercurl
-hi SpellCap guibg=#231A1D guisp=#FFB633 gui=undercurl
-hi Search guifg=#F8D454 guibg=#231A1D gui=bold
-hi DiagnosticSignError guifg=#E9475A guibg=#0C0C2C
-hi DiagnosticVirtualTextError guifg=#E9475A guibg=#200C20
-hi DiagnosticSignWarn guifg=#FFB633 guibg=#0C0C2C
-hi DiagnosticVirtualTextWarn guifg=#FFB633 guibg=#231A1D
-hi DiagnosticSignInfo guifg=#7FCFFF guibg=#0C0C2C
-hi DiagnosticVirtualTextInfo guifg=#7FCFFF guibg=#131D33
-hi DiagnosticSignHint guifg=#FFFFFF
-hi LspSignatureActiveParameter guifg=#7FCFFF
-hi LspReferenceText guifg=none guibg=#131D33 gui=bold
-hi LspReferenceRead guifg=#40B0FF guibg=#131D33 gui=bold
-hi LspReferenceWrite guifg=#40B0FF guibg=#131D33 gui=bold
-hi IndentBlanklineChar guifg=#283048
-hi IndentBlanklineContextChar guifg=#5040E0
-hi IndentBlanklineContextStart guifg=none guibg=#283048 gui=bold
-hi CmpItemKindText guifg=#8C8CAF
-hi CmpItemKindMethod guifg=#7050FF
-hi CmpItemKindFunction guifg=#7FCFFF
-hi CmpItemKindConstructor guifg=#40B0FF
-hi CmpItemKindField guifg=#A0FF80
-hi CmpItemKindVariable guifg=#50DF40
-hi CmpItemKindClass guifg=#FFFF40
-hi CmpItemKindInterface guifg=#FFB633
-hi CmpItemKindValue guifg=#16C0B0
-hi CmpItemKindEnum guifg=#16C0B0
-hi CmpItemKindKeyword guifg=#7050FF
-hi CmpItemKindSnippet guifg=#9FFF5A
-hi CmpItemKindFile guifg=#FAFAFA
-hi CmpItemKindFolder guifg=#FAFAFA
-hi TelescopeBorder guifg=#283048
-hi TelescopeNormal guifg=#FAFAFA guibg=#07071A
-hi TelescopePreviewTitle guifg=#FFFFFF guibg=#283048
-hi TelescopeResultsTitle guifg=#FFFFFF guibg=#283048
-hi TelescopeSelection guifg=#FFFFFF guibg=#003050
-hi TelescopePromptBorder guifg=#5040E0
-hi TelescopePromptTitle guifg=#FFFFFF guibg=#5040E0
-hi TelescopePromptNormal guifg=#FFFFFF guibg=#07071A
-hi TelescopePromptPrefix guifg=#9FFF5A
-hi packerStatus guifg=#7050FF
-hi packerStatusCommit guifg=#FFFF40
-hi packerStatusSuccess guifg=#50DF40
-hi packerStatusFail guifg=#E9475A
-hi packerPackageName guifg=#FAFAFA
-hi packerPackageNotLoaded guifg=#FFFF40
-hi packerString guifg=#40B0FF
-hi packerBool guifg=#40B0FF
-hi packerBreakingChange guifg=#E9475A
-hi packerWorking guifg=#40B0FF
-hi packerSuccess guifg=#50DF40
-hi packerFail guifg=#E9475A
-hi packerHash guifg=#FFFF40
-hi packerRelDate guifg=#8C8CAF
-hi packerProgress guifg=#7050FF
-hi packerOutput guifg=#FAFAFA
-hi packerTimeTrivial guifg=#8C8CAF
-hi packerTimeLow guifg=#FAFAFA
-hi packerTimeMedium guifg=#FFFF40
-hi packerTimeHigh guifg=#FFB633
-hi GitGutterAdd guifg=#50DF40 guibg=#0C0C2C
-hi GitGutterAddLine guifg=none guibg=#063806
-hi DiffAdd guifg=#50DF40 guibg=#0C0C2C
-hi DiffAddLn guifg=none guibg=#063806
-hi GitGutterChange guifg=#FFFF40 guibg=#0C0C2C
-hi GitGutterChangeLine guifg=none guibg=#383805
-hi DiffChange guifg=#FFFF40 guibg=#0C0C2C
-hi DiffChangeLn guifg=none guibg=#383805
-hi GitGutterDelete guifg=#E9475A guibg=#0C0C2C
-hi GitGutterDeleteLine guifg=none guibg=#380505
-hi DiffDelete guifg=#E9475A guibg=#0C0C2C
-hi DiffDeleteLn guifg=none guibg=#380505
-hi GitGutterChangeDelete guifg=#FFB633 guibg=#0C0C2C
-hi GitGutterChangeDeleteLine guifg=none guibg=#383805
-hi DiffChangeDelete guifg=#FFB633 guibg=#0C0C2C
-hi DiffChangeDeleteLn guifg=none guibg=#383805
-hi DiffAdded guifg=#50DF40 guibg=#063806
-hi DiffRemoved guifg=#E9475A guibg=#380505
-hi DapBreakpoint guifg=#FFB633 guibg=#0C0C2C
-hi DapBreakpointConditional guifg=#FFFF40 guibg=#0C0C2C
-hi DapBreakpointRejected guifg=#E9475A guibg=#0C0C2C
-hi DapStopped guifg=#50DF40 guibg=#0C0C2C
-hi DapStoppedLine guifg=none guibg=#283048 gui=italic
-hi YankyPut guifg=none guibg=#5040E0
-hi YankyYanked guifg=none guibg=#5040E0
+hi StartifyBracket fg=103 guifg=#8C8CAF
+hi StartifyPath fg=75 guifg=#40B0FF
+hi StartifySlash fg=103 guifg=#8C8CAF
+hi StartifyFile fg=117 guifg=#7FCFFF
+hi StartifyFooter fg=103 guifg=#8C8CAF
+hi StartifyHeader fg=77 guifg=#50DF40
+hi StartifyNumber fg=215 guifg=#FFB633
+hi StartifySpecial fg=117 guifg=#7FCFFF
+hi StartLogo1 fg=18 guifg=#14067E
+hi StartLogo2 fg=18 guifg=#15127B
+hi StartLogo3 fg=18 guifg=#171F78
+hi StartLogo4 fg=18 guifg=#182B75
+hi StartLogo5 fg=23 guifg=#193872
+hi StartLogo6 fg=23 guifg=#1A446E
+hi StartLogo7 fg=23 guifg=#1C506B
+hi StartLogo8 fg=23 guifg=#1D5D68
+hi StartLogo9 fg=23 guifg=#1E6965
+hi StartLogo10 fg=29 guifg=#1F7562
+hi StartLogo11 fg=29 guifg=#21825F
+hi StartLogo12 fg=29 guifg=#228E5C
+hi StartLogo13 fg=35 guifg=#239B59
+hi StartLogo14 fg=35 guifg=#24A755
+hi StartLogo15 fg=35 guifg=#26B352
+hi StartLogo16 fg=35 guifg=#27C04F
+hi StartLogo17 fg=41 guifg=#28CC4C
+hi StartLogo18 fg=41 guifg=#29D343
+hi PMenu fg=231 guifg=#FAFAFA bg=23 guibg=#003050
+hi PMenuSbar fg=none guifg=none bg=103 guibg=#8C8CAF
+hi PMenuSel fg=231 guifg=#FAFAFA bg=27 guibg=#2070FF
+hi PMenuThumb fg=232 guifg=#07071A bg=75 guibg=#40B0FF
+hi qfFileName fg=117 guifg=#7FCFFF
+hi qfLineNr fg=227 guifg=#FFFF40
+hi SpellBad bg=234 guibg=#200C20 guisp=#E9475A gui=undercurl
+hi SpellCap bg=234 guibg=#231A1D guisp=#FFB633 gui=undercurl
+hi Search fg=221 guifg=#F8D454 bg=234 guibg=#231A1D gui=bold
+hi DiagnosticSignError fg=167 guifg=#E9475A bg=233 guibg=#0C0C2C
+hi DiagnosticVirtualTextError fg=167 guifg=#E9475A bg=234 guibg=#200C20
+hi DiagnosticSignWarn fg=215 guifg=#FFB633 bg=233 guibg=#0C0C2C
+hi DiagnosticVirtualTextWarn fg=215 guifg=#FFB633 bg=234 guibg=#231A1D
+hi DiagnosticSignInfo fg=117 guifg=#7FCFFF bg=233 guibg=#0C0C2C
+hi DiagnosticVirtualTextInfo fg=117 guifg=#7FCFFF bg=234 guibg=#131D33
+hi DiagnosticSignHint fg=231 guifg=#FFFFFF
+hi LspSignatureActiveParameter fg=117 guifg=#7FCFFF
+hi LspReferenceText fg=none guifg=none bg=234 guibg=#131D33 gui=bold
+hi LspReferenceRead fg=75 guifg=#40B0FF bg=234 guibg=#131D33 gui=bold
+hi LspReferenceWrite fg=75 guifg=#40B0FF bg=234 guibg=#131D33 gui=bold
+hi IndentBlanklineChar fg=236 guifg=#283048
+hi IndentBlanklineContextChar fg=62 guifg=#5040E0
+hi IndentBlanklineContextStart fg=none guifg=none bg=236 guibg=#283048 gui=bold
+hi CmpItemKindText fg=103 guifg=#8C8CAF
+hi CmpItemKindMethod fg=63 guifg=#7050FF
+hi CmpItemKindFunction fg=117 guifg=#7FCFFF
+hi CmpItemKindConstructor fg=75 guifg=#40B0FF
+hi CmpItemKindField fg=156 guifg=#A0FF80
+hi CmpItemKindVariable fg=77 guifg=#50DF40
+hi CmpItemKindClass fg=227 guifg=#FFFF40
+hi CmpItemKindInterface fg=215 guifg=#FFB633
+hi CmpItemKindValue fg=37 guifg=#16C0B0
+hi CmpItemKindEnum fg=37 guifg=#16C0B0
+hi CmpItemKindKeyword fg=63 guifg=#7050FF
+hi CmpItemKindSnippet fg=155 guifg=#9FFF5A
+hi CmpItemKindFile fg=231 guifg=#FAFAFA
+hi CmpItemKindFolder fg=231 guifg=#FAFAFA
+hi TelescopeBorder fg=236 guifg=#283048
+hi TelescopeNormal fg=231 guifg=#FAFAFA bg=232 guibg=#07071A
+hi TelescopePreviewTitle fg=231 guifg=#FFFFFF bg=236 guibg=#283048
+hi TelescopeResultsTitle fg=231 guifg=#FFFFFF bg=236 guibg=#283048
+hi TelescopeSelection fg=231 guifg=#FFFFFF bg=23 guibg=#003050
+hi TelescopePromptBorder fg=62 guifg=#5040E0
+hi TelescopePromptTitle fg=231 guifg=#FFFFFF bg=62 guibg=#5040E0
+hi TelescopePromptNormal fg=231 guifg=#FFFFFF bg=232 guibg=#07071A
+hi TelescopePromptPrefix fg=155 guifg=#9FFF5A
+hi packerStatus fg=63 guifg=#7050FF
+hi packerStatusCommit fg=227 guifg=#FFFF40
+hi packerStatusSuccess fg=77 guifg=#50DF40
+hi packerStatusFail fg=167 guifg=#E9475A
+hi packerPackageName fg=231 guifg=#FAFAFA
+hi packerPackageNotLoaded fg=227 guifg=#FFFF40
+hi packerString fg=75 guifg=#40B0FF
+hi packerBool fg=75 guifg=#40B0FF
+hi packerBreakingChange fg=167 guifg=#E9475A
+hi packerWorking fg=75 guifg=#40B0FF
+hi packerSuccess fg=77 guifg=#50DF40
+hi packerFail fg=167 guifg=#E9475A
+hi packerHash fg=227 guifg=#FFFF40
+hi packerRelDate fg=103 guifg=#8C8CAF
+hi packerProgress fg=63 guifg=#7050FF
+hi packerOutput fg=231 guifg=#FAFAFA
+hi packerTimeTrivial fg=103 guifg=#8C8CAF
+hi packerTimeLow fg=231 guifg=#FAFAFA
+hi packerTimeMedium fg=227 guifg=#FFFF40
+hi packerTimeHigh fg=215 guifg=#FFB633
+hi GitGutterAdd fg=77 guifg=#50DF40 bg=233 guibg=#0C0C2C
+hi GitGutterAddLine fg=none guifg=none bg=22 guibg=#063806
+hi DiffAdd fg=77 guifg=#50DF40 bg=233 guibg=#0C0C2C
+hi DiffAddLn fg=none guifg=none bg=22 guibg=#063806
+hi GitGutterChange fg=227 guifg=#FFFF40 bg=233 guibg=#0C0C2C
+hi GitGutterChangeLine fg=none guifg=none bg=237 guibg=#383805
+hi DiffChange fg=227 guifg=#FFFF40 bg=233 guibg=#0C0C2C
+hi DiffChangeLn fg=none guifg=none bg=237 guibg=#383805
+hi GitGutterDelete fg=167 guifg=#E9475A bg=233 guibg=#0C0C2C
+hi GitGutterDeleteLine fg=none guifg=none bg=52 guibg=#380505
+hi DiffDelete fg=167 guifg=#E9475A bg=233 guibg=#0C0C2C
+hi DiffDeleteLn fg=none guifg=none bg=52 guibg=#380505
+hi GitGutterChangeDelete fg=215 guifg=#FFB633 bg=233 guibg=#0C0C2C
+hi GitGutterChangeDeleteLine fg=none guifg=none bg=237 guibg=#383805
+hi DiffChangeDelete fg=215 guifg=#FFB633 bg=233 guibg=#0C0C2C
+hi DiffChangeDeleteLn fg=none guifg=none bg=237 guibg=#383805
+hi DiffAdded fg=77 guifg=#50DF40 bg=22 guibg=#063806
+hi DiffRemoved fg=167 guifg=#E9475A bg=52 guibg=#380505
+hi DapBreakpoint fg=215 guifg=#FFB633 bg=233 guibg=#0C0C2C
+hi DapBreakpointConditional fg=227 guifg=#FFFF40 bg=233 guibg=#0C0C2C
+hi DapBreakpointRejected fg=167 guifg=#E9475A bg=233 guibg=#0C0C2C
+hi DapStopped fg=77 guifg=#50DF40 bg=233 guibg=#0C0C2C
+hi DapStoppedLine fg=none guifg=none bg=236 guibg=#283048 gui=italic
+hi YankyPut fg=none guifg=none bg=62 guibg=#5040E0
+hi YankyYanked fg=none guifg=none bg=62 guibg=#5040E0
