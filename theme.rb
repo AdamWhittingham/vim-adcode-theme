@@ -6,7 +6,8 @@ plain_bg     = '#07071A'
 muted        = '#8C8CAF'
 super_muted  = '#283048'
 float_bg     = '#0A1840'
-none         = 'none'
+none         = 'NONE'
+@none        = none
 
 vertical_div = '#0C0C2C'
 gutter = '#0C0C2C'
@@ -72,7 +73,7 @@ RESERVED_COLORS = 16
 @cterm_cache = {}
 
 def cterm(hex)
-  return hex if hex == 'none'
+  return hex if hex == @none
   return unless hex.length == 7
 
   cached = @cterm_cache[hex]

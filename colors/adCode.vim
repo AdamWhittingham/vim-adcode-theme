@@ -2,23 +2,23 @@ hi Normal ctermfg=231 guifg=#FAFAFA ctermbg=232 guibg=#07071A
 hi Visual ctermbg=23 guibg=#003050
 hi LineNr ctermfg=103 guifg=#8C8CAF ctermbg=233 guibg=#0C0C2C
 hi Cursor ctermfg=231 guifg=#FAFAFA ctermbg=231 guibg=#FFFFFF
-hi CursorLine ctermfg=none guifg=none ctermbg=233 guibg=#0C0C2C
+hi CursorLine ctermfg=NONE guifg=NONE ctermbg=233 guibg=#0C0C2C
 hi CursorLineNr ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C gui=bold
-hi CursorColumn ctermfg=none guifg=none ctermbg=17 guibg=#10084A
-hi MatchParen ctermfg=221 guifg=#F8D454 ctermbg=none guibg=none gui=bold
+hi CursorColumn ctermfg=NONE guifg=NONE ctermbg=17 guibg=#10084A
+hi MatchParen ctermfg=221 guifg=#F8D454 ctermbg=NONE guibg=NONE gui=bold
 hi SignColumn ctermfg=231 guifg=#FAFAFA ctermbg=233 guibg=#0C0C2C
 hi VertSplit ctermfg=233 guifg=#0C0C2C ctermbg=233 guibg=#0C0C2C
 hi NonText ctermfg=236 guifg=#283048 gui=bold
 hi SpecialKey ctermfg=208 guifg=#FF9800 gui=bold
-hi RedundantSpaces ctermfg=none guifg=none ctermbg=167 guibg=#E9475A
+hi RedundantSpaces ctermfg=NONE guifg=NONE ctermbg=167 guibg=#E9475A
 hi BadSpaces ctermfg=103 guifg=#8C8CAF ctermbg=167 guibg=#E9475A
 hi NormalFloat ctermfg=231 guifg=#FAFAFA ctermbg=234 guibg=#0A1840
 hi FloatBorder ctermfg=103 guifg=#8C8CAF ctermbg=234 guibg=#0A1840
 hi Folded ctermfg=27 guifg=#2070FF ctermbg=234 guibg=#0A1840
-hi InactiveWindow ctermfg=none guifg=none ctermbg=233 guibg=#0C0C2C
+hi InactiveWindow ctermfg=NONE guifg=NONE ctermbg=233 guibg=#0C0C2C
 hi Boolean ctermfg=215 guifg=#FFB633
 hi Character ctermfg=77 guifg=#50DF40
-hi Comment ctermfg=103 guifg=#8C8CAF ctermbg=none guibg=none gui=italic
+hi Comment ctermfg=103 guifg=#8C8CAF ctermbg=NONE guibg=NONE gui=italic
 hi Conditional ctermfg=133 guifg=#C030C0
 hi Constant ctermfg=75 guifg=#40B0FF
 hi Debug ctermfg=208 guifg=#FF9800
@@ -99,7 +99,7 @@ hi StartLogo16 ctermfg=35 guifg=#27C04F
 hi StartLogo17 ctermfg=41 guifg=#28CC4C
 hi StartLogo18 ctermfg=41 guifg=#29D343
 hi PMenu ctermfg=231 guifg=#FAFAFA ctermbg=23 guibg=#003050
-hi PMenuSbar ctermfg=none guifg=none ctermbg=103 guibg=#8C8CAF
+hi PMenuSbar ctermfg=NONE guifg=NONE ctermbg=103 guibg=#8C8CAF
 hi PMenuSel ctermfg=231 guifg=#FAFAFA ctermbg=27 guibg=#2070FF
 hi PMenuThumb ctermfg=232 guifg=#07071A ctermbg=75 guibg=#40B0FF
 hi qfFileName ctermfg=117 guifg=#7FCFFF
@@ -115,12 +115,12 @@ hi DiagnosticSignInfo ctermfg=117 guifg=#7FCFFF ctermbg=233 guibg=#0C0C2C
 hi DiagnosticVirtualTextInfo ctermfg=117 guifg=#7FCFFF ctermbg=234 guibg=#131D33
 hi DiagnosticSignHint ctermfg=231 guifg=#FFFFFF
 hi LspSignatureActiveParameter ctermfg=117 guifg=#7FCFFF
-hi LspReferenceText ctermfg=none guifg=none ctermbg=234 guibg=#131D33 gui=bold
+hi LspReferenceText ctermfg=NONE guifg=NONE ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceRead ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceWrite ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
 hi IndentBlanklineChar ctermfg=236 guifg=#283048
 hi IndentBlanklineContextChar ctermfg=62 guifg=#5040E0
-hi IndentBlanklineContextStart ctermfg=none guifg=none ctermbg=236 guibg=#283048 gui=bold
+hi IndentBlanklineContextStart ctermfg=NONE guifg=NONE ctermbg=236 guibg=#283048 gui=bold
 hi CmpItemKindText ctermfg=103 guifg=#8C8CAF
 hi CmpItemKindMethod ctermfg=63 guifg=#7050FF
 hi CmpItemKindFunction ctermfg=117 guifg=#7FCFFF
@@ -165,27 +165,27 @@ hi packerTimeLow ctermfg=231 guifg=#FAFAFA
 hi packerTimeMedium ctermfg=227 guifg=#FFFF40
 hi packerTimeHigh ctermfg=215 guifg=#FFB633
 hi GitGutterAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
-hi GitGutterAddLine ctermfg=none guifg=none ctermbg=22 guibg=#063806
+hi GitGutterAddLine ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
 hi DiffAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
-hi DiffAddLn ctermfg=none guifg=none ctermbg=22 guibg=#063806
+hi DiffAddLn ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
 hi GitGutterChange ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
-hi GitGutterChangeLine ctermfg=none guifg=none ctermbg=237 guibg=#383805
+hi GitGutterChangeLine ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi DiffChange ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
-hi DiffChangeLn ctermfg=none guifg=none ctermbg=237 guibg=#383805
+hi DiffChangeLn ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi GitGutterDelete ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
-hi GitGutterDeleteLine ctermfg=none guifg=none ctermbg=52 guibg=#380505
+hi GitGutterDeleteLine ctermfg=NONE guifg=NONE ctermbg=52 guibg=#380505
 hi DiffDelete ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
-hi DiffDeleteLn ctermfg=none guifg=none ctermbg=52 guibg=#380505
+hi DiffDeleteLn ctermfg=NONE guifg=NONE ctermbg=52 guibg=#380505
 hi GitGutterChangeDelete ctermfg=215 guifg=#FFB633 ctermbg=233 guibg=#0C0C2C
-hi GitGutterChangeDeleteLine ctermfg=none guifg=none ctermbg=237 guibg=#383805
+hi GitGutterChangeDeleteLine ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi DiffChangeDelete ctermfg=215 guifg=#FFB633 ctermbg=233 guibg=#0C0C2C
-hi DiffChangeDeleteLn ctermfg=none guifg=none ctermbg=237 guibg=#383805
+hi DiffChangeDeleteLn ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi DiffAdded ctermfg=77 guifg=#50DF40 ctermbg=22 guibg=#063806
 hi DiffRemoved ctermfg=167 guifg=#E9475A ctermbg=52 guibg=#380505
 hi DapBreakpoint ctermfg=215 guifg=#FFB633 ctermbg=233 guibg=#0C0C2C
 hi DapBreakpointConditional ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
 hi DapBreakpointRejected ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
 hi DapStopped ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
-hi DapStoppedLine ctermfg=none guifg=none ctermbg=236 guibg=#283048 gui=italic
-hi YankyPut ctermfg=none guifg=none ctermbg=62 guibg=#5040E0
-hi YankyYanked ctermfg=none guifg=none ctermbg=62 guibg=#5040E0
+hi DapStoppedLine ctermfg=NONE guifg=NONE ctermbg=236 guibg=#283048 gui=italic
+hi YankyPut ctermfg=NONE guifg=NONE ctermbg=62 guibg=#5040E0
+hi YankyYanked ctermfg=NONE guifg=NONE ctermbg=62 guibg=#5040E0
