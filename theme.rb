@@ -52,12 +52,12 @@ def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil)
   out << name
 
   if fg
-    out << "fg=#{cterm(fg)}"
+    out << "ctermfg=#{cterm(fg)}"
     out << "guifg=#{fg}"
   end
 
   if bg
-    out << "bg=#{cterm(bg)}"
+    out << "ctermbg=#{cterm(bg)}"
     out << "guibg=#{bg}"
   end
 
