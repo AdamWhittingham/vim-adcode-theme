@@ -51,7 +51,7 @@ hi Type ctermfg=75 guifg=#40B0FF
 hi Typedef ctermfg=75 guifg=#40B0FF
 hi Warning ctermfg=215 guifg=#FFB633 gui=bold
 hi bracket ctermfg=231 guifg=#FAFAFA
-hi @comment ctermfg=103 guifg=#8C8CAF
+hi @comment ctermfg=103 guifg=#8C8CAF gui=italic
 hi @conditional ctermfg=135 guifg=#9F60FF
 hi @exception ctermfg=167 guifg=#E9475A
 hi @function ctermfg=117 guifg=#7FCFFF gui=bold
@@ -189,3 +189,10 @@ hi DapStopped ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi DapStoppedLine ctermfg=NONE guifg=NONE ctermbg=236 guibg=#283048 gui=italic
 hi YankyPut ctermfg=NONE guifg=NONE ctermbg=62 guibg=#5040E0
 hi YankyYanked ctermfg=NONE guifg=NONE ctermbg=62 guibg=#5040E0
+hi sshconfigMatch ctermfg=63 guifg=#7050FF
+hi sshconfigHostPort ctermfg=75 guifg=#40B0FF gui=bold
+hi sshconfigKeyword ctermfg=39 guifg=#20A0FF
+hi sshconfigPreferredAuth ctermfg=227 guifg=#FFFF40
+hi sshconfigYesNo ctermfg=215 guifg=#FFB633
+hi sshconfigNumber ctermfg=155 guifg=#9FFF5A
+hi sshconfigLogLevel ctermfg=215 guifg=#FFB633

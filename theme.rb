@@ -25,6 +25,7 @@ dark_green   = '#107020'
 teal         = '#16C0B0'
 dark_teal    = '#107090'
 dark_blue    = '#2070FF'
+mid_blue     = '#20A0FF'
 blue         = '#40B0FF'
 light_blue   = '#7FCFFF'
 light_purple = '#9F60FF'
@@ -202,7 +203,7 @@ hi("Warning",              fg: orange, styles: :bold)
 hi("bracket",              fg: plain_fg)
 
 # Treesitter Syntax groups
-hi("@comment",               fg: muted)
+hi("@comment",               fg: muted, styles: :italic)
 hi("@conditional",           fg: light_purple)
 hi("@exception",             fg: red)
 hi("@function",              fg: light_blue, styles: :bold)
@@ -377,173 +378,11 @@ hi("DapStoppedLine", fg: none, bg: super_muted, styles: :italic)
 hi("YankyPut", fg: none, bg: dark_purple)
 hi("YankyYanked", fg: none, bg: dark_purple)
 
-# Artificially stop processing below here as Ruby for incremental dev
-__END__
-
-# NetRW
-  "netrwData"	   blue
-  "netrwSymLink" green
-
-# BufExplorer
-  "bufExplorerCurFile" light_blue
-  "bufExplorerAltBuf"  blue
-  "bufExplorerHelp"    muted
-  "bufExplorerSortBy"  green
-
-# Language Specific
-## Ruby
-  "rubyAccess"               purple,     none, gui: :italic
-  "rubyAttribute"            light_purple
-  "rubyBlockParameter"       teal
-  "rubyBlockParameterList"   dark_teal
-  "rubyBoolean"              yellow, none
-  "rubyClass"                magenta, gui: :italic
-  "rubyClassName"            yellow, gui: :bold
-  "rubyClassVariable"        light_blue
-  "rubyConditional"          teal
-  "rubyConstant"             yellow
-  "rubyControl"              teal
-  "rubyComment"              muted,  none,  gui: :italic
-  "rubyDefine"               purple
-  "rubyDoBlock"              none,            none
-  "rubyException"            red
-  "rubyExceptional"          orange
-  "rubyFloat"                lime
-  "rubyFunction"             light_blue
-  "rubyGlobalVariable"       orange
-  "rubyInclude"              light_purple
-  "rubyInstanceVariable"     green
-  "rubyInteger"              lime
-  "rubyInterpolation"        lime
-  "rubyInterpolationDelimiter" lime
-  "rubyKeyword"              teal
-  "rubyMacro"                magenta,    none, gui:  'italic'
-  "rubyMethodBlock"          none,       none
-  "rubyMethodDeclaration"    light_blue
-  "rubyModule"               purple,     none, gui:  'italic'
-  "rubyPredefinedIdentifier" orange
-  "rubyPseudoVariable"       yellow
-  "rubyRegexp"               lime
-  "rubyRegexpAnchor"         green
-  "rubyRegexpDelimiter"      green
-  "rubyRegexpSpecial"        lime
-  "rubyRegexpQuantifier"     lime
-  "rubyRailsTestMethod"      plain_fg
-  "rubyString"               green
-  "rubyStringDelimiter"      teal
-  "rubySymbol"               blue
-  "rubyReturn"               magenta, none, gui: 'bold'
-  "rubyTodo"                 orange,       none, gui: 'bold'
-
-## Rspec
-  "rspecBeforeAndAfter"      light_purple
-  "rspecGroupMethods"        light_purple
-  "rspecMatchers"            teal, none, gui: 'bold'
-  "rspecMocks"               orange
-
-## Elixir
-  "elixirAlias"               yellow
-  "elixirAtom"                blue
-  "elixirBlockDefinition"     pink
-  "elixirBoolean"             orange
-  "elixirDefine"              light_purple
-  "elixirFunctionDeclaration" light_blue
-  "elixirGuard"               pink
-  "elixirInclude"             purple
-  "elixirKeyword"             pink
-  "elixirMacroDeclaration"    light_blue
-  "elixirMacroDefine"         pink
-  "elixirModuleDefine"        light_purple
-  "elixirModuleDeclaration"   yellow
-  "elixirNumber"              lime
-  "elixirPrivateDefine"       purple
-  "elixirSigil"               green
-  "elixirSigilDelimiter"      green
-  "elixirStringDelimiter"     green
-  "elixirUnusedVariable"      plain_fg
-  "elixirVariable"            yellow
-
-## HTML
-  "htmlTag"                 green
-  "htmlTagN"                green
-  "htmlSpecialTagName"      green
-  "htmlEndTag"              green
-  "htmlArg"                 blue
-  "htmlString"              plain_fg
-  "htmlTagName"             green
-  "htmlLink"                plain_fg
-  "htmlComment"             muted, gui:    'italic', cterm: 'italic'
-  "htmlCommentPart"         muted, gui:    'italic', cterm: 'italic'
-  "htmlCSSStyleComment"     lime, gui:    'italic', cterm: 'italic'
-  "htmlitalic"              plain_fg, none, gui: 'italic'
-  "htmlboldunderlineitalic" plain_fg, none, gui: 'italic,bold,underline'
-  "htmlbolditalic"          plain_fg, none, gui: 'italic,bold'
-  "htmlunderlineitalic"     plain_fg, none, gui: 'italic,underline'
-  "htmlbold"                plain_fg, none, gui: 'bold'
-  "htmlboldunderline"       plain_fg, none, gui: 'bold,underline'
-  "htmlunderline"           plain_fg, none, gui: 'underline'
-
-## XML
-  "xmlTag"                  light_blue
-  "xmlEndTag"               blue
-  "xmlAttrib"               purple
-
-## CSS
-  "cssAttributeSelector"    green
-  "cssBackgroundProp"       green
-  "cssBorderAttr"           light_blue
-  "cssBorderProp"           green
-  "cssBoxAttr"              light_blue
-  "cssBackgroundAttr"       light_blue
-  "cssUIAttr"               light_blue
-  "cssBoxProp"              green
-  "cssBraces"               plain_fg
-  "cssColor"                blue
-  "cssColorAttr"            light_blue
-  "cssColorProp"            green
-  "cssCommonAttr"           light_blue
-  "cssDefinition"           blue
-  "cssDefinition"           green
-  "cssDimensionProp"        green
-  "cssFontAttr"             light_blue
-  "cssFontProp"             green
-  "cssFunctionName"         yellow
-  "cssGeneratedContentProp" green
-  "cssNoise"                plain_fg
-  "cssPositioningProp"      green
-  "cssPositioningAttr"      yellow
-  "cssPseudoClassId"        yellow
-  "cssRenderProp"           green
-  "cssTableProp"            green
-  "cssTagName"              plain_fg
-  "cssTextAttr"             light_blue
-  "cssTextProp"             green
-  "cssURL"                  lime
-
-## Javascript
-  "jsRegexpOr"              magenta
-  "jsRegexpAnd"             magenta
-  "jsRegexpString"          magenta
-  "jsRegexpCharClass"       pink
-  "jsFuncArgs"              light_blue
-  "jsGlobalObjects"         orange
-  "jsFloat"                 teal
-  "jsReturn"                light_purple
-  "jsStorageClass"          light_blue
-  "jsObjectKey"             blue
-  "jsStringS"               green
-  "jsStringD"               lime
-  "jsParens"                purple
-  "jsNoise"                 purple
-  "jsOperator"              yellow
-  "jsFuncAssignExpr"        muted
-
-## Markdown
-  "TSTitle"                 light_green, gui: :bold
-
 ## SSH Config
-  "sshConfigHostSect"       blue,         gui: 'bold'
-  "sshConfigHostPort"       light_blue,   gui: 'bold'
-  "sshConfigKeyword"        purple
-  "sshconfigPreferredAuth"  yellow
-  "sshconfigNumber"         lime
+hi("sshconfigMatch",         fg: purple)
+hi("sshconfigHostPort",      fg: blue, styles: :bold)
+hi("sshconfigKeyword",       fg: mid_blue)
+hi("sshconfigPreferredAuth", fg: yellow)
+hi("sshconfigYesNo",         fg: orange)
+hi("sshconfigNumber",        fg: lime)
+hi("sshconfigLogLevel",      fg: orange)
