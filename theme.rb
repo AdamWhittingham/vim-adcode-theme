@@ -28,9 +28,10 @@ dark_blue    = '#2070FF'
 mid_blue     = '#20A0FF'
 blue         = '#40B0FF'
 light_blue   = '#7FCFFF'
-light_purple = '#9F60FF'
-purple       = '#7050FF'
-dark_purple  = '#5040E0'
+light_purple = "#A080FF"
+purple       = '#8860FF'
+dark_purple  = '#7050FF'
+darker_purple= '#5040E0'
 pink         = '#D040B0'
 magenta      = '#C030C0'
 highlight    = '#F8D454'
@@ -228,6 +229,9 @@ hi("@variable.builtin",           fg: plain_fg,     styles:  :italic)
 #               Text               #
 ####################################
 hi("@text.title",                 styles: %i[bold italic])
+hi("@text.todo",                  fg: blue,   bg: bg_light_blue, styles: %i[bold italic])
+hi("@text.warning",               fg: orange, bg: bg_orange,     styles: %i[bold italic])
+hi("@text.danger",                fg: red,    bg: bg_red,        styles: %i[bold italic])
 
 ####################################
 #                UI                #
@@ -289,9 +293,9 @@ hi("LspReferenceRead",            fg: blue,         bg: bg_light_blue,  styles: 
 hi("LspReferenceWrite",           fg: blue,         bg: bg_light_blue,  styles: :bold)
 
 # Indentation guidelines
-hi("IndentBlanklineChar",         fg: super_muted)
-hi("IndentBlanklineContextChar",  fg: dark_purple)
-hi("IndentBlanklineContextStart", fg: none,         bg: super_muted,    styles: :bold)
+hi("InentBlanklineChar",         fg: super_muted)
+hi("IndentBlanklineContextChar",  fg: darker_purple, styles: :nocombine)
+hi("IndentBlanklineContextStart", fg: none,          styles: :bold)
 
 ## CMP
 hi("CmpItemKindText",             fg: muted)
@@ -377,7 +381,7 @@ hi("DapStoppedLine",              fg: none,         bg: super_muted,    styles: 
 # Whichkey
 hi("WhichKey",                    fg: light_blue)
 hi("WhichKeySeparator",           fg: muted)
-hi("WhichKeyDesc",                fg: lime)
+hi("WhichKeyDesc",                fg: light_purple)
 hi("WhichKeyGroup",               fg: teal)
 
 # Yanky

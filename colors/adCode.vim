@@ -30,8 +30,8 @@ hi Float ctermfg=155 guifg=#9FFF5A
 hi Function ctermfg=117 guifg=#7FCFFF
 hi Identifier ctermfg=155 guifg=#9FFF5A
 hi Include ctermfg=227 guifg=#FFFF40
-hi Keyword ctermfg=135 guifg=#9F60FF gui=italic
-hi KeywordFunction ctermfg=135 guifg=#9F60FF gui=italic
+hi Keyword ctermfg=141 guifg=#A080FF gui=italic
+hi KeywordFunction ctermfg=141 guifg=#A080FF gui=italic
 hi Label ctermfg=156 guifg=#A0FF80
 hi Number ctermfg=77 guifg=#50DF40
 hi Operator ctermfg=231 guifg=#FAFAFA
@@ -40,7 +40,7 @@ hi PunctBracket ctermfg=77 guifg=#50DF40
 hi PunctDelimiter ctermfg=231 guifg=#FFFFFF
 hi PunctSpecial ctermfg=77 guifg=#50DF40
 hi Special ctermfg=75 guifg=#40B0FF
-hi Statement ctermfg=135 guifg=#9F60FF
+hi Statement ctermfg=141 guifg=#A080FF
 hi String ctermfg=77 guifg=#50DF40
 hi StringRegex ctermfg=37 guifg=#16C0B0
 hi Structure ctermfg=75 guifg=#40B0FF
@@ -52,18 +52,18 @@ hi Typedef ctermfg=75 guifg=#40B0FF
 hi Warning ctermfg=215 guifg=#FFB633 gui=bold
 hi bracket ctermfg=231 guifg=#FAFAFA
 hi @comment ctermfg=103 guifg=#8C8CAF gui=italic
-hi @conditional ctermfg=135 guifg=#9F60FF
+hi @conditional ctermfg=141 guifg=#A080FF
 hi @exception ctermfg=167 guifg=#E9475A
 hi @function ctermfg=117 guifg=#7FCFFF gui=bold
 hi @function.call ctermfg=117 guifg=#7FCFFF
-hi @keyword ctermfg=63 guifg=#7050FF gui=italic
+hi @keyword ctermfg=99 guifg=#8860FF gui=italic
 hi @keyword.return ctermfg=133 guifg=#C030C0 gui=italic
 hi @operator ctermfg=231 guifg=#FFFFFF
 hi @parameter ctermfg=231 guifg=#FAFAFA
 hi @property ctermfg=117 guifg=#7FCFFF
 hi @punctuation.bracket ctermfg=27 guifg=#2070FF
 hi @punctuation.delimiter ctermfg=117 guifg=#7FCFFF
-hi @punctuation.special ctermfg=135 guifg=#9F60FF
+hi @punctuation.special ctermfg=141 guifg=#A080FF
 hi @label ctermfg=37 guifg=#16C0B0
 hi @string ctermfg=155 guifg=#9FFF5A
 hi @string.escape ctermfg=77 guifg=#50DF40
@@ -72,6 +72,9 @@ hi @symbol ctermfg=37 guifg=#16C0B0
 hi @variable ctermfg=231 guifg=#FAFAFA
 hi @variable.builtin ctermfg=231 guifg=#FAFAFA gui=italic
 hi @text.title gui=bold,italic
+hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
+hi @text.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
+hi @text.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
 hi StartifyBracket ctermfg=103 guifg=#8C8CAF
 hi StartifyPath ctermfg=75 guifg=#40B0FF
 hi StartifySlash ctermfg=103 guifg=#8C8CAF
@@ -118,11 +121,11 @@ hi LspSignatureActiveParameter ctermfg=117 guifg=#7FCFFF
 hi LspReferenceText ctermfg=NONE guifg=NONE ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceRead ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceWrite ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
-hi IndentBlanklineChar ctermfg=236 guifg=#283048
-hi IndentBlanklineContextChar ctermfg=62 guifg=#5040E0
-hi IndentBlanklineContextStart ctermfg=NONE guifg=NONE ctermbg=236 guibg=#283048 gui=bold
+hi InentBlanklineChar ctermfg=236 guifg=#283048
+hi IndentBlanklineContextChar ctermfg=62 guifg=#5040E0 gui=nocombine
+hi IndentBlanklineContextStart ctermfg=NONE guifg=NONE gui=bold
 hi CmpItemKindText ctermfg=103 guifg=#8C8CAF
-hi CmpItemKindMethod ctermfg=63 guifg=#7050FF
+hi CmpItemKindMethod ctermfg=99 guifg=#8860FF
 hi CmpItemKindFunction ctermfg=117 guifg=#7FCFFF
 hi CmpItemKindConstructor ctermfg=75 guifg=#40B0FF
 hi CmpItemKindField ctermfg=156 guifg=#A0FF80
@@ -131,7 +134,7 @@ hi CmpItemKindClass ctermfg=227 guifg=#FFFF40
 hi CmpItemKindInterface ctermfg=215 guifg=#FFB633
 hi CmpItemKindValue ctermfg=37 guifg=#16C0B0
 hi CmpItemKindEnum ctermfg=37 guifg=#16C0B0
-hi CmpItemKindKeyword ctermfg=63 guifg=#7050FF
+hi CmpItemKindKeyword ctermfg=99 guifg=#8860FF
 hi CmpItemKindSnippet ctermfg=155 guifg=#9FFF5A
 hi CmpItemKindFile ctermfg=231 guifg=#FAFAFA
 hi CmpItemKindFolder ctermfg=231 guifg=#FAFAFA
@@ -140,11 +143,11 @@ hi TelescopeNormal ctermfg=231 guifg=#FAFAFA ctermbg=232 guibg=#07071A
 hi TelescopePreviewTitle ctermfg=231 guifg=#FFFFFF ctermbg=236 guibg=#283048
 hi TelescopeResultsTitle ctermfg=231 guifg=#FFFFFF ctermbg=236 guibg=#283048
 hi TelescopeSelection ctermfg=231 guifg=#FFFFFF ctermbg=23 guibg=#003050
-hi TelescopePromptBorder ctermfg=62 guifg=#5040E0
-hi TelescopePromptTitle ctermfg=231 guifg=#FFFFFF ctermbg=62 guibg=#5040E0
+hi TelescopePromptBorder ctermfg=63 guifg=#7050FF
+hi TelescopePromptTitle ctermfg=231 guifg=#FFFFFF ctermbg=63 guibg=#7050FF
 hi TelescopePromptNormal ctermfg=231 guifg=#FFFFFF ctermbg=232 guibg=#07071A
 hi TelescopePromptPrefix ctermfg=155 guifg=#9FFF5A
-hi packerStatus ctermfg=63 guifg=#7050FF
+hi packerStatus ctermfg=99 guifg=#8860FF
 hi packerStatusCommit ctermfg=227 guifg=#FFFF40
 hi packerStatusSuccess ctermfg=77 guifg=#50DF40
 hi packerStatusFail ctermfg=167 guifg=#E9475A
@@ -158,7 +161,7 @@ hi packerSuccess ctermfg=77 guifg=#50DF40
 hi packerFail ctermfg=167 guifg=#E9475A
 hi packerHash ctermfg=227 guifg=#FFFF40
 hi packerRelDate ctermfg=103 guifg=#8C8CAF
-hi packerProgress ctermfg=63 guifg=#7050FF
+hi packerProgress ctermfg=99 guifg=#8860FF
 hi packerOutput ctermfg=231 guifg=#FAFAFA
 hi packerTimeTrivial ctermfg=103 guifg=#8C8CAF
 hi packerTimeLow ctermfg=231 guifg=#FAFAFA
@@ -189,11 +192,11 @@ hi DapStopped ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi DapStoppedLine ctermfg=NONE guifg=NONE ctermbg=236 guibg=#283048 gui=italic
 hi WhichKey ctermfg=117 guifg=#7FCFFF
 hi WhichKeySeparator ctermfg=103 guifg=#8C8CAF
-hi WhichKeyDesc ctermfg=155 guifg=#9FFF5A
+hi WhichKeyDesc ctermfg=141 guifg=#A080FF
 hi WhichKeyGroup ctermfg=37 guifg=#16C0B0
-hi YankyPut ctermfg=NONE guifg=NONE ctermbg=62 guibg=#5040E0
-hi YankyYanked ctermfg=NONE guifg=NONE ctermbg=62 guibg=#5040E0
-hi sshconfigMatch ctermfg=63 guifg=#7050FF
+hi YankyPut ctermfg=NONE guifg=NONE ctermbg=63 guibg=#7050FF
+hi YankyYanked ctermfg=NONE guifg=NONE ctermbg=63 guibg=#7050FF
+hi sshconfigMatch ctermfg=99 guifg=#8860FF
 hi sshconfigHostPort ctermfg=75 guifg=#40B0FF gui=bold
 hi sshconfigKeyword ctermfg=39 guifg=#20A0FF
 hi sshconfigPreferredAuth ctermfg=227 guifg=#FFFF40
