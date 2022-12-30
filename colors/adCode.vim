@@ -187,6 +187,10 @@ hi DapBreakpointConditional ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
 hi DapBreakpointRejected ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
 hi DapStopped ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi DapStoppedLine ctermfg=NONE guifg=NONE ctermbg=236 guibg=#283048 gui=italic
+hi WhichKey ctermfg=117 guifg=#7FCFFF
+hi WhichKeySeparator ctermfg=103 guifg=#8C8CAF
+hi WhichKeyDesc ctermfg=155 guifg=#9FFF5A
+hi WhichKeyGroup ctermfg=37 guifg=#16C0B0
 hi YankyPut ctermfg=NONE guifg=NONE ctermbg=62 guibg=#5040E0
 hi YankyYanked ctermfg=NONE guifg=NONE ctermbg=62 guibg=#5040E0
 hi sshconfigMatch ctermfg=63 guifg=#7050FF
