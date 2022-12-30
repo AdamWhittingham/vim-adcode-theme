@@ -1,13 +1,14 @@
-Vim-AdCode
-==========
+adCode
+======
 
-A colourful Vim/Nvim theme for **bright** developers who aren't afraid of some **colour**!
+A colourful Vim/[Neovim] theme for **bright** developers who aren't afraid of some **colour**!
 
 ![Screenshot](docs/screenshot.png)
 
-Uses blue/purple for most things so that values and constants really ✨**pop**✨!
+Uses dark blues for backgrounds, and bright colors so that values and constants really ✨**pop**✨!
 
-Used in [my Vim/Neovim config](https://github.com/AdamWhittingham/vim-config), with support for several popular plugins.
+Used in [my Vim/Neovim config](https://github.com/AdamWhittingham/vim-config), with Tree-sitter support, as well as support for several popular plugins.
+
 
 Contributing
 ------------
