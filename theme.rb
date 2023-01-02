@@ -151,7 +151,7 @@ hi('Cursor',                      fg: plain_fg,     bg: white)
 hi('CursorLine',                  fg: none,         bg: gutter)
 hi('CursorLineNr',                fg: green,        bg: gutter,         styles: :bold)
 hi('CursorColumn',                fg: none,         bg: cursor_column)
-hi('MatchParen',                  fg: highlight,    bg: none,           styles: :bold)
+hi('MatchParen',                  fg: green,        bg: bg_green,           styles: :bold)
 hi('SignColumn',                  fg: plain_fg,     bg: vertical_div)
 hi('VertSplit',                   fg: vertical_div, bg: vertical_div)
 hi('NonText',                     fg: super_muted,  styles: :bold)
@@ -224,6 +224,7 @@ hi("@string.regex",               fg: lime)
 hi("@symbol",                     fg: teal)
 hi("@variable",                   fg: plain_fg)
 hi("@variable.builtin",           fg: plain_fg,     styles:  :italic)
+hi("@field",                      fg: light_blue)
 
 ####################################
 #               Text               #

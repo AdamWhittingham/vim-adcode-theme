@@ -5,7 +5,7 @@ hi Cursor ctermfg=231 guifg=#FAFAFA ctermbg=231 guibg=#FFFFFF
 hi CursorLine ctermfg=NONE guifg=NONE ctermbg=233 guibg=#0C0C2C
 hi CursorLineNr ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C gui=bold
 hi CursorColumn ctermfg=NONE guifg=NONE ctermbg=17 guibg=#10084A
-hi MatchParen ctermfg=221 guifg=#F8D454 ctermbg=NONE guibg=NONE gui=bold
+hi MatchParen ctermfg=77 guifg=#50DF40 ctermbg=236 guibg=#103030 gui=bold
 hi SignColumn ctermfg=231 guifg=#FAFAFA ctermbg=233 guibg=#0C0C2C
 hi VertSplit ctermfg=233 guifg=#0C0C2C ctermbg=233 guibg=#0C0C2C
 hi NonText ctermfg=236 guifg=#283048 gui=bold
@@ -71,6 +71,7 @@ hi @string.regex ctermfg=155 guifg=#9FFF5A
 hi @symbol ctermfg=37 guifg=#16C0B0
 hi @variable ctermfg=231 guifg=#FAFAFA
 hi @variable.builtin ctermfg=231 guifg=#FAFAFA gui=italic
+hi @field ctermfg=117 guifg=#7FCFFF
 hi @text.title gui=bold,italic
 hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @text.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
