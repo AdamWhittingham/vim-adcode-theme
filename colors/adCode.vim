@@ -102,6 +102,12 @@ hi StartLogo15 ctermfg=35 guifg=#26B352
 hi StartLogo16 ctermfg=35 guifg=#27C04F
 hi StartLogo17 ctermfg=41 guifg=#28CC4C
 hi StartLogo18 ctermfg=41 guifg=#29D343
+hi StartLogoPop1 ctermfg=214 guifg=#EC9F05
+hi StartLogoPop2 ctermfg=208 guifg=#F08C04
+hi StartLogoPop3 ctermfg=208 guifg=#F37E03
+hi StartLogoPop4 ctermfg=202 guifg=#F77002
+hi StartLogoPop5 ctermfg=202 guifg=#FB5D01
+hi StartLogoPop6 ctermfg=202 guifg=#FF4E00
 hi PMenu ctermfg=231 guifg=#FAFAFA ctermbg=23 guibg=#003050
 hi PMenuSbar ctermfg=NONE guifg=NONE ctermbg=103 guibg=#8C8CAF
 hi PMenuSel ctermfg=231 guifg=#FAFAFA ctermbg=27 guibg=#2070FF

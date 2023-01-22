@@ -264,6 +264,12 @@ hi("StartLogo15",                 fg: '#26B352')
 hi("StartLogo16",                 fg: '#27C04F')
 hi("StartLogo17",                 fg: '#28CC4C')
 hi("StartLogo18",                 fg: '#29D343')
+hi("StartLogoPop1",               fg: '#EC9F05')
+hi("StartLogoPop2",               fg: '#F08C04')
+hi("StartLogoPop3",               fg: '#F37E03')
+hi("StartLogoPop4",               fg: '#F77002')
+hi("StartLogoPop5",               fg: '#FB5D01')
+hi("StartLogoPop6",               fg: '#FF4E00')
 
 # Menus
 hi("PMenu",                       fg: plain_fg,     bg: visual)
