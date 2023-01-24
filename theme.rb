@@ -168,6 +168,7 @@ hi('InactiveWindow',              fg: none,         bg: vertical_div)
 ####################################
 # Vim Syntax groups
 hi("Boolean",                     fg: orange)
+hi("Conceal",                     fg: orange, bg: bg_orange)
 hi("Character",                   fg: green)
 hi("Comment",                     fg: muted,        bg: none,           styles: :italic)
 hi("Conditional",                 fg: magenta)
