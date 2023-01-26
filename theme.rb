@@ -19,15 +19,15 @@ dark_orange  = '#FF9800'
 orange       = '#FFB633'
 yellow       = '#FFFF40'
 lime         = '#9FFF5A'
-light_green  = '#A0FF80'
+light_green  = '#50E080'
 green        = '#50DF40'
 dark_green   = '#107020'
-teal         = '#16C0B0'
+teal         = '#30D0C0'
 dark_teal    = '#107090'
 dark_blue    = '#2070FF'
 mid_blue     = '#20A0FF'
 blue         = '#40B0FF'
-light_blue   = '#7FCFFF'
+light_blue   = '#70D0FF'
 light_purple = "#A080FF"
 purple       = '#8860FF'
 dark_purple  = '#7050FF'
@@ -181,7 +181,7 @@ hi("Field",                       fg: teal)
 hi("Float",                       fg: lime)
 hi("Function",                    fg: light_blue)
 hi("Identifier",                  fg: lime)
-hi("Include",                     fg: yellow)
+hi("Include",                     fg: pink)
 hi("Keyword",                     fg: light_purple, styles: :italic)
 hi("KeywordFunction",             fg: light_purple, styles: :italic)
 hi("Label",                       fg: light_green)
@@ -210,8 +210,10 @@ hi("@conditional",                fg: light_purple)
 hi("@exception",                  fg: red)
 hi("@function",                   fg: light_blue,   styles: :bold)
 hi("@function.call",              fg: light_blue)
+hi("@include",                    fg: pink)
 hi("@keyword",                    fg: purple,       styles: :italic)
 hi("@keyword.return",             fg: magenta,      styles: :italic)
+hi("@namespace",                  fg: dark_teal)
 hi("@operator",                   fg: white)
 hi("@parameter",                  fg: plain_fg)
 hi("@property",                   fg: light_blue)
@@ -219,8 +221,8 @@ hi("@punctuation.bracket",        fg: dark_blue)
 hi("@punctuation.delimiter",      fg: light_blue)
 hi("@punctuation.special",        fg: light_purple)
 hi("@label",                      fg: teal)
-hi("@string",                     fg: lime)
-hi("@string.escape",              fg: green)
+hi("@string",                     fg: light_green)
+hi("@string.escape",              fg: lime)
 hi("@string.regex",               fg: lime)
 hi("@symbol",                     fg: teal)
 hi("@variable",                   fg: plain_fg)

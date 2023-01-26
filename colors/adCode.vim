@@ -26,24 +26,24 @@ hi Debug ctermfg=208 guifg=#FF9800
 hi Define ctermfg=231 guifg=#FAFAFA
 hi Delimiter ctermfg=27 guifg=#2070FF
 hi Exception ctermfg=167 guifg=#E9475A
-hi Field ctermfg=37 guifg=#16C0B0
+hi Field ctermfg=79 guifg=#30D0C0
 hi Float ctermfg=155 guifg=#9FFF5A
-hi Function ctermfg=117 guifg=#7FCFFF
+hi Function ctermfg=81 guifg=#70D0FF
 hi Identifier ctermfg=155 guifg=#9FFF5A
-hi Include ctermfg=227 guifg=#FFFF40
+hi Include ctermfg=169 guifg=#D040B0
 hi Keyword ctermfg=141 guifg=#A080FF gui=italic
 hi KeywordFunction ctermfg=141 guifg=#A080FF gui=italic
-hi Label ctermfg=156 guifg=#A0FF80
+hi Label ctermfg=78 guifg=#50E080
 hi Number ctermfg=77 guifg=#50DF40
 hi Operator ctermfg=231 guifg=#FAFAFA
-hi Parameter ctermfg=37 guifg=#16C0B0
+hi Parameter ctermfg=79 guifg=#30D0C0
 hi PunctBracket ctermfg=77 guifg=#50DF40
 hi PunctDelimiter ctermfg=231 guifg=#FFFFFF
 hi PunctSpecial ctermfg=77 guifg=#50DF40
 hi Special ctermfg=75 guifg=#40B0FF
 hi Statement ctermfg=141 guifg=#A080FF
 hi String ctermfg=77 guifg=#50DF40
-hi StringRegex ctermfg=37 guifg=#16C0B0
+hi StringRegex ctermfg=79 guifg=#30D0C0
 hi Structure ctermfg=75 guifg=#40B0FF
 hi Symbol ctermfg=75 guifg=#40B0FF
 hi Title ctermfg=75 guifg=#40B0FF
@@ -55,24 +55,26 @@ hi bracket ctermfg=231 guifg=#FAFAFA
 hi @comment ctermfg=103 guifg=#8C8CAF gui=italic
 hi @conditional ctermfg=141 guifg=#A080FF
 hi @exception ctermfg=167 guifg=#E9475A
-hi @function ctermfg=117 guifg=#7FCFFF gui=bold
-hi @function.call ctermfg=117 guifg=#7FCFFF
+hi @function ctermfg=81 guifg=#70D0FF gui=bold
+hi @function.call ctermfg=81 guifg=#70D0FF
+hi @include ctermfg=169 guifg=#D040B0
 hi @keyword ctermfg=99 guifg=#8860FF gui=italic
 hi @keyword.return ctermfg=133 guifg=#C030C0 gui=italic
+hi @namespace ctermfg=24 guifg=#107090
 hi @operator ctermfg=231 guifg=#FFFFFF
 hi @parameter ctermfg=231 guifg=#FAFAFA
-hi @property ctermfg=117 guifg=#7FCFFF
+hi @property ctermfg=81 guifg=#70D0FF
 hi @punctuation.bracket ctermfg=27 guifg=#2070FF
-hi @punctuation.delimiter ctermfg=117 guifg=#7FCFFF
+hi @punctuation.delimiter ctermfg=81 guifg=#70D0FF
 hi @punctuation.special ctermfg=141 guifg=#A080FF
-hi @label ctermfg=37 guifg=#16C0B0
-hi @string ctermfg=155 guifg=#9FFF5A
-hi @string.escape ctermfg=77 guifg=#50DF40
+hi @label ctermfg=79 guifg=#30D0C0
+hi @string ctermfg=78 guifg=#50E080
+hi @string.escape ctermfg=155 guifg=#9FFF5A
 hi @string.regex ctermfg=155 guifg=#9FFF5A
-hi @symbol ctermfg=37 guifg=#16C0B0
+hi @symbol ctermfg=79 guifg=#30D0C0
 hi @variable ctermfg=231 guifg=#FAFAFA
 hi @variable.builtin ctermfg=231 guifg=#FAFAFA gui=italic
-hi @field ctermfg=117 guifg=#7FCFFF
+hi @field ctermfg=81 guifg=#70D0FF
 hi @text.title gui=bold,italic
 hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @text.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
@@ -80,11 +82,11 @@ hi @text.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,ita
 hi StartifyBracket ctermfg=103 guifg=#8C8CAF
 hi StartifyPath ctermfg=75 guifg=#40B0FF
 hi StartifySlash ctermfg=103 guifg=#8C8CAF
-hi StartifyFile ctermfg=117 guifg=#7FCFFF
+hi StartifyFile ctermfg=81 guifg=#70D0FF
 hi StartifyFooter ctermfg=103 guifg=#8C8CAF
 hi StartifyHeader ctermfg=77 guifg=#50DF40
 hi StartifyNumber ctermfg=215 guifg=#FFB633
-hi StartifySpecial ctermfg=117 guifg=#7FCFFF
+hi StartifySpecial ctermfg=81 guifg=#70D0FF
 hi StartLogo1 ctermfg=18 guifg=#14067E
 hi StartLogo2 ctermfg=18 guifg=#15127B
 hi StartLogo3 ctermfg=18 guifg=#171F78
@@ -113,7 +115,7 @@ hi PMenu ctermfg=231 guifg=#FAFAFA ctermbg=23 guibg=#003050
 hi PMenuSbar ctermfg=NONE guifg=NONE ctermbg=103 guibg=#8C8CAF
 hi PMenuSel ctermfg=231 guifg=#FAFAFA ctermbg=27 guibg=#2070FF
 hi PMenuThumb ctermfg=232 guifg=#07071A ctermbg=75 guibg=#40B0FF
-hi qfFileName ctermfg=117 guifg=#7FCFFF
+hi qfFileName ctermfg=81 guifg=#70D0FF
 hi qfLineNr ctermfg=227 guifg=#FFFF40
 hi SpellBad ctermbg=234 guibg=#200C20 guisp=#E9475A gui=undercurl
 hi SpellCap ctermbg=234 guibg=#231A1D guisp=#FFB633 gui=undercurl
@@ -122,10 +124,10 @@ hi DiagnosticSignError ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
 hi DiagnosticVirtualTextError ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20
 hi DiagnosticSignWarn ctermfg=215 guifg=#FFB633 ctermbg=233 guibg=#0C0C2C
 hi DiagnosticVirtualTextWarn ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D
-hi DiagnosticSignInfo ctermfg=117 guifg=#7FCFFF ctermbg=233 guibg=#0C0C2C
-hi DiagnosticVirtualTextInfo ctermfg=117 guifg=#7FCFFF ctermbg=234 guibg=#131D33
+hi DiagnosticSignInfo ctermfg=81 guifg=#70D0FF ctermbg=233 guibg=#0C0C2C
+hi DiagnosticVirtualTextInfo ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
 hi DiagnosticSignHint ctermfg=231 guifg=#FFFFFF
-hi LspSignatureActiveParameter ctermfg=117 guifg=#7FCFFF
+hi LspSignatureActiveParameter ctermfg=81 guifg=#70D0FF
 hi LspReferenceText ctermfg=NONE guifg=NONE ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceRead ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceWrite ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
@@ -134,14 +136,14 @@ hi IndentBlanklineContextChar ctermfg=62 guifg=#5040E0 gui=nocombine
 hi IndentBlanklineContextStart ctermfg=NONE guifg=NONE gui=bold
 hi CmpItemKindText ctermfg=103 guifg=#8C8CAF
 hi CmpItemKindMethod ctermfg=99 guifg=#8860FF
-hi CmpItemKindFunction ctermfg=117 guifg=#7FCFFF
+hi CmpItemKindFunction ctermfg=81 guifg=#70D0FF
 hi CmpItemKindConstructor ctermfg=75 guifg=#40B0FF
-hi CmpItemKindField ctermfg=156 guifg=#A0FF80
+hi CmpItemKindField ctermfg=78 guifg=#50E080
 hi CmpItemKindVariable ctermfg=77 guifg=#50DF40
 hi CmpItemKindClass ctermfg=227 guifg=#FFFF40
 hi CmpItemKindInterface ctermfg=215 guifg=#FFB633
-hi CmpItemKindValue ctermfg=37 guifg=#16C0B0
-hi CmpItemKindEnum ctermfg=37 guifg=#16C0B0
+hi CmpItemKindValue ctermfg=79 guifg=#30D0C0
+hi CmpItemKindEnum ctermfg=79 guifg=#30D0C0
 hi CmpItemKindKeyword ctermfg=99 guifg=#8860FF
 hi CmpItemKindSnippet ctermfg=155 guifg=#9FFF5A
 hi CmpItemKindFile ctermfg=231 guifg=#FAFAFA
@@ -198,10 +200,10 @@ hi DapBreakpointConditional ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
 hi DapBreakpointRejected ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
 hi DapStopped ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi DapStoppedLine ctermfg=NONE guifg=NONE ctermbg=236 guibg=#283048 gui=italic
-hi WhichKey ctermfg=117 guifg=#7FCFFF
+hi WhichKey ctermfg=81 guifg=#70D0FF
 hi WhichKeySeparator ctermfg=103 guifg=#8C8CAF
 hi WhichKeyDesc ctermfg=141 guifg=#A080FF
-hi WhichKeyGroup ctermfg=37 guifg=#16C0B0
+hi WhichKeyGroup ctermfg=79 guifg=#30D0C0
 hi YankyPut ctermfg=NONE guifg=NONE ctermbg=63 guibg=#7050FF
 hi YankyYanked ctermfg=NONE guifg=NONE ctermbg=63 guibg=#7050FF
 hi sshconfigMatch ctermfg=99 guifg=#8860FF
