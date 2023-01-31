@@ -131,6 +131,9 @@ hi LspSignatureActiveParameter ctermfg=81 guifg=#70D0FF
 hi LspReferenceText ctermfg=NONE guifg=NONE ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceRead ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceWrite ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
+hi DiagnosticInfo ctermfg=81 guifg=#70D0FF
+hi DiagnostiError ctermfg=167 guifg=#E9475A
+hi DiagnosticWarn ctermfg=215 guifg=#FFB633
 hi InentBlanklineChar ctermfg=236 guifg=#283048
 hi IndentBlanklineContextChar ctermfg=62 guifg=#5040E0 gui=nocombine
 hi IndentBlanklineContextStart ctermfg=NONE guifg=NONE gui=bold
@@ -195,6 +198,8 @@ hi DiffChangeDelete ctermfg=215 guifg=#FFB633 ctermbg=233 guibg=#0C0C2C
 hi DiffChangeDeleteLn ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi DiffAdded ctermfg=77 guifg=#50DF40 ctermbg=22 guibg=#063806
 hi DiffRemoved ctermfg=167 guifg=#E9475A ctermbg=52 guibg=#380505
+hi DiffConflictMine ctermbg=236 guibg=#103050
+hi DiffConflictTheirs ctermbg=236 guibg=#503010
 hi DapBreakpoint ctermfg=215 guifg=#FFB633 ctermbg=233 guibg=#0C0C2C
 hi DapBreakpointConditional ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
 hi DapBreakpointRejected ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C

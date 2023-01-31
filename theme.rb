@@ -46,6 +46,9 @@ diff_add_bg  = '#063806'
 diff_del_bg  = '#380505'
 diff_moddel_bg  = '#383805'
 
+conflict_mine  = '#103050'
+conflict_theirs  = '#503010'
+
 def hi(name, fg: nil, bg: nil, styles: [], guisp: nil)
   puts vim_hi(name, fg: fg, bg: bg, styles: Array(styles), guisp: guisp)
 end
@@ -302,6 +305,11 @@ hi("LspReferenceText",            fg: none,         bg: bg_light_blue,  styles: 
 hi("LspReferenceRead",            fg: blue,         bg: bg_light_blue,  styles: :bold)
 hi("LspReferenceWrite",           fg: blue,         bg: bg_light_blue,  styles: :bold)
 
+### LSPsaga
+hi("DiagnosticInfo",              fg: light_blue)
+hi("DiagnostiError",              fg: red)
+hi("DiagnosticWarn",              fg: orange)
+
 # Indentation guidelines
 hi("InentBlanklineChar",         fg: super_muted)
 hi("IndentBlanklineContextChar",  fg: darker_purple, styles: :nocombine)
@@ -380,6 +388,9 @@ hi("DiffChangeDeleteLn",          fg: none,         bg: diff_moddel_bg)
 ## Gitsigns preview window
 hi("DiffAdded",                   fg: green,        bg: diff_add_bg)
 hi("DiffRemoved",                 fg: red,          bg: diff_del_bg)
+
+hi("DiffConflictMine",                              bg: conflict_mine)
+hi("DiffConflictTheirs",                            bg: conflict_theirs)
 
 # DAP
 hi("DapBreakpoint",               fg: orange,       bg: vertical_div)
