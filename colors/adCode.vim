@@ -131,6 +131,8 @@ hi LspSignatureActiveParameter ctermfg=81 guifg=#70D0FF
 hi LspReferenceText ctermfg=NONE guifg=NONE ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceRead ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
 hi LspReferenceWrite ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold
+hi SagaNormal ctermbg=234 guibg=#0A1840
+hi SagaBorder ctermfg=27 guifg=#2070FF ctermbg=234 guibg=#0A1840
 hi DiagnosticInfo ctermfg=81 guifg=#70D0FF
 hi DiagnostiError ctermfg=167 guifg=#E9475A
 hi DiagnosticWarn ctermfg=215 guifg=#FFB633

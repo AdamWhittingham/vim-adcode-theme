@@ -306,6 +306,8 @@ hi("LspReferenceRead",            fg: blue,         bg: bg_light_blue,  styles: 
 hi("LspReferenceWrite",           fg: blue,         bg: bg_light_blue,  styles: :bold)
 
 ### LSPsaga
+hi("SagaNormal",                                    bg: float_bg)
+hi("SagaBorder",                  fg: dark_blue,    bg: float_bg)
 hi("DiagnosticInfo",              fg: light_blue)
 hi("DiagnostiError",              fg: red)
 hi("DiagnosticWarn",              fg: orange)
