@@ -165,6 +165,7 @@ hi('NormalFloat',                 fg: plain_fg,     bg: float_bg)
 hi('FloatBorder',                 fg: muted,        bg: float_bg)
 hi('Folded',                      fg: dark_blue,    bg: float_bg)
 hi('InactiveWindow',              fg: none,         bg: vertical_div)
+hi('ErrorMsg',                    fg: red,          bg: bg_red)
 
 ####################################
 #            Programming           #
