@@ -80,6 +80,7 @@ hi @text.title gui=bold,italic
 hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @text.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
 hi @text.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
+hi ghostText ctermfg=236 guifg=#283048 gui=italic
 hi StartifyBracket ctermfg=103 guifg=#8C8CAF
 hi StartifyPath ctermfg=75 guifg=#40B0FF
 hi StartifySlash ctermfg=103 guifg=#8C8CAF
@@ -191,6 +192,7 @@ hi GitGutterChange ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
 hi GitGutterChangeLine ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi DiffChange ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
 hi DiffChangeLn ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
+hi DiffText ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi GitGutterDelete ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
 hi GitGutterDeleteLine ctermfg=NONE guifg=NONE ctermbg=52 guibg=#380505
 hi DiffDelete ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C

@@ -240,6 +240,7 @@ hi("@text.title",                 styles: %i[bold italic])
 hi("@text.todo",                  fg: blue,   bg: bg_light_blue, styles: %i[bold italic])
 hi("@text.warning",               fg: orange, bg: bg_orange,     styles: %i[bold italic])
 hi("@text.danger",                fg: red,    bg: bg_red,        styles: %i[bold italic])
+hi("ghostText",                   fg: super_muted,               styles: %i[italic])
 
 ####################################
 #                UI                #
@@ -368,25 +369,31 @@ hi("packerTimeMedium",            fg: yellow)
 hi("packerTimeHigh",              fg: orange)
 
 # Gitsigns & Diffs
+## Added
 hi("GitGutterAdd",                fg: green,        bg: vertical_div)
 hi("GitGutterAddLine",            fg: none,         bg: diff_add_bg)
 hi("DiffAdd",                     fg: green,        bg: vertical_div)
 hi("DiffAddLn",                   fg: none,         bg: diff_add_bg)
-hi("GitGutterChange",             fg: yellow,       bg: vertical_div)
 
+## Changed
+hi("GitGutterChange",             fg: yellow,       bg: vertical_div)
 hi("GitGutterChangeLine",         fg: none,         bg: diff_moddel_bg)
 hi("DiffChange",                  fg: yellow,       bg: vertical_div)
 hi("DiffChangeLn",                fg: none,         bg: diff_moddel_bg)
+hi("DiffText",                    fg: none,         bg: diff_moddel_bg)
 
+## Deleted
 hi("GitGutterDelete",             fg: red,          bg: vertical_div)
 hi("GitGutterDeleteLine",         fg: none,         bg: diff_del_bg)
 hi("DiffDelete",                  fg: red,          bg: vertical_div)
 hi("DiffDeleteLn",                fg: none,         bg: diff_del_bg)
 
+## ChangeDelete
 hi("GitGutterChangeDelete",       fg: orange,       bg: vertical_div)
 hi("GitGutterChangeDeleteLine",   fg: none,         bg: diff_moddel_bg)
 hi("DiffChangeDelete",            fg: orange,       bg: vertical_div)
 hi("DiffChangeDeleteLn",          fg: none,         bg: diff_moddel_bg)
+
 
 ## Gitsigns preview window
 hi("DiffAdded",                   fg: green,        bg: diff_add_bg)
