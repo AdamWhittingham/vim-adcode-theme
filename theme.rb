@@ -230,13 +230,13 @@ hi("@string.escape",              fg: lime)
 hi("@string.regex",               fg: lime)
 hi("@symbol",                     fg: teal)
 hi("@variable",                   fg: plain_fg)
-hi("@variable.builtin",           fg: plain_fg,     styles:  :italic)
+hi("@variable.builtin",           fg: plain_fg,                  styles:  :italic)
 hi("@field",                      fg: light_blue)
 
 ####################################
 #               Text               #
 ####################################
-hi("@text.title",                 styles: %i[bold italic])
+hi("@text.title",                 fg: light_green,               styles: %i[bold])
 hi("@text.todo",                  fg: blue,   bg: bg_light_blue, styles: %i[bold italic])
 hi("@text.warning",               fg: orange, bg: bg_orange,     styles: %i[bold italic])
 hi("@text.danger",                fg: red,    bg: bg_red,        styles: %i[bold italic])
@@ -315,7 +315,7 @@ hi("DiagnostiError",              fg: red)
 hi("DiagnosticWarn",              fg: orange)
 
 # Indentation guidelines
-hi("InentBlanklineChar",         fg: super_muted)
+hi("InentBlanklineChar",          fg: super_muted)
 hi("IndentBlanklineContextChar",  fg: darker_purple, styles: :nocombine)
 hi("IndentBlanklineContextStart", fg: none,          styles: :bold)
 
@@ -345,28 +345,6 @@ hi("TelescopePromptBorder",       fg: dark_purple)
 hi("TelescopePromptTitle",        fg: white,        bg: dark_purple)
 hi("TelescopePromptNormal",       fg: white,        bg: plain_bg)
 hi("TelescopePromptPrefix",       fg: lime)
-
-# Packer
-hi("packerStatus",                fg: purple)
-hi("packerStatusCommit",          fg: yellow)
-hi("packerStatusSuccess",         fg: green)
-hi("packerStatusFail",            fg: red)
-hi("packerPackageName",           fg: plain_fg)
-hi("packerPackageNotLoaded",      fg: yellow)
-hi("packerString",                fg: blue)
-hi("packerBool",                  fg: blue)
-hi("packerBreakingChange",        fg: red)
-hi("packerWorking",               fg: blue)
-hi("packerSuccess",               fg: green)
-hi("packerFail",                  fg: red)
-hi("packerHash",                  fg: yellow)
-hi("packerRelDate",               fg: muted)
-hi("packerProgress",              fg: purple)
-hi("packerOutput",                fg: plain_fg)
-hi("packerTimeTrivial",           fg: muted)
-hi("packerTimeLow",               fg: plain_fg)
-hi("packerTimeMedium",            fg: yellow)
-hi("packerTimeHigh",              fg: orange)
 
 # Gitsigns & Diffs
 ## Added

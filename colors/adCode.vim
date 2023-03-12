@@ -76,7 +76,7 @@ hi @symbol ctermfg=79 guifg=#30D0C0
 hi @variable ctermfg=231 guifg=#FAFAFA
 hi @variable.builtin ctermfg=231 guifg=#FAFAFA gui=italic
 hi @field ctermfg=81 guifg=#70D0FF
-hi @text.title gui=bold,italic
+hi @text.title ctermfg=78 guifg=#50E080 gui=bold
 hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @text.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
 hi @text.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
@@ -164,26 +164,6 @@ hi TelescopePromptBorder ctermfg=63 guifg=#7050FF
 hi TelescopePromptTitle ctermfg=231 guifg=#FFFFFF ctermbg=63 guibg=#7050FF
 hi TelescopePromptNormal ctermfg=231 guifg=#FFFFFF ctermbg=232 guibg=#07071A
 hi TelescopePromptPrefix ctermfg=155 guifg=#9FFF5A
-hi packerStatus ctermfg=99 guifg=#8860FF
-hi packerStatusCommit ctermfg=227 guifg=#FFFF40
-hi packerStatusSuccess ctermfg=77 guifg=#50DF40
-hi packerStatusFail ctermfg=167 guifg=#E9475A
-hi packerPackageName ctermfg=231 guifg=#FAFAFA
-hi packerPackageNotLoaded ctermfg=227 guifg=#FFFF40
-hi packerString ctermfg=75 guifg=#40B0FF
-hi packerBool ctermfg=75 guifg=#40B0FF
-hi packerBreakingChange ctermfg=167 guifg=#E9475A
-hi packerWorking ctermfg=75 guifg=#40B0FF
-hi packerSuccess ctermfg=77 guifg=#50DF40
-hi packerFail ctermfg=167 guifg=#E9475A
-hi packerHash ctermfg=227 guifg=#FFFF40
-hi packerRelDate ctermfg=103 guifg=#8C8CAF
-hi packerProgress ctermfg=99 guifg=#8860FF
-hi packerOutput ctermfg=231 guifg=#FAFAFA
-hi packerTimeTrivial ctermfg=103 guifg=#8C8CAF
-hi packerTimeLow ctermfg=231 guifg=#FAFAFA
-hi packerTimeMedium ctermfg=227 guifg=#FFFF40
-hi packerTimeHigh ctermfg=215 guifg=#FFB633
 hi GitGutterAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi GitGutterAddLine ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
 hi DiffAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
