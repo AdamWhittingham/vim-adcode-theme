@@ -18,7 +18,7 @@ red          = '#E9475A'
 dark_orange  = '#FF9800'
 orange       = '#FFB633'
 yellow       = '#FFFF40'
-lime         = '#9FFF5A'
+lime         = '#70FF5A'
 light_green  = '#50E080'
 green        = '#50DF40'
 dark_green   = '#107020'
@@ -236,11 +236,15 @@ hi("@field",                      fg: light_blue)
 ####################################
 #               Text               #
 ####################################
-hi("@text.title",                 fg: light_green,               styles: %i[bold])
-hi("@text.todo",                  fg: blue,   bg: bg_light_blue, styles: %i[bold italic])
-hi("@text.warning",               fg: orange, bg: bg_orange,     styles: %i[bold italic])
-hi("@text.danger",                fg: red,    bg: bg_red,        styles: %i[bold italic])
-hi("ghostText",                   fg: super_muted,               styles: %i[italic])
+hi("@text.title",                   fg: light_green, styles: %i[bold])
+hi("@text.todo",                    fg: blue,        bg: bg_light_blue, styles: %i[bold italic])
+hi("@text.warning",                 fg: orange,      bg: bg_orange,     styles: %i[bold italic])
+hi("@text.danger",                  fg: red,         bg: bg_red,        styles: %i[bold italic])
+hi("ghostText",                     fg: super_muted, styles: %i[italic])
+
+# Markdown code blocks
+hi("@text.literal.markdown",        fg: light_blue,  bg: bg_light_blue)
+hi("@text.literal.markdown_inline", fg: light_blue,  bg: bg_light_blue)
 
 ####################################
 #                UI                #

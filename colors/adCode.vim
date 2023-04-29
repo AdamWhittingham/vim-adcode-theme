@@ -28,9 +28,9 @@ hi Define ctermfg=231 guifg=#FAFAFA
 hi Delimiter ctermfg=27 guifg=#2070FF
 hi Exception ctermfg=167 guifg=#E9475A
 hi Field ctermfg=79 guifg=#30D0C0
-hi Float ctermfg=155 guifg=#9FFF5A
+hi Float ctermfg=83 guifg=#70FF5A
 hi Function ctermfg=81 guifg=#70D0FF
-hi Identifier ctermfg=155 guifg=#9FFF5A
+hi Identifier ctermfg=83 guifg=#70FF5A
 hi Include ctermfg=169 guifg=#D040B0
 hi Keyword ctermfg=141 guifg=#A080FF gui=italic
 hi KeywordFunction ctermfg=141 guifg=#A080FF gui=italic
@@ -70,8 +70,8 @@ hi @punctuation.delimiter ctermfg=81 guifg=#70D0FF
 hi @punctuation.special ctermfg=141 guifg=#A080FF
 hi @label ctermfg=79 guifg=#30D0C0
 hi @string ctermfg=78 guifg=#50E080
-hi @string.escape ctermfg=155 guifg=#9FFF5A
-hi @string.regex ctermfg=155 guifg=#9FFF5A
+hi @string.escape ctermfg=83 guifg=#70FF5A
+hi @string.regex ctermfg=83 guifg=#70FF5A
 hi @symbol ctermfg=79 guifg=#30D0C0
 hi @variable ctermfg=231 guifg=#FAFAFA
 hi @variable.builtin ctermfg=231 guifg=#FAFAFA gui=italic
@@ -81,6 +81,8 @@ hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @text.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
 hi @text.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
 hi ghostText ctermfg=236 guifg=#283048 gui=italic
+hi @text.literal.markdown ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
+hi @text.literal.markdown_inline ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
 hi StartifyBracket ctermfg=103 guifg=#8C8CAF
 hi StartifyPath ctermfg=75 guifg=#40B0FF
 hi StartifySlash ctermfg=103 guifg=#8C8CAF
@@ -152,7 +154,7 @@ hi CmpItemKindInterface ctermfg=215 guifg=#FFB633
 hi CmpItemKindValue ctermfg=79 guifg=#30D0C0
 hi CmpItemKindEnum ctermfg=79 guifg=#30D0C0
 hi CmpItemKindKeyword ctermfg=99 guifg=#8860FF
-hi CmpItemKindSnippet ctermfg=155 guifg=#9FFF5A
+hi CmpItemKindSnippet ctermfg=83 guifg=#70FF5A
 hi CmpItemKindFile ctermfg=231 guifg=#FAFAFA
 hi CmpItemKindFolder ctermfg=231 guifg=#FAFAFA
 hi TelescopeBorder ctermfg=236 guifg=#283048
@@ -163,7 +165,7 @@ hi TelescopeSelection ctermfg=231 guifg=#FFFFFF ctermbg=23 guibg=#003050
 hi TelescopePromptBorder ctermfg=63 guifg=#7050FF
 hi TelescopePromptTitle ctermfg=231 guifg=#FFFFFF ctermbg=63 guibg=#7050FF
 hi TelescopePromptNormal ctermfg=231 guifg=#FFFFFF ctermbg=232 guibg=#07071A
-hi TelescopePromptPrefix ctermfg=155 guifg=#9FFF5A
+hi TelescopePromptPrefix ctermfg=83 guifg=#70FF5A
 hi GitGutterAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi GitGutterAddLine ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
 hi DiffAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
@@ -201,5 +203,5 @@ hi sshconfigHostPort ctermfg=75 guifg=#40B0FF gui=bold
 hi sshconfigKeyword ctermfg=39 guifg=#20A0FF
 hi sshconfigPreferredAuth ctermfg=227 guifg=#FFFF40
 hi sshconfigYesNo ctermfg=215 guifg=#FFB633
-hi sshconfigNumber ctermfg=155 guifg=#9FFF5A
+hi sshconfigNumber ctermfg=83 guifg=#70FF5A
 hi sshconfigLogLevel ctermfg=215 guifg=#FFB633
