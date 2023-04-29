@@ -115,10 +115,10 @@ hi StartLogoPop3 ctermfg=208 guifg=#F37E03
 hi StartLogoPop4 ctermfg=202 guifg=#F77002
 hi StartLogoPop5 ctermfg=202 guifg=#FB5D01
 hi StartLogoPop6 ctermfg=202 guifg=#FF4E00
-hi PMenu ctermfg=231 guifg=#FAFAFA ctermbg=23 guibg=#003050
-hi PMenuSbar ctermfg=NONE guifg=NONE ctermbg=103 guibg=#8C8CAF
-hi PMenuSel ctermfg=231 guifg=#FAFAFA ctermbg=27 guibg=#2070FF
-hi PMenuThumb ctermfg=232 guifg=#07071A ctermbg=75 guibg=#40B0FF
+hi PMenu ctermfg=231 guifg=#FAFAFA ctermbg=234 guibg=#0A1840
+hi PMenuSel ctermbg=24 guibg=#104080
+hi PMenuSbar ctermfg=231 guifg=#FAFAFA ctermbg=234 guibg=#0A1840
+hi PMenuThumb ctermfg=232 guifg=#07071A ctermbg=62 guibg=#5040E0
 hi qfFileName ctermfg=81 guifg=#70D0FF
 hi qfLineNr ctermfg=227 guifg=#FFFF40
 hi SpellBad ctermbg=234 guibg=#200C20 guisp=#E9475A gui=undercurl

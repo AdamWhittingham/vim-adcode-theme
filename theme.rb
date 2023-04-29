@@ -24,6 +24,7 @@ green        = '#50DF40'
 dark_green   = '#107020'
 teal         = '#30D0C0'
 dark_teal    = '#107090'
+darker_blue  = '#104080'
 dark_blue    = '#2070FF'
 mid_blue     = '#20A0FF'
 blue         = '#40B0FF'
@@ -284,10 +285,10 @@ hi("StartLogoPop5",               fg: '#FB5D01')
 hi("StartLogoPop6",               fg: '#FF4E00')
 
 # Menus
-hi("PMenu",                       fg: plain_fg,     bg: visual)
-hi("PMenuSbar",                   fg: none,         bg: muted)
-hi("PMenuSel",                    fg: plain_fg,     bg: dark_blue)
-hi("PMenuThumb",                  fg: plain_bg,     bg: blue)
+hi("PMenu",                       fg: plain_fg,     bg: float_bg)
+hi("PMenuSel",                                      bg: darker_blue)
+hi("PMenuSbar",                   fg: plain_fg,     bg: float_bg)
+hi("PMenuThumb",                  fg: plain_bg,     bg: darker_purple)
 
 # Quick Find window
 hi("qfFileName",                  fg: light_blue)
