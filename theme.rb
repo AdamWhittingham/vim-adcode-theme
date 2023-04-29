@@ -171,7 +171,7 @@ hi('ErrorMsg',                    fg: red,          bg: bg_red)
 #            Programming           #
 ####################################
 # Vim Syntax groups
-hi("Boolean",                     fg: orange)
+hi("Boolean",                     fg: light_purple)
 hi("Conceal",                     fg: orange, bg: bg_orange)
 hi("Character",                   fg: green)
 hi("Comment",                     fg: muted,        bg: none,           styles: :italic)
@@ -184,7 +184,7 @@ hi("Exception",                   fg: red)
 hi("Field",                       fg: teal)
 hi("Float",                       fg: lime)
 hi("Function",                    fg: light_blue)
-hi("Identifier",                  fg: lime)
+hi("Identifier",                  fg: plain_fg)
 hi("Include",                     fg: pink)
 hi("Keyword",                     fg: light_purple, styles: :italic)
 hi("KeywordFunction",             fg: light_purple, styles: :italic)

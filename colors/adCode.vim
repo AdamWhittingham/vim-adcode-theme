@@ -17,7 +17,7 @@ hi FloatBorder ctermfg=103 guifg=#8C8CAF ctermbg=234 guibg=#0A1840
 hi Folded ctermfg=27 guifg=#2070FF ctermbg=234 guibg=#0A1840
 hi InactiveWindow ctermfg=NONE guifg=NONE ctermbg=233 guibg=#0C0C2C
 hi ErrorMsg ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20
-hi Boolean ctermfg=215 guifg=#FFB633
+hi Boolean ctermfg=141 guifg=#A080FF
 hi Conceal ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D
 hi Character ctermfg=77 guifg=#50DF40
 hi Comment ctermfg=103 guifg=#8C8CAF ctermbg=NONE guibg=NONE gui=italic
@@ -30,7 +30,7 @@ hi Exception ctermfg=167 guifg=#E9475A
 hi Field ctermfg=79 guifg=#30D0C0
 hi Float ctermfg=83 guifg=#70FF5A
 hi Function ctermfg=81 guifg=#70D0FF
-hi Identifier ctermfg=83 guifg=#70FF5A
+hi Identifier ctermfg=231 guifg=#FAFAFA
 hi Include ctermfg=169 guifg=#D040B0
 hi Keyword ctermfg=141 guifg=#A080FF gui=italic
 hi KeywordFunction ctermfg=141 guifg=#A080FF gui=italic
