@@ -320,6 +320,11 @@ hi("DiagnostiError",              fg: red)
 hi("DiagnosticWarn",              fg: orange)
 
 # Indentation guidelines
+# ## V3
+hi("IblIndent",                   fg: super_muted)
+hi("IblScope",                    fg: darker_purple)
+
+## V2
 hi("InentBlanklineChar",          fg: super_muted)
 hi("IndentBlanklineContextChar",  fg: darker_purple, styles: :nocombine)
 hi("IndentBlanklineContextStart", fg: none,          styles: :bold)

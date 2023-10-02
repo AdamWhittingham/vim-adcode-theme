@@ -140,6 +140,8 @@ hi SagaBorder ctermfg=27 guifg=#2070FF ctermbg=234 guibg=#0A1840
 hi DiagnosticInfo ctermfg=81 guifg=#70D0FF
 hi DiagnostiError ctermfg=167 guifg=#E9475A
 hi DiagnosticWarn ctermfg=215 guifg=#FFB633
+hi IblIndent ctermfg=236 guifg=#283048
+hi IblScope ctermfg=62 guifg=#5040E0
 hi InentBlanklineChar ctermfg=236 guifg=#283048
 hi IndentBlanklineContextChar ctermfg=62 guifg=#5040E0 gui=nocombine
 hi IndentBlanklineContextStart ctermfg=NONE guifg=NONE gui=bold
