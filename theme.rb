@@ -259,30 +259,40 @@ hi("StartifyFooter",              fg: muted)
 hi("StartifyHeader",              fg: green)
 hi("StartifyNumber",              fg: orange)
 hi("StartifySpecial",             fg: light_blue)
-hi("StartLogo1",                  fg: '#14067E')
-hi("StartLogo2",                  fg: '#15127B')
-hi("StartLogo3",                  fg: '#171F78')
-hi("StartLogo4",                  fg: '#182B75')
-hi("StartLogo5",                  fg: '#193872')
-hi("StartLogo6",                  fg: '#1A446E')
-hi("StartLogo7",                  fg: '#1C506B')
-hi("StartLogo8",                  fg: '#1D5D68')
-hi("StartLogo9",                  fg: '#1E6965')
-hi("StartLogo10",                 fg: '#1F7562')
-hi("StartLogo11",                 fg: '#21825F')
-hi("StartLogo12",                 fg: '#228E5C')
-hi("StartLogo13",                 fg: '#239B59')
-hi("StartLogo14",                 fg: '#24A755')
-hi("StartLogo15",                 fg: '#26B352')
-hi("StartLogo16",                 fg: '#27C04F')
-hi("StartLogo17",                 fg: '#28CC4C')
-hi("StartLogo18",                 fg: '#29D343')
-hi("StartLogoPop1",               fg: '#EC9F05')
-hi("StartLogoPop2",               fg: '#F08C04')
-hi("StartLogoPop3",               fg: '#F37E03')
-hi("StartLogoPop4",               fg: '#F77002')
-hi("StartLogoPop5",               fg: '#FB5D01')
-hi("StartLogoPop6",               fg: '#FF4E00')
+
+# Thanks to https://colordesigner.io/gradient-generator
+%w[
+  #29d142
+  #00d05f
+  #00ce79
+  #00cb92
+  #00c8aa
+  #00c4c0
+  #00bfd3
+  #00bae3
+  #00b4f0
+  #00adf8
+  #00a6fc
+  #009dfc
+  #0095f8
+  #008bf0
+].each_with_index do |hex, i|
+    hi("StartLogo#{i}",   fg: hex)
+  end
+
+
+%w[
+  #bd075c
+  #b7015f
+  #b00062
+  #a90064
+  #a20066
+  #9a0069
+  #92006a
+  #8a006c
+].each_with_index do |hex, i|
+    hi("StartLogoPop#{i}",   fg: hex)
+  end
 
 # Menus
 hi("PMenu",                       fg: plain_fg,     bg: float_bg)
