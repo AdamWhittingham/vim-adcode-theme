@@ -3,6 +3,7 @@
 # Colors
 plain_fg     = '#FAFAFA'
 plain_bg     = '#07071A'
+dark_bg      = '#030340'
 muted        = '#8C8CAF'
 super_muted  = '#283048'
 float_bg     = '#0A1840'
@@ -233,6 +234,10 @@ hi("@symbol",                     fg: teal)
 hi("@variable",                   fg: plain_fg)
 hi("@variable.builtin",           fg: plain_fg,                  styles:  :italic)
 hi("@field",                      fg: light_blue)
+
+# Treesitter Context
+hi("TreesitterContext",           fg: muted, bg: dark_bg, styles: :italic)
+hi("TreesitterContextLineNumber", fg: darker_blue, bg: dark_bg, styles: :italic)
 
 ####################################
 #               Text               #

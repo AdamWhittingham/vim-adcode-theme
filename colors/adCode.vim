@@ -76,6 +76,8 @@ hi @symbol ctermfg=79 guifg=#30D0C0
 hi @variable ctermfg=231 guifg=#FAFAFA
 hi @variable.builtin ctermfg=231 guifg=#FAFAFA gui=italic
 hi @field ctermfg=81 guifg=#70D0FF
+hi TreesitterContext ctermfg=103 guifg=#8C8CAF ctermbg=17 guibg=#030340 gui=italic
+hi TreesitterContextLineNumber ctermfg=24 guifg=#104080 ctermbg=17 guibg=#030340 gui=italic
 hi @text.title ctermfg=78 guifg=#50E080 gui=bold
 hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @text.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
