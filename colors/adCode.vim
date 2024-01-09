@@ -121,8 +121,8 @@ hi PMenuSbar ctermfg=231 guifg=#FAFAFA ctermbg=234 guibg=#0A1840
 hi PMenuThumb ctermfg=232 guifg=#07071A ctermbg=62 guibg=#5040E0
 hi qfFileName ctermfg=81 guifg=#70D0FF
 hi qfLineNr ctermfg=227 guifg=#FFFF40
-hi SpellBad ctermbg=234 guibg=#200C20 guisp=#E9475A gui=undercurl
-hi SpellCap ctermbg=234 guibg=#231A1D guisp=#FFB633 gui=undercurl
+hi SpellBad ctermbg=234 guibg=#200C20 term=underline cterm=undercurl guisp=#E9475A
+hi SpellCap ctermbg=234 guibg=#231A1D term=underline cterm=undercurl guisp=#FFB633
 hi Search ctermfg=221 guifg=#F8D454 ctermbg=234 guibg=#231A1D gui=bold
 hi DiagnosticSignError ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
 hi DiagnosticVirtualTextError ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20
@@ -159,15 +159,24 @@ hi CmpItemKindKeyword ctermfg=99 guifg=#8860FF
 hi CmpItemKindSnippet ctermfg=83 guifg=#70FF5A
 hi CmpItemKindFile ctermfg=231 guifg=#FAFAFA
 hi CmpItemKindFolder ctermfg=231 guifg=#FAFAFA
-hi TelescopeBorder ctermfg=236 guifg=#283048
 hi TelescopeNormal ctermfg=231 guifg=#FAFAFA ctermbg=232 guibg=#07071A
-hi TelescopePreviewTitle ctermfg=231 guifg=#FFFFFF ctermbg=236 guibg=#283048
-hi TelescopeResultsTitle ctermfg=231 guifg=#FFFFFF ctermbg=236 guibg=#283048
+hi TelescopeBorder ctermfg=236 guifg=#283048
 hi TelescopeSelection ctermfg=231 guifg=#FFFFFF ctermbg=23 guibg=#003050
-hi TelescopePromptBorder ctermfg=63 guifg=#7050FF
+hi TelescopeSelectionCaret ctermfg=169 guifg=#D040B0
+hi TelescopeMatching ctermfg=83 guifg=#70FF5A
+hi TelescopePreviewTitle ctermfg=231 guifg=#FFFFFF ctermbg=232 guibg=#07071A
+hi TelescopePreviewNormal ctermbg=234 guibg=#0A1840
+hi TelescopePreviewBorder ctermfg=234 guifg=#0A1840 ctermbg=234 guibg=#0A1840
+hi TelescopeResultsTitle ctermfg=231 guifg=#FFFFFF ctermbg=236 guibg=#283048
+hi TelescopeResultsDiffAdd ctermbg=236 guibg=#103030
+hi TelescopeResultsDiffChange ctermbg=234 guibg=#231A1D
+hi TelescopeResultsDiffDelete ctermbg=234 guibg=#200C20
+hi TelescopeResultsDiffUntracked ctermbg=234 guibg=#131D33
 hi TelescopePromptTitle ctermfg=231 guifg=#FFFFFF ctermbg=63 guibg=#7050FF
 hi TelescopePromptNormal ctermfg=231 guifg=#FFFFFF ctermbg=232 guibg=#07071A
 hi TelescopePromptPrefix ctermfg=83 guifg=#70FF5A
+hi TelescopePromptBorder ctermfg=63 guifg=#7050FF ctermbg=232 guibg=#07071A
+hi TelescopePromptCounter ctermfg=63 guifg=#7050FF
 hi GitGutterAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi GitGutterAddLine ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
 hi DiffAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C

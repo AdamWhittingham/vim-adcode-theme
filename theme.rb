@@ -51,11 +51,11 @@ diff_moddel_bg  = '#383805'
 conflict_mine  = '#103050'
 conflict_theirs  = '#503010'
 
-def hi(name, fg: nil, bg: nil, styles: [], guisp: nil)
-  puts vim_hi(name, fg: fg, bg: bg, styles: Array(styles), guisp: guisp)
+def hi(name, fg: nil, bg: nil, styles: [], guisp: nil, undercurl: nil, underdotted: nil)
+  puts vim_hi(name, fg: fg, bg: bg, styles: Array(styles), guisp: guisp, undercurl: undercurl, underdotted: nil)
 end
 
-def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil)
+def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil, undercurl: nil, underdotted: nil)
   out = ["hi"]
   out << name
 
@@ -69,8 +69,10 @@ def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil)
     out << "guibg=#{bg}"
   end
 
-  out << "guisp=#{guisp}" if guisp
   out << resolve_style(styles)
+  out << undercurl(undercurl) if undercurl
+  out << underdotted(underdotted) if underdotted
+  out << "guisp=#{guisp}" if guisp
   out.compact.join(" ")
 end
 
@@ -124,12 +126,18 @@ def resolve_style(opts)
   end
 end
 
+def undercurl(guisp)
+  "term=underline cterm=undercurl guisp=#{guisp}"
+end
+
+def underdotted(guisp)
+  "term=underline cterm=underdotted guisp=#{guisp}"
+end
+
 VALID_OPTS = %i[
   bold
   underline
-  undercurl
   underdouble
-  underdotted
   underdashed
   strikethrough
   reverse
@@ -310,8 +318,8 @@ hi("qfFileName",                  fg: light_blue)
 hi("qfLineNr",                    fg: yellow)
 
 # Spelling and Search
-hi("SpellBad",                    bg: bg_red,       styles: :undercurl, guisp: red)
-hi("SpellCap",                    bg: bg_orange,    styles: :undercurl, guisp: orange)
+hi("SpellBad",                    bg: bg_red,       undercurl: red)
+hi("SpellCap",                    bg: bg_orange,    undercurl: orange)
 hi("Search",                      fg: highlight,    bg: bg_orange,      styles: :bold)
 
 # LSP
@@ -323,9 +331,10 @@ hi("DiagnosticSignInfo",          fg: light_blue,   bg: gutter)
 hi("DiagnosticVirtualTextInfo",   fg: light_blue,   bg: bg_light_blue)
 hi("DiagnosticSignHint",          fg: white)
 hi("LspSignatureActiveParameter", fg: light_blue)
-hi("LspReferenceText",            fg: none,         bg: bg_light_blue,  styles: :bold)
-hi("LspReferenceRead",            fg: blue,         bg: bg_light_blue,  styles: :bold)
-hi("LspReferenceWrite",           fg: blue,         bg: bg_light_blue,  styles: :bold)
+
+hi("LspReferenceText",            fg: none,         bg: bg_light_blue,  styles: :bold, underdotted: yellow)
+hi("LspReferenceRead",            fg: blue,         bg: bg_light_blue,  styles: :bold, underdotted: yellow)
+hi("LspReferenceWrite",           fg: blue,         bg: bg_light_blue,  styles: :bold, underdotted: yellow)
 
 ### LSPsaga
 hi("SagaNormal",                                    bg: float_bg)
@@ -361,15 +370,28 @@ hi("CmpItemKindFile",             fg: plain_fg)
 hi("CmpItemKindFolder",           fg: plain_fg)
 
 ## Telescope
-hi("TelescopeBorder",             fg: super_muted)
 hi("TelescopeNormal",             fg: plain_fg,     bg: plain_bg)
-hi("TelescopePreviewTitle",       fg: white,        bg: super_muted)
-hi("TelescopeResultsTitle",       fg: white,        bg: super_muted)
+hi("TelescopeBorder",             fg: super_muted)
+
 hi("TelescopeSelection",          fg: white,        bg: visual)
-hi("TelescopePromptBorder",       fg: dark_purple)
+hi("TelescopeSelectionCaret",     fg: pink)
+hi("TelescopeMatching",           fg: lime)
+
+hi("TelescopePreviewTitle",       fg: white,        bg: plain_bg)
+hi("TelescopePreviewNormal",                        bg: float_bg)
+hi("TelescopePreviewBorder",      fg: float_bg,     bg: float_bg)
+
+hi("TelescopeResultsTitle",       fg: white,        bg: super_muted)
+hi("TelescopeResultsDiffAdd",                       bg: bg_green)
+hi("TelescopeResultsDiffChange",                    bg: bg_orange)
+hi("TelescopeResultsDiffDelete",                    bg: bg_red)
+hi("TelescopeResultsDiffUntracked",                 bg: bg_light_blue)
+
 hi("TelescopePromptTitle",        fg: white,        bg: dark_purple)
 hi("TelescopePromptNormal",       fg: white,        bg: plain_bg)
 hi("TelescopePromptPrefix",       fg: lime)
+hi("TelescopePromptBorder",       fg: dark_purple,  bg: plain_bg)
+hi("TelescopePromptCounter",      fg: dark_purple)
 
 # Gitsigns & Diffs
 ## Added
