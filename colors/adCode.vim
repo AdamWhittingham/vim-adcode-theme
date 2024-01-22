@@ -55,15 +55,20 @@ hi Warning ctermfg=215 guifg=#FFB633 gui=bold
 hi bracket ctermfg=231 guifg=#FAFAFA
 hi @comment ctermfg=103 guifg=#8C8CAF gui=italic
 hi @conditional ctermfg=141 guifg=#A080FF
+hi @keyword.conditional ctermfg=141 guifg=#A080FF
 hi @exception ctermfg=167 guifg=#E9475A
+hi @keyword.exception ctermfg=167 guifg=#E9475A
 hi @function ctermfg=81 guifg=#70D0FF gui=bold
 hi @function.call ctermfg=81 guifg=#70D0FF
 hi @include ctermfg=169 guifg=#D040B0
+hi @keyword.include ctermfg=169 guifg=#D040B0
 hi @keyword ctermfg=99 guifg=#8860FF gui=italic
 hi @keyword.return ctermfg=133 guifg=#C030C0 gui=italic
 hi @namespace ctermfg=24 guifg=#107090
+hi @module ctermfg=24 guifg=#107090
 hi @operator ctermfg=231 guifg=#FFFFFF
 hi @parameter ctermfg=231 guifg=#FAFAFA
+hi @variable.parameter ctermfg=231 guifg=#FAFAFA
 hi @property ctermfg=81 guifg=#70D0FF
 hi @punctuation.bracket ctermfg=27 guifg=#2070FF
 hi @punctuation.delimiter ctermfg=81 guifg=#70D0FF
@@ -72,19 +77,33 @@ hi @label ctermfg=79 guifg=#30D0C0
 hi @string ctermfg=78 guifg=#50E080
 hi @string.escape ctermfg=83 guifg=#70FF5A
 hi @string.regex ctermfg=83 guifg=#70FF5A
+hi @string.regexp ctermfg=83 guifg=#70FF5A
 hi @symbol ctermfg=79 guifg=#30D0C0
+hi @string.special.symbol ctermfg=79 guifg=#30D0C0
+hi @string.special.uri ctermfg=81 guifg=#70D0FF term=underline cterm=undercurl guisp=#40B0FF
 hi @variable ctermfg=231 guifg=#FAFAFA
 hi @variable.builtin ctermfg=231 guifg=#FAFAFA gui=italic
 hi @field ctermfg=81 guifg=#70D0FF
+hi @variable.member ctermfg=81 guifg=#70D0FF
+hi @number.float ctermfg=83 guifg=#70FF5A
 hi TreesitterContext ctermfg=103 guifg=#8C8CAF ctermbg=17 guibg=#030340 gui=italic
 hi TreesitterContextLineNumber ctermfg=24 guifg=#104080 ctermbg=17 guibg=#030340 gui=italic
 hi @text.title ctermfg=78 guifg=#50E080 gui=bold
+hi @markup.heading ctermfg=78 guifg=#50E080 gui=bold
 hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
+hi @comment.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @text.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
+hi @comment.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
 hi @text.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
+hi @comment.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
 hi ghostText ctermfg=236 guifg=#283048 gui=italic
+hi @markup.raw ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
 hi @text.literal.markdown ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
 hi @text.literal.markdown_inline ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
+hi @markup.link ctermfg=81 guifg=#70D0FF term=underline cterm=undercurl guisp=#40B0FF
+hi @markup.list ctermfg=169 guifg=#D040B0
+hi @markup.strong gui=bold
+hi @markup.italic gui=italic
 hi StartifyBracket ctermfg=103 guifg=#8C8CAF
 hi StartifyPath ctermfg=75 guifg=#40B0FF
 hi StartifySlash ctermfg=103 guifg=#8C8CAF
@@ -181,15 +200,18 @@ hi GitGutterAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi GitGutterAddLine ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
 hi DiffAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi DiffAddLn ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
+hi @text.diff.plus ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
 hi GitGutterChange ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
 hi GitGutterChangeLine ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi DiffChange ctermfg=227 guifg=#FFFF40 ctermbg=233 guibg=#0C0C2C
 hi DiffChangeLn ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi DiffText ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
+hi @text.diff.delta ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi GitGutterDelete ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
 hi GitGutterDeleteLine ctermfg=NONE guifg=NONE ctermbg=52 guibg=#380505
 hi DiffDelete ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
 hi DiffDeleteLn ctermfg=NONE guifg=NONE ctermbg=52 guibg=#380505
+hi @text.diff.minus ctermfg=NONE guifg=NONE ctermbg=52 guibg=#380505
 hi GitGutterChangeDelete ctermfg=215 guifg=#FFB633 ctermbg=233 guibg=#0C0C2C
 hi GitGutterChangeDeleteLine ctermfg=NONE guifg=NONE ctermbg=237 guibg=#383805
 hi DiffChangeDelete ctermfg=215 guifg=#FFB633 ctermbg=233 guibg=#0C0C2C

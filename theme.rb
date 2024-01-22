@@ -219,29 +219,39 @@ hi("Warning",                     fg: orange,       styles: :bold)
 hi("bracket",                     fg: plain_fg)
 
 # Treesitter Syntax groups
-hi("@comment",                    fg: muted,        styles: :italic)
-hi("@conditional",                fg: light_purple)
-hi("@exception",                  fg: red)
-hi("@function",                   fg: light_blue,   styles: :bold)
-hi("@function.call",              fg: light_blue)
-hi("@include",                    fg: pink)
-hi("@keyword",                    fg: purple,       styles: :italic)
-hi("@keyword.return",             fg: magenta,      styles: :italic)
-hi("@namespace",                  fg: dark_teal)
-hi("@operator",                   fg: white)
-hi("@parameter",                  fg: plain_fg)
-hi("@property",                   fg: light_blue)
-hi("@punctuation.bracket",        fg: dark_blue)
-hi("@punctuation.delimiter",      fg: light_blue)
-hi("@punctuation.special",        fg: light_purple)
-hi("@label",                      fg: teal)
-hi("@string",                     fg: light_green)
-hi("@string.escape",              fg: lime)
-hi("@string.regex",               fg: lime)
-hi("@symbol",                     fg: teal)
-hi("@variable",                   fg: plain_fg)
-hi("@variable.builtin",           fg: plain_fg,                  styles:  :italic)
-hi("@field",                      fg: light_blue)
+hi("@comment",               fg: muted,      styles: :italic)
+hi("@conditional",           fg: light_purple) # Depreacted
+hi("@keyword.conditional",   fg: light_purple)
+hi("@exception",             fg: red) # Depreacted
+hi("@keyword.exception",     fg: red)
+hi("@function",              fg: light_blue, styles: :bold)
+hi("@function.call",         fg: light_blue)
+hi("@include",               fg: pink)
+hi("@keyword.include",       fg: pink)
+hi("@keyword",               fg: purple,     styles: :italic)
+hi("@keyword.return",        fg: magenta,    styles: :italic)
+hi("@namespace",             fg: dark_teal) # Depreacted
+hi("@module",                fg: dark_teal)
+hi("@operator",              fg: white)
+hi("@parameter",             fg: plain_fg) # Depreacted
+hi("@variable.parameter",    fg: plain_fg)
+hi("@property",              fg: light_blue)
+hi("@punctuation.bracket",   fg: dark_blue)
+hi("@punctuation.delimiter", fg: light_blue)
+hi("@punctuation.special",   fg: light_purple)
+hi("@label",                 fg: teal)
+hi("@string",                fg: light_green)
+hi("@string.escape",         fg: lime)
+hi("@string.regex",          fg: lime)
+hi("@string.regexp",         fg: lime) # Depreacted
+hi("@symbol",                fg: teal) # Depreacted
+hi("@string.special.symbol", fg: teal)
+hi("@string.special.uri",    fg: light_blue, undercurl: blue)
+hi("@variable",              fg: plain_fg)
+hi("@variable.builtin",      fg: plain_fg,   styles:  :italic)
+hi("@field",                 fg: light_blue) # Depreacted
+hi("@variable.member",       fg: light_blue)
+hi("@number.float",          fg: lime)
 
 # Treesitter Context
 hi("TreesitterContext",           fg: muted, bg: dark_bg, styles: :italic)
@@ -250,15 +260,24 @@ hi("TreesitterContextLineNumber", fg: darker_blue, bg: dark_bg, styles: :italic)
 ####################################
 #               Text               #
 ####################################
-hi("@text.title",                   fg: light_green, styles: %i[bold])
-hi("@text.todo",                    fg: blue,        bg: bg_light_blue, styles: %i[bold italic])
-hi("@text.warning",                 fg: orange,      bg: bg_orange,     styles: %i[bold italic])
-hi("@text.danger",                  fg: red,         bg: bg_red,        styles: %i[bold italic])
-hi("ghostText",                     fg: super_muted, styles: %i[italic])
+hi("@text.title",      fg: light_green, styles: %i[bold])
+hi("@markup.heading",  fg: light_green, styles: %i[bold])
+hi("@text.todo",       fg: blue,        bg: bg_light_blue, styles: %i[bold italic]) # Deprecated
+hi("@comment.todo",    fg: blue,        bg: bg_light_blue, styles: %i[bold italic])
+hi("@text.warning",    fg: orange,      bg: bg_orange,     styles: %i[bold italic]) # Deprecated
+hi("@comment.warning", fg: orange,      bg: bg_orange,     styles: %i[bold italic])
+hi("@text.danger",     fg: red,         bg: bg_red,        styles: %i[bold italic]) # Deprecated
+hi("@comment.danger",  fg: red,         bg: bg_red,        styles: %i[bold italic])
+hi("ghostText",        fg: super_muted, styles: %i[italic])
 
 # Markdown code blocks
-hi("@text.literal.markdown",        fg: light_blue,  bg: bg_light_blue)
-hi("@text.literal.markdown_inline", fg: light_blue,  bg: bg_light_blue)
+hi("@markup.raw",                   fg: light_blue, bg: bg_light_blue)
+hi("@text.literal.markdown",        fg: light_blue, bg: bg_light_blue)
+hi("@text.literal.markdown_inline", fg: light_blue, bg: bg_light_blue)
+hi("@markup.link",                  fg: light_blue, undercurl: blue)
+hi("@markup.list",                  fg: pink)
+hi("@markup.strong",                 styles: %i[bold])
+hi("@markup.italic",                 styles: %i[italic])
 
 ####################################
 #                UI                #
@@ -395,23 +414,26 @@ hi("TelescopePromptCounter",      fg: dark_purple)
 
 # Gitsigns & Diffs
 ## Added
-hi("GitGutterAdd",                fg: green,        bg: vertical_div)
-hi("GitGutterAddLine",            fg: none,         bg: diff_add_bg)
-hi("DiffAdd",                     fg: green,        bg: vertical_div)
-hi("DiffAddLn",                   fg: none,         bg: diff_add_bg)
+hi("GitGutterAdd",        fg: green,  bg: vertical_div)
+hi("GitGutterAddLine",    fg: none,   bg: diff_add_bg)
+hi("DiffAdd",             fg: green,  bg: vertical_div)
+hi("DiffAddLn",           fg: none,   bg: diff_add_bg)
+hi("@text.diff.plus",     fg: none,   bg: diff_add_bg)
 
 ## Changed
-hi("GitGutterChange",             fg: yellow,       bg: vertical_div)
-hi("GitGutterChangeLine",         fg: none,         bg: diff_moddel_bg)
-hi("DiffChange",                  fg: yellow,       bg: vertical_div)
-hi("DiffChangeLn",                fg: none,         bg: diff_moddel_bg)
-hi("DiffText",                    fg: none,         bg: diff_moddel_bg)
+hi("GitGutterChange",     fg: yellow, bg: vertical_div)
+hi("GitGutterChangeLine", fg: none,   bg: diff_moddel_bg)
+hi("DiffChange",          fg: yellow, bg: vertical_div)
+hi("DiffChangeLn",        fg: none,   bg: diff_moddel_bg)
+hi("DiffText",            fg: none,   bg: diff_moddel_bg)
+hi("@text.diff.delta",    fg: none,   bg: diff_moddel_bg)
 
 ## Deleted
-hi("GitGutterDelete",             fg: red,          bg: vertical_div)
-hi("GitGutterDeleteLine",         fg: none,         bg: diff_del_bg)
-hi("DiffDelete",                  fg: red,          bg: vertical_div)
-hi("DiffDeleteLn",                fg: none,         bg: diff_del_bg)
+hi("GitGutterDelete",     fg: red,    bg: vertical_div)
+hi("GitGutterDeleteLine", fg: none,   bg: diff_del_bg)
+hi("DiffDelete",          fg: red,    bg: vertical_div)
+hi("DiffDeleteLn",        fg: none,   bg: diff_del_bg)
+hi("@text.diff.minus",    fg: none,   bg: diff_del_bg)
 
 ## ChangeDelete
 hi("GitGutterChangeDelete",       fg: orange,       bg: vertical_div)
