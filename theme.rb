@@ -268,6 +268,7 @@ hi("@text.warning",    fg: orange,      bg: bg_orange,     styles: %i[bold itali
 hi("@comment.warning", fg: orange,      bg: bg_orange,     styles: %i[bold italic])
 hi("@text.danger",     fg: red,         bg: bg_red,        styles: %i[bold italic]) # Deprecated
 hi("@comment.danger",  fg: red,         bg: bg_red,        styles: %i[bold italic])
+hi("@comment.error",   fg: red,         bg: bg_red,        styles: %i[bold italic])
 hi("ghostText",        fg: super_muted, styles: %i[italic])
 
 # Markdown code blocks
