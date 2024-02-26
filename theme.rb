@@ -413,6 +413,9 @@ hi("TelescopePromptPrefix",       fg: lime)
 hi("TelescopePromptBorder",       fg: dark_purple,  bg: plain_bg)
 hi("TelescopePromptCounter",      fg: dark_purple)
 
+# Lazy
+hi("LazyDimmed", fg: muted, styles: :italic)
+
 # Gitsigns & Diffs
 ## Added
 hi("GitGutterAdd",        fg: green,  bg: vertical_div)

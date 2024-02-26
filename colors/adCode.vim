@@ -196,6 +196,7 @@ hi TelescopePromptNormal ctermfg=231 guifg=#FFFFFF ctermbg=232 guibg=#07071A
 hi TelescopePromptPrefix ctermfg=83 guifg=#70FF5A
 hi TelescopePromptBorder ctermfg=63 guifg=#7050FF ctermbg=232 guibg=#07071A
 hi TelescopePromptCounter ctermfg=63 guifg=#7050FF
+hi LazyDimmed ctermfg=103 guifg=#8C8CAF gui=italic
 hi GitGutterAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi GitGutterAddLine ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
 hi DiffAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
