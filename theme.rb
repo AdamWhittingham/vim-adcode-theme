@@ -261,7 +261,6 @@ hi("TreesitterContextLineNumber", fg: darker_blue, bg: dark_bg, styles: :italic)
 #               Text               #
 ####################################
 hi("@text.title",      fg: light_green, styles: %i[bold])
-hi("@markup.heading",  fg: light_green, styles: %i[bold])
 hi("@text.todo",       fg: blue,        bg: bg_light_blue, styles: %i[bold italic]) # Deprecated
 hi("@comment.todo",    fg: blue,        bg: bg_light_blue, styles: %i[bold italic])
 hi("@text.warning",    fg: orange,      bg: bg_orange,     styles: %i[bold italic]) # Deprecated
@@ -271,7 +270,9 @@ hi("@comment.danger",  fg: red,         bg: bg_red,        styles: %i[bold itali
 hi("@comment.error",   fg: red,         bg: bg_red,        styles: %i[bold italic])
 hi("ghostText",        fg: super_muted, styles: %i[italic])
 
-# Markdown code blocks
+# Markdown
+hi("@markup.heading",  fg: light_green, styles: %i[bold])
+hi("@markup.heading.1.markdown",  fg: green, styles: %i[bold])
 hi("@markup.raw",                   fg: light_blue, bg: bg_light_blue)
 hi("@text.literal.markdown",        fg: light_blue, bg: bg_light_blue)
 hi("@text.literal.markdown_inline", fg: light_blue, bg: bg_light_blue)
