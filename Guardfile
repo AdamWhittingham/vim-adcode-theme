@@ -13,10 +13,15 @@ guard :shell do
     `./theme.rb > #{repo_output}`
     print "."
 
-    `cp #{repo_output} #{vim_output}`
-    print "."
-    `cp #{repo_output} #{nvim_output}`
-    print "."
+    if Dir["~/.vim"]
+      `cp #{repo_output} #{vim_output}`
+      print "."
+    end
+
+    if Dir["~/.config/nvim"]
+      `cp #{repo_output} #{nvim_output}`
+      print "."
+    end
 
     puts "updated"
   end
