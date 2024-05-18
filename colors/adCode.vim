@@ -89,18 +89,21 @@ hi @number.float ctermfg=83 guifg=#70FF5A
 hi TreesitterContext ctermfg=103 guifg=#8C8CAF ctermbg=17 guibg=#030340 gui=italic
 hi TreesitterContextLineNumber ctermfg=24 guifg=#104080 ctermbg=17 guibg=#030340 gui=italic
 hi @text.title ctermfg=78 guifg=#50E080 gui=bold
-hi @markup.heading ctermfg=78 guifg=#50E080 gui=bold
 hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @comment.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @text.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
 hi @comment.warning ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D gui=bold,italic
 hi @text.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
 hi @comment.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
+hi @comment.error ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
 hi ghostText ctermfg=236 guifg=#283048 gui=italic
+hi @markup.heading ctermfg=78 guifg=#50E080 gui=bold
 hi @markup.raw ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
 hi @text.literal.markdown ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
 hi @text.literal.markdown_inline ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
-hi @markup.link ctermfg=81 guifg=#70D0FF term=underline cterm=undercurl guisp=#40B0FF
+hi @markup.link ctermfg=103 guifg=#8C8CAF term=underline cterm=undercurl guisp=#40B0FF
+hi @markup.link.label ctermfg=75 guifg=#40B0FF
+hi @markup.link.url ctermfg=99 guifg=#8860FF gui=italic
 hi @markup.list ctermfg=169 guifg=#D040B0
 hi @markup.strong gui=bold
 hi @markup.italic gui=italic

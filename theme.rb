@@ -271,15 +271,16 @@ hi("@comment.error",   fg: red,         bg: bg_red,        styles: %i[bold itali
 hi("ghostText",        fg: super_muted, styles: %i[italic])
 
 # Markdown
-hi("@markup.heading",  fg: light_green, styles: %i[bold])
-hi("@markup.heading.1.markdown",  fg: green, styles: %i[bold])
+hi("@markup.heading",               fg: light_green, styles: %i[bold])
 hi("@markup.raw",                   fg: light_blue, bg: bg_light_blue)
 hi("@text.literal.markdown",        fg: light_blue, bg: bg_light_blue)
 hi("@text.literal.markdown_inline", fg: light_blue, bg: bg_light_blue)
-hi("@markup.link",                  fg: light_blue, undercurl: blue)
+hi("@markup.link",                  fg: muted, undercurl: blue)
+hi("@markup.link.label",            fg: blue)
+hi("@markup.link.url",              fg: purple, styles: %i[italic])
 hi("@markup.list",                  fg: pink)
-hi("@markup.strong",                 styles: %i[bold])
-hi("@markup.italic",                 styles: %i[italic])
+hi("@markup.strong",                            styles: %i[bold])
+hi("@markup.italic",                            styles: %i[italic])
 
 ####################################
 #                UI                #
