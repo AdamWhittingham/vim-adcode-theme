@@ -176,6 +176,7 @@ hi('FloatBorder',                 fg: muted,        bg: float_bg)
 hi('Folded',                      fg: dark_blue,    bg: float_bg)
 hi('InactiveWindow',              fg: none,         bg: vertical_div)
 hi('ErrorMsg',                    fg: red,          bg: bg_red)
+hi('StatusLine',                  fg: muted,        bg: float_bg)
 
 ####################################
 #            Programming           #

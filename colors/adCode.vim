@@ -17,6 +17,7 @@ hi FloatBorder ctermfg=103 guifg=#8C8CAF ctermbg=234 guibg=#0A1840
 hi Folded ctermfg=27 guifg=#2070FF ctermbg=234 guibg=#0A1840
 hi InactiveWindow ctermfg=NONE guifg=NONE ctermbg=233 guibg=#0C0C2C
 hi ErrorMsg ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20
+hi StatusLine ctermfg=103 guifg=#8C8CAF ctermbg=234 guibg=#0A1840
 hi Boolean ctermfg=141 guifg=#A080FF
 hi Conceal ctermfg=215 guifg=#FFB633 ctermbg=234 guibg=#231A1D
 hi Character ctermfg=77 guifg=#50DF40
