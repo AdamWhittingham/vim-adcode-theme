@@ -33,7 +33,7 @@ light_blue   = '#70D0FF'
 light_purple = "#A080FF"
 purple       = '#8860FF'
 dark_purple  = '#7050FF'
-darker_purple= '#5040E0'
+darker_purple= '#3030C0'
 pink         = '#D040B0'
 magenta      = '#C030C0'
 highlight    = '#F8D454'
@@ -53,6 +53,10 @@ conflict_theirs  = '#503010'
 
 def hi(name, fg: nil, bg: nil, styles: [], guisp: nil, undercurl: nil, underdotted: nil)
   puts vim_hi(name, fg: fg, bg: bg, styles: Array(styles), guisp: guisp, undercurl: undercurl, underdotted: nil)
+end
+
+def link(name, source)
+  "hi! link #{name} #{source}"
 end
 
 def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil, undercurl: nil, underdotted: nil)
@@ -170,7 +174,7 @@ hi('VertSplit',                   fg: vertical_div, bg: vertical_div)
 hi('NonText',                     fg: super_muted,  styles: :bold)
 hi('SpecialKey',                  fg: dark_orange,  styles: :bold)
 hi('RedundantSpaces',             fg: none,         bg: red)
-hi('BadSpaces',                   fg: muted,        bg: red)
+hi('BadSpaces',                   fg: plain_fg,     bg: red)
 hi('NormalFloat',                 fg: plain_fg,     bg: float_bg)
 hi('FloatBorder',                 fg: muted,        bg: float_bg)
 hi('Folded',                      fg: dark_blue,    bg: float_bg)
@@ -331,8 +335,8 @@ hi("StartifySpecial",             fg: light_blue)
   end
 
 # Menus
-hi("PMenu",                       fg: plain_fg,     bg: float_bg)
-hi("PMenuSel",                                      bg: darker_blue)
+hi("PMenu",                       fg: none,         bg: float_bg)
+hi("PMenuSel",                    fg: none,         bg: darker_purple, styles: :bold)
 hi("PMenuSbar",                   fg: plain_fg,     bg: float_bg)
 hi("PMenuThumb",                  fg: plain_bg,     bg: darker_purple)
 
@@ -344,6 +348,7 @@ hi("qfLineNr",                    fg: yellow)
 hi("SpellBad",                    bg: bg_red,       undercurl: red)
 hi("SpellCap",                    bg: bg_orange,    undercurl: orange)
 hi("Search",                      fg: highlight,    bg: bg_orange,      styles: :bold)
+hi("CurSearch",                   fg: highlight,    bg: bg_orange,      styles: :bold)
 
 # LSP
 hi("DiagnosticSignError",         fg: red,          bg: gutter)
@@ -410,11 +415,11 @@ hi("TelescopeResultsDiffChange",                    bg: bg_orange)
 hi("TelescopeResultsDiffDelete",                    bg: bg_red)
 hi("TelescopeResultsDiffUntracked",                 bg: bg_light_blue)
 
-hi("TelescopePromptTitle",        fg: white,        bg: dark_purple)
+hi("TelescopePromptTitle",        fg: white,        bg: darker_purple)
 hi("TelescopePromptNormal",       fg: white,        bg: plain_bg)
 hi("TelescopePromptPrefix",       fg: lime)
-hi("TelescopePromptBorder",       fg: dark_purple,  bg: plain_bg)
-hi("TelescopePromptCounter",      fg: dark_purple)
+hi("TelescopePromptBorder",       fg: darker_purple,  bg: plain_bg)
+hi("TelescopePromptCounter",      fg: darker_purple)
 
 # Lazy
 hi("LazyDimmed", fg: muted, styles: :italic)

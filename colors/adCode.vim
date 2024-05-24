@@ -11,7 +11,7 @@ hi VertSplit ctermfg=233 guifg=#0C0C2C ctermbg=233 guibg=#0C0C2C
 hi NonText ctermfg=236 guifg=#283048 gui=bold
 hi SpecialKey ctermfg=208 guifg=#FF9800 gui=bold
 hi RedundantSpaces ctermfg=NONE guifg=NONE ctermbg=167 guibg=#E9475A
-hi BadSpaces ctermfg=103 guifg=#8C8CAF ctermbg=167 guibg=#E9475A
+hi BadSpaces ctermfg=231 guifg=#FAFAFA ctermbg=167 guibg=#E9475A
 hi NormalFloat ctermfg=231 guifg=#FAFAFA ctermbg=234 guibg=#0A1840
 hi FloatBorder ctermfg=103 guifg=#8C8CAF ctermbg=234 guibg=#0A1840
 hi Folded ctermfg=27 guifg=#2070FF ctermbg=234 guibg=#0A1840
@@ -138,15 +138,16 @@ hi StartLogoPop4 ctermfg=125 guifg=#a20066
 hi StartLogoPop5 ctermfg=89 guifg=#9a0069
 hi StartLogoPop6 ctermfg=89 guifg=#92006a
 hi StartLogoPop7 ctermfg=89 guifg=#8a006c
-hi PMenu ctermfg=231 guifg=#FAFAFA ctermbg=234 guibg=#0A1840
-hi PMenuSel ctermbg=24 guibg=#104080
+hi PMenu ctermfg=NONE guifg=NONE ctermbg=234 guibg=#0A1840
+hi PMenuSel ctermfg=NONE guifg=NONE ctermbg=61 guibg=#3030C0 gui=bold
 hi PMenuSbar ctermfg=231 guifg=#FAFAFA ctermbg=234 guibg=#0A1840
-hi PMenuThumb ctermfg=232 guifg=#07071A ctermbg=62 guibg=#5040E0
+hi PMenuThumb ctermfg=232 guifg=#07071A ctermbg=61 guibg=#3030C0
 hi qfFileName ctermfg=81 guifg=#70D0FF
 hi qfLineNr ctermfg=227 guifg=#FFFF40
 hi SpellBad ctermbg=234 guibg=#200C20 term=underline cterm=undercurl guisp=#E9475A
 hi SpellCap ctermbg=234 guibg=#231A1D term=underline cterm=undercurl guisp=#FFB633
 hi Search ctermfg=221 guifg=#F8D454 ctermbg=234 guibg=#231A1D gui=bold
+hi CurSearch ctermfg=221 guifg=#F8D454 ctermbg=234 guibg=#231A1D gui=bold
 hi DiagnosticSignError ctermfg=167 guifg=#E9475A ctermbg=233 guibg=#0C0C2C
 hi DiagnosticVirtualTextError ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20
 hi DiagnosticSignWarn ctermfg=215 guifg=#FFB633 ctermbg=233 guibg=#0C0C2C
@@ -164,9 +165,9 @@ hi DiagnosticInfo ctermfg=81 guifg=#70D0FF
 hi DiagnostiError ctermfg=167 guifg=#E9475A
 hi DiagnosticWarn ctermfg=215 guifg=#FFB633
 hi IblIndent ctermfg=236 guifg=#283048
-hi IblScope ctermfg=62 guifg=#5040E0
+hi IblScope ctermfg=61 guifg=#3030C0
 hi InentBlanklineChar ctermfg=236 guifg=#283048
-hi IndentBlanklineContextChar ctermfg=62 guifg=#5040E0 gui=nocombine
+hi IndentBlanklineContextChar ctermfg=61 guifg=#3030C0 gui=nocombine
 hi IndentBlanklineContextStart ctermfg=NONE guifg=NONE gui=bold
 hi CmpItemKindText ctermfg=103 guifg=#8C8CAF
 hi CmpItemKindMethod ctermfg=99 guifg=#8860FF
@@ -195,11 +196,11 @@ hi TelescopeResultsDiffAdd ctermbg=236 guibg=#103030
 hi TelescopeResultsDiffChange ctermbg=234 guibg=#231A1D
 hi TelescopeResultsDiffDelete ctermbg=234 guibg=#200C20
 hi TelescopeResultsDiffUntracked ctermbg=234 guibg=#131D33
-hi TelescopePromptTitle ctermfg=231 guifg=#FFFFFF ctermbg=63 guibg=#7050FF
+hi TelescopePromptTitle ctermfg=231 guifg=#FFFFFF ctermbg=61 guibg=#3030C0
 hi TelescopePromptNormal ctermfg=231 guifg=#FFFFFF ctermbg=232 guibg=#07071A
 hi TelescopePromptPrefix ctermfg=83 guifg=#70FF5A
-hi TelescopePromptBorder ctermfg=63 guifg=#7050FF ctermbg=232 guibg=#07071A
-hi TelescopePromptCounter ctermfg=63 guifg=#7050FF
+hi TelescopePromptBorder ctermfg=61 guifg=#3030C0 ctermbg=232 guibg=#07071A
+hi TelescopePromptCounter ctermfg=61 guifg=#3030C0
 hi LazyDimmed ctermfg=103 guifg=#8C8CAF gui=italic
 hi GitGutterAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi GitGutterAddLine ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
