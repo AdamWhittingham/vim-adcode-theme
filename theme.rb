@@ -43,6 +43,7 @@ bg_red       = '#200C20'
 bg_orange    = '#231A1D'
 bg_green     = '#103030'
 bg_light_blue= '#131D33'
+bg_white     = '#002020'
 
 diff_add_bg  = '#063806'
 diff_del_bg  = '#380505'
@@ -286,6 +287,12 @@ hi("@markup.link.url",              fg: purple, styles: %i[italic])
 hi("@markup.list",                  fg: pink)
 hi("@markup.strong",                            styles: %i[bold])
 hi("@markup.italic",                            styles: %i[italic])
+
+hi("@markup.heading.1.markdown", fg: green,    bg: bg_white)
+hi("@markup.heading.2.markdown", fg: teal,     bg: bg_white)
+hi("@markup.heading.3.markdown", fg: mid_blue, bg: bg_white)
+hi("@markup.heading.4.markdown", fg: purple,   bg: bg_white)
+hi("@markup.heading.5.markdown", fg: magenta,  bg: bg_white)
 
 ####################################
 #                UI                #

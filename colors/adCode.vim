@@ -108,6 +108,11 @@ hi @markup.link.url ctermfg=99 guifg=#8860FF gui=italic
 hi @markup.list ctermfg=169 guifg=#D040B0
 hi @markup.strong gui=bold
 hi @markup.italic gui=italic
+hi @markup.heading.1.markdown ctermfg=77 guifg=#50DF40 ctermbg=234 guibg=#002020
+hi @markup.heading.2.markdown ctermfg=79 guifg=#30D0C0 ctermbg=234 guibg=#002020
+hi @markup.heading.3.markdown ctermfg=39 guifg=#20A0FF ctermbg=234 guibg=#002020
+hi @markup.heading.4.markdown ctermfg=99 guifg=#8860FF ctermbg=234 guibg=#002020
+hi @markup.heading.5.markdown ctermfg=133 guifg=#C030C0 ctermbg=234 guibg=#002020
 hi StartifyBracket ctermfg=103 guifg=#8C8CAF
 hi StartifyPath ctermfg=75 guifg=#40B0FF
 hi StartifySlash ctermfg=103 guifg=#8C8CAF
