@@ -98,8 +98,9 @@ hi @text.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,ita
 hi @comment.danger ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
 hi @comment.error ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20 gui=bold,italic
 hi ghostText ctermfg=236 guifg=#283048 gui=italic
-hi @markup.heading ctermfg=78 guifg=#50E080 gui=bold
 hi @markup.raw ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
+hi @markup.raw.block.markdown ctermbg=234 guibg=#131D33
+hi CodeBlock ctermbg=234 guibg=#131D33
 hi @text.literal.markdown ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
 hi @text.literal.markdown_inline ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131D33
 hi @markup.link ctermfg=103 guifg=#8C8CAF term=underline cterm=undercurl guisp=#40B0FF
@@ -108,11 +109,19 @@ hi @markup.link.url ctermfg=99 guifg=#8860FF gui=italic
 hi @markup.list ctermfg=169 guifg=#D040B0
 hi @markup.strong gui=bold
 hi @markup.italic gui=italic
-hi @markup.heading.1.markdown ctermfg=77 guifg=#50DF40 ctermbg=234 guibg=#002020
-hi @markup.heading.2.markdown ctermfg=79 guifg=#30D0C0 ctermbg=234 guibg=#002020
-hi @markup.heading.3.markdown ctermfg=39 guifg=#20A0FF ctermbg=234 guibg=#002020
-hi @markup.heading.4.markdown ctermfg=99 guifg=#8860FF ctermbg=234 guibg=#002020
-hi @markup.heading.5.markdown ctermfg=133 guifg=#C030C0 ctermbg=234 guibg=#002020
+hi @markup.heading ctermfg=78 guifg=#50E080 gui=bold
+hi @markup.heading.1.markdown ctermfg=77 guifg=#50DF40 ctermbg=234 guibg=#102020
+hi @markup.heading.2.markdown ctermfg=79 guifg=#30D0C0 ctermbg=234 guibg=#102020
+hi @markup.heading.3.markdown ctermfg=39 guifg=#20A0FF ctermbg=234 guibg=#102020
+hi @markup.heading.4.markdown ctermfg=99 guifg=#8860FF ctermbg=234 guibg=#102020
+hi @markup.heading.5.markdown ctermfg=133 guifg=#C030C0 ctermbg=234 guibg=#102020
+hi @markup.heading.6.markdown ctermfg=141 guifg=#A080FF ctermbg=234 guibg=#102020
+hi! link markdownH1 @markup.heading.1.markdown
+hi! link markdownH2 @markup.heading.2.markdown
+hi! link markdownH3 @markup.heading.3.markdown
+hi! link markdownH4 @markup.heading.4.markdown
+hi! link markdownH5 @markup.heading.5.markdown
+hi! link markdownH6 @markup.heading.6.markdown
 hi StartifyBracket ctermfg=103 guifg=#8C8CAF
 hi StartifyPath ctermfg=75 guifg=#40B0FF
 hi StartifySlash ctermfg=103 guifg=#8C8CAF

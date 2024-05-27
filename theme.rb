@@ -30,7 +30,7 @@ dark_blue    = '#2070FF'
 mid_blue     = '#20A0FF'
 blue         = '#40B0FF'
 light_blue   = '#70D0FF'
-light_purple = "#A080FF"
+light_purple = '#A080FF'
 purple       = '#8860FF'
 dark_purple  = '#7050FF'
 darker_purple= '#3030C0'
@@ -43,7 +43,7 @@ bg_red       = '#200C20'
 bg_orange    = '#231A1D'
 bg_green     = '#103030'
 bg_light_blue= '#131D33'
-bg_white     = '#002020'
+bg_white     = '#102020'
 
 diff_add_bg  = '#063806'
 diff_del_bg  = '#380505'
@@ -57,7 +57,7 @@ def hi(name, fg: nil, bg: nil, styles: [], guisp: nil, undercurl: nil, underdott
 end
 
 def link(name, source)
-  "hi! link #{name} #{source}"
+  puts "hi! link #{name} #{source}"
 end
 
 def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil, undercurl: nil, underdotted: nil)
@@ -277,8 +277,9 @@ hi("@comment.error",   fg: red,         bg: bg_red,        styles: %i[bold itali
 hi("ghostText",        fg: super_muted, styles: %i[italic])
 
 # Markdown
-hi("@markup.heading",               fg: light_green, styles: %i[bold])
 hi("@markup.raw",                   fg: light_blue, bg: bg_light_blue)
+hi("@markup.raw.block.markdown", bg: bg_light_blue)
+hi("CodeBlock", bg: bg_light_blue)
 hi("@text.literal.markdown",        fg: light_blue, bg: bg_light_blue)
 hi("@text.literal.markdown_inline", fg: light_blue, bg: bg_light_blue)
 hi("@markup.link",                  fg: muted, undercurl: blue)
@@ -288,11 +289,20 @@ hi("@markup.list",                  fg: pink)
 hi("@markup.strong",                            styles: %i[bold])
 hi("@markup.italic",                            styles: %i[italic])
 
-hi("@markup.heading.1.markdown", fg: green,    bg: bg_white)
-hi("@markup.heading.2.markdown", fg: teal,     bg: bg_white)
-hi("@markup.heading.3.markdown", fg: mid_blue, bg: bg_white)
-hi("@markup.heading.4.markdown", fg: purple,   bg: bg_white)
-hi("@markup.heading.5.markdown", fg: magenta,  bg: bg_white)
+hi("@markup.heading",            fg: light_green,  styles: %i[bold])
+hi("@markup.heading.1.markdown", fg: green,        bg: bg_white)
+hi("@markup.heading.2.markdown", fg: teal,         bg: bg_white)
+hi("@markup.heading.3.markdown", fg: mid_blue,     bg: bg_white)
+hi("@markup.heading.4.markdown", fg: purple,       bg: bg_white)
+hi("@markup.heading.5.markdown", fg: magenta,      bg: bg_white)
+hi("@markup.heading.6.markdown", fg: light_purple, bg: bg_white)
+
+link("markdownH1", "@markup.heading.1.markdown")
+link("markdownH2", "@markup.heading.2.markdown")
+link("markdownH3", "@markup.heading.3.markdown")
+link("markdownH4", "@markup.heading.4.markdown")
+link("markdownH5", "@markup.heading.5.markdown")
+link("markdownH6", "@markup.heading.6.markdown")
 
 ####################################
 #                UI                #
