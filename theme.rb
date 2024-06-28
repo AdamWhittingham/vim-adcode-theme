@@ -208,7 +208,7 @@ hi("Identifier",                  fg: plain_fg)
 hi("Include",                     fg: pink)
 hi("Keyword",                     fg: light_purple, styles: :italic)
 hi("KeywordFunction",             fg: light_purple, styles: :italic)
-hi("Label",                       fg: light_green)
+hi("Label",                       fg: teal)
 hi("Number",                      fg: green)
 hi("Operator",                    fg: plain_fg)
 hi("Parameter",                   fg: teal)
@@ -267,6 +267,14 @@ hi("@number.float",          fg: lime)
 hi("TreesitterContext",           fg: muted, bg: dark_bg, styles: :italic)
 hi("TreesitterContextLineNumber", fg: darker_blue, bg: dark_bg, styles: :italic)
 
+# Raindbow helpers
+hi("rainbow1", fg: dark_blue)
+hi("rainbow2", fg: blue)
+hi("rainbow3", fg: dark_teal)
+hi("rainbow4", fg: purple)
+hi("rainbow5", fg: dark_purple)
+hi("rainbow6", fg: darker_purple)
+
 ####################################
 #               Text               #
 ####################################
@@ -282,16 +290,19 @@ hi("ghostText",        fg: super_muted, styles: %i[italic])
 
 # Markdown
 hi("@markup.raw",                   fg: light_blue, bg: bg_light_blue)
-hi("@markup.raw.block.markdown", bg: bg_light_blue)
-hi("CodeBlock", bg: bg_light_blue)
+hi("@markup.raw.block.markdown",    bg: bg_light_blue)
+hi("CodeBlock",                     bg: bg_light_blue)
 hi("@text.literal.markdown",        fg: light_blue, bg: bg_light_blue)
 hi("@text.literal.markdown_inline", fg: light_blue, bg: bg_light_blue)
-hi("@markup.link",                  fg: muted, undercurl: blue)
+hi("@markup.link",                  fg: muted,      undercurl: blue)
 hi("@markup.link.label",            fg: blue)
-hi("@markup.link.url",              fg: purple, styles: %i[italic])
-hi("@markup.list",                  fg: pink)
-hi("@markup.strong",                            styles: %i[bold])
-hi("@markup.italic",                            styles: %i[italic])
+hi("@markup.link.url",              fg: purple,     styles: %i[italic])
+hi("@markup.list",                  fg: purple)
+hi("@markup.strong",                styles: %i[bold])
+hi("@markup.italic",                styles: %i[italic])
+
+hi("code_block",                    bg: float_bg)
+hi("inline_code_block",             bg: float_bg)
 
 hi("@markup.heading",            fg: light_green,  styles: %i[bold])
 hi("@markup.heading.1.markdown", fg: green,        bg: bg_white)
@@ -307,6 +318,20 @@ link("markdownH3", "@markup.heading.3.markdown")
 link("markdownH4", "@markup.heading.4.markdown")
 link("markdownH5", "@markup.heading.5.markdown")
 link("markdownH6", "@markup.heading.6.markdown")
+
+link("markview_h1", "@markup.heading.1.markdown")
+link("markview_h2", "@markup.heading.2.markdown")
+link("markview_h3", "@markup.heading.3.markdown")
+link("markview_h4", "@markup.heading.4.markdown")
+link("markview_h5", "@markup.heading.5.markdown")
+link("markview_h6", "@markup.heading.6.markdown")
+
+link("markview_h1_icon", "@markup.heading.1.markdown")
+link("markview_h2_icon", "@markup.heading.2.markdown")
+link("markview_h3_icon", "@markup.heading.3.markdown")
+link("markview_h4_icon", "@markup.heading.4.markdown")
+link("markview_h5_icon", "@markup.heading.5.markdown")
+link("markview_h6_icon", "@markup.heading.6.markdown")
 
 ####################################
 #                UI                #

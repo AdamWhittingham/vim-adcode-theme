@@ -35,7 +35,7 @@ hi Identifier ctermfg=231 guifg=#FAFAFA
 hi Include ctermfg=169 guifg=#D040B0
 hi Keyword ctermfg=141 guifg=#A080FF gui=italic
 hi KeywordFunction ctermfg=141 guifg=#A080FF gui=italic
-hi Label ctermfg=78 guifg=#50E080
+hi Label ctermfg=79 guifg=#30D0C0
 hi Number ctermfg=77 guifg=#50DF40
 hi Operator ctermfg=231 guifg=#FAFAFA
 hi Parameter ctermfg=79 guifg=#30D0C0
@@ -89,6 +89,12 @@ hi @variable.member ctermfg=81 guifg=#70D0FF
 hi @number.float ctermfg=83 guifg=#70FF5A
 hi TreesitterContext ctermfg=103 guifg=#8C8CAF ctermbg=17 guibg=#030340 gui=italic
 hi TreesitterContextLineNumber ctermfg=24 guifg=#104080 ctermbg=17 guibg=#030340 gui=italic
+hi rainbow1 ctermfg=27 guifg=#2070FF
+hi rainbow2 ctermfg=75 guifg=#40B0FF
+hi rainbow3 ctermfg=24 guifg=#107090
+hi rainbow4 ctermfg=99 guifg=#8860FF
+hi rainbow5 ctermfg=63 guifg=#7050FF
+hi rainbow6 ctermfg=61 guifg=#3030C0
 hi @text.title ctermfg=78 guifg=#50E080 gui=bold
 hi @text.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
 hi @comment.todo ctermfg=75 guifg=#40B0FF ctermbg=234 guibg=#131D33 gui=bold,italic
@@ -106,9 +112,11 @@ hi @text.literal.markdown_inline ctermfg=81 guifg=#70D0FF ctermbg=234 guibg=#131
 hi @markup.link ctermfg=103 guifg=#8C8CAF term=underline cterm=undercurl guisp=#40B0FF
 hi @markup.link.label ctermfg=75 guifg=#40B0FF
 hi @markup.link.url ctermfg=99 guifg=#8860FF gui=italic
-hi @markup.list ctermfg=169 guifg=#D040B0
+hi @markup.list ctermfg=99 guifg=#8860FF
 hi @markup.strong gui=bold
 hi @markup.italic gui=italic
+hi code_block ctermbg=234 guibg=#0A1840
+hi inline_code_block ctermbg=234 guibg=#0A1840
 hi @markup.heading ctermfg=78 guifg=#50E080 gui=bold
 hi @markup.heading.1.markdown ctermfg=77 guifg=#50DF40 ctermbg=234 guibg=#102020
 hi @markup.heading.2.markdown ctermfg=79 guifg=#30D0C0 ctermbg=234 guibg=#102020
@@ -122,6 +130,18 @@ hi! link markdownH3 @markup.heading.3.markdown
 hi! link markdownH4 @markup.heading.4.markdown
 hi! link markdownH5 @markup.heading.5.markdown
 hi! link markdownH6 @markup.heading.6.markdown
+hi! link markview_h1 @markup.heading.1.markdown
+hi! link markview_h2 @markup.heading.2.markdown
+hi! link markview_h3 @markup.heading.3.markdown
+hi! link markview_h4 @markup.heading.4.markdown
+hi! link markview_h5 @markup.heading.5.markdown
+hi! link markview_h6 @markup.heading.6.markdown
+hi! link markview_h1_icon @markup.heading.1.markdown
+hi! link markview_h2_icon @markup.heading.2.markdown
+hi! link markview_h3_icon @markup.heading.3.markdown
+hi! link markview_h4_icon @markup.heading.4.markdown
+hi! link markview_h5_icon @markup.heading.5.markdown
+hi! link markview_h6_icon @markup.heading.6.markdown
 hi StartifyBracket ctermfg=103 guifg=#8C8CAF
 hi StartifyPath ctermfg=75 guifg=#40B0FF
 hi StartifySlash ctermfg=103 guifg=#8C8CAF
