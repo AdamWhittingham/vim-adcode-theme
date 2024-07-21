@@ -1,9 +1,5 @@
 #! /usr/bin/env ruby
 
-# TODO The thing
-# FIX this
-# FIXME
-
 # Colors
 plain_fg     = '#FAFAFA'
 plain_bg     = '#07071A'
@@ -291,7 +287,6 @@ hi("ghostText",        fg: super_muted, styles: %i[italic])
 # Markdown
 hi("@markup.raw",                   fg: light_blue, bg: bg_light_blue)
 hi("@markup.raw.block.markdown",    bg: bg_light_blue)
-hi("CodeBlock",                     bg: bg_light_blue)
 hi("@text.literal.markdown",        fg: light_blue, bg: bg_light_blue)
 hi("@text.literal.markdown_inline", fg: light_blue, bg: bg_light_blue)
 hi("@markup.link",                  fg: muted,      undercurl: blue)
@@ -301,37 +296,34 @@ hi("@markup.list",                  fg: purple)
 hi("@markup.strong",                styles: %i[bold])
 hi("@markup.italic",                styles: %i[italic])
 
+
+hi("CodeBlock",                     bg: float_bg)
 hi("code_block",                    bg: float_bg)
 hi("inline_code_block",             bg: float_bg)
+hi("RenderMarkdownCode",            bg: float_bg)
 
 hi("@markup.heading",            fg: light_green,  styles: %i[bold])
-hi("@markup.heading.1.markdown", fg: green,        bg: bg_white)
-hi("@markup.heading.2.markdown", fg: teal,         bg: bg_white)
-hi("@markup.heading.3.markdown", fg: mid_blue,     bg: bg_white)
-hi("@markup.heading.4.markdown", fg: purple,       bg: bg_white)
-hi("@markup.heading.5.markdown", fg: magenta,      bg: bg_white)
-hi("@markup.heading.6.markdown", fg: light_purple, bg: bg_white)
+hi("@markup.heading.1.markdown", fg: green)
+hi("@markup.heading.2.markdown", fg: teal)
+hi("@markup.heading.3.markdown", fg: mid_blue)
+hi("@markup.heading.4.markdown", fg: purple)
+hi("@markup.heading.5.markdown", fg: magenta)
+hi("@markup.heading.6.markdown", fg: light_purple)
 
-link("markdownH1", "@markup.heading.1.markdown")
-link("markdownH2", "@markup.heading.2.markdown")
-link("markdownH3", "@markup.heading.3.markdown")
-link("markdownH4", "@markup.heading.4.markdown")
-link("markdownH5", "@markup.heading.5.markdown")
-link("markdownH6", "@markup.heading.6.markdown")
+link("RenderMarkdownH1", "@markup.heading.1.markdown")
+link("RenderMarkdownH2", "@markup.heading.2.markdown")
+link("RenderMarkdownH3", "@markup.heading.3.markdown")
+link("RenderMarkdownH4", "@markup.heading.4.markdown")
+link("RenderMarkdownH5", "@markup.heading.5.markdown")
+link("RenderMarkdownH6", "@markup.heading.6.markdown")
 
-link("markview_h1", "@markup.heading.1.markdown")
-link("markview_h2", "@markup.heading.2.markdown")
-link("markview_h3", "@markup.heading.3.markdown")
-link("markview_h4", "@markup.heading.4.markdown")
-link("markview_h5", "@markup.heading.5.markdown")
-link("markview_h6", "@markup.heading.6.markdown")
+link("RenderMarkdownH1Bg", "@markup.heading.1.markdown")
+link("RenderMarkdownH2Bg", "@markup.heading.2.markdown")
+link("RenderMarkdownH3Bg", "@markup.heading.3.markdown")
+link("RenderMarkdownH4Bg", "@markup.heading.4.markdown")
+link("RenderMarkdownH5Bg", "@markup.heading.5.markdown")
+link("RenderMarkdownH6Bg", "@markup.heading.6.markdown")
 
-link("markview_h1_icon", "@markup.heading.1.markdown")
-link("markview_h2_icon", "@markup.heading.2.markdown")
-link("markview_h3_icon", "@markup.heading.3.markdown")
-link("markview_h4_icon", "@markup.heading.4.markdown")
-link("markview_h5_icon", "@markup.heading.5.markdown")
-link("markview_h6_icon", "@markup.heading.6.markdown")
 
 ####################################
 #                UI                #
