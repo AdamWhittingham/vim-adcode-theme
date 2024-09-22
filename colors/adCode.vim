@@ -5,7 +5,7 @@ hi Cursor ctermfg=231 guifg=#FAFAFA ctermbg=231 guibg=#FFFFFF
 hi CursorLine ctermfg=NONE guifg=NONE ctermbg=233 guibg=#0C0C2C
 hi CursorLineNr ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C gui=bold
 hi CursorColumn ctermfg=NONE guifg=NONE ctermbg=17 guibg=#10084A
-hi MatchParen ctermfg=77 guifg=#50DF40 ctermbg=236 guibg=#103030 gui=bold
+hi MatchParen ctermfg=83 guifg=#70FF5A ctermbg=236 guibg=#103030 gui=bold
 hi SignColumn ctermfg=231 guifg=#FAFAFA ctermbg=233 guibg=#0C0C2C
 hi VertSplit ctermfg=233 guifg=#0C0C2C ctermbg=233 guibg=#0C0C2C
 hi NonText ctermfg=236 guifg=#283048 gui=bold
