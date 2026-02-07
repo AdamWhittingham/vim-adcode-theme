@@ -8,22 +8,23 @@ nvim_output = "~/.config/nvim/colors/#{scheme_name}.vim"
 
 guard :shell do
   watch("theme.rb") do |scheme_files|
-    print "#{Time.now}: generating '#{scheme_name}'"
+    puts "#{Time.now}: generating '#{scheme_name}'"
 
     `./theme.rb > #{repo_output}`
-    print "."
 
     if Dir["~/.vim"]
-      `cp #{repo_output} #{vim_output}`
-      print "."
+      print "  Vim "
+      `mkdir -p ~/.vim/colors/`
+      `cp #{repo_output} #{vim_output} &>/dev/null`
+      puts "✓"
     end
 
     if Dir["~/.config/nvim"]
+      print "  Neovim "
+      `mkdir -p ~/.config/nvim/colors/`
       `cp #{repo_output} #{nvim_output}`
-      print "."
+      puts "✓"
     end
-
-    puts "updated"
   end
   nil
 end

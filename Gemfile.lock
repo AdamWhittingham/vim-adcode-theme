@@ -39,6 +39,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  guard
   guard-shell
 
 BUNDLED WITH

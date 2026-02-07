@@ -13,7 +13,7 @@ hi SpecialKey ctermfg=208 guifg=#FF9800 gui=bold
 hi RedundantSpaces ctermfg=NONE guifg=NONE ctermbg=167 guibg=#E9475A
 hi BadSpaces ctermfg=231 guifg=#FAFAFA ctermbg=167 guibg=#E9475A
 hi NormalFloat ctermfg=231 guifg=#FAFAFA ctermbg=234 guibg=#0A1840
-hi FloatBorder ctermfg=103 guifg=#8C8CAF ctermbg=234 guibg=#0A1840
+hi FloatBorder ctermfg=236 guifg=#283048 ctermbg=234 guibg=#0A1840
 hi Folded ctermfg=27 guifg=#2070FF ctermbg=234 guibg=#0A1840
 hi InactiveWindow ctermfg=NONE guifg=NONE ctermbg=233 guibg=#0C0C2C
 hi ErrorMsg ctermfg=167 guifg=#E9475A ctermbg=234 guibg=#200C20
@@ -28,24 +28,24 @@ hi Debug ctermfg=208 guifg=#FF9800
 hi Define ctermfg=231 guifg=#FAFAFA
 hi Delimiter ctermfg=27 guifg=#2070FF
 hi Exception ctermfg=167 guifg=#E9475A
-hi Field ctermfg=79 guifg=#30D0C0
+hi Field ctermfg=73 guifg=#30B0C0
 hi Float ctermfg=83 guifg=#70FF5A
 hi Function ctermfg=81 guifg=#70D0FF
 hi Identifier ctermfg=231 guifg=#FAFAFA
 hi Include ctermfg=169 guifg=#D040B0
 hi Keyword ctermfg=141 guifg=#A080FF gui=italic
 hi KeywordFunction ctermfg=141 guifg=#A080FF gui=italic
-hi Label ctermfg=79 guifg=#30D0C0
+hi Label ctermfg=73 guifg=#30B0C0
 hi Number ctermfg=77 guifg=#50DF40
 hi Operator ctermfg=231 guifg=#FAFAFA
-hi Parameter ctermfg=79 guifg=#30D0C0
+hi Parameter ctermfg=73 guifg=#30B0C0
 hi PunctBracket ctermfg=77 guifg=#50DF40
 hi PunctDelimiter ctermfg=231 guifg=#FFFFFF
 hi PunctSpecial ctermfg=77 guifg=#50DF40
 hi Special ctermfg=75 guifg=#40B0FF
 hi Statement ctermfg=141 guifg=#A080FF
 hi String ctermfg=77 guifg=#50DF40
-hi StringRegex ctermfg=79 guifg=#30D0C0
+hi StringRegex ctermfg=73 guifg=#30B0C0
 hi Structure ctermfg=75 guifg=#40B0FF
 hi Symbol ctermfg=75 guifg=#40B0FF
 hi Title ctermfg=75 guifg=#40B0FF
@@ -74,13 +74,13 @@ hi @property ctermfg=81 guifg=#70D0FF
 hi @punctuation.bracket ctermfg=27 guifg=#2070FF
 hi @punctuation.delimiter ctermfg=81 guifg=#70D0FF
 hi @punctuation.special ctermfg=141 guifg=#A080FF
-hi @label ctermfg=79 guifg=#30D0C0
+hi @label ctermfg=73 guifg=#30B0C0
 hi @string ctermfg=78 guifg=#50E080
 hi @string.escape ctermfg=83 guifg=#70FF5A
 hi @string.regex ctermfg=83 guifg=#70FF5A
 hi @string.regexp ctermfg=83 guifg=#70FF5A
-hi @symbol ctermfg=79 guifg=#30D0C0
-hi @string.special.symbol ctermfg=79 guifg=#30D0C0
+hi @symbol ctermfg=73 guifg=#30B0C0
+hi @string.special.symbol ctermfg=73 guifg=#30B0C0
 hi @string.special.uri ctermfg=81 guifg=#70D0FF term=underline cterm=undercurl guisp=#40B0FF
 hi @variable ctermfg=231 guifg=#FAFAFA
 hi @variable.builtin ctermfg=231 guifg=#FAFAFA gui=italic
@@ -120,7 +120,7 @@ hi inline_code_block ctermbg=234 guibg=#0A1840
 hi RenderMarkdownCode ctermbg=234 guibg=#0A1840
 hi @markup.heading ctermfg=78 guifg=#50E080 gui=bold
 hi @markup.heading.1.markdown ctermfg=77 guifg=#50DF40
-hi @markup.heading.2.markdown ctermfg=79 guifg=#30D0C0
+hi @markup.heading.2.markdown ctermfg=73 guifg=#30B0C0
 hi @markup.heading.3.markdown ctermfg=39 guifg=#20A0FF
 hi @markup.heading.4.markdown ctermfg=99 guifg=#8860FF
 hi @markup.heading.5.markdown ctermfg=133 guifg=#C030C0
@@ -206,8 +206,8 @@ hi CmpItemKindField ctermfg=78 guifg=#50E080
 hi CmpItemKindVariable ctermfg=77 guifg=#50DF40
 hi CmpItemKindClass ctermfg=227 guifg=#FFFF40
 hi CmpItemKindInterface ctermfg=215 guifg=#FFB633
-hi CmpItemKindValue ctermfg=79 guifg=#30D0C0
-hi CmpItemKindEnum ctermfg=79 guifg=#30D0C0
+hi CmpItemKindValue ctermfg=73 guifg=#30B0C0
+hi CmpItemKindEnum ctermfg=73 guifg=#30B0C0
 hi CmpItemKindKeyword ctermfg=99 guifg=#8860FF
 hi CmpItemKindSnippet ctermfg=83 guifg=#70FF5A
 hi CmpItemKindFile ctermfg=231 guifg=#FAFAFA
@@ -230,6 +230,15 @@ hi TelescopePromptNormal ctermfg=231 guifg=#FFFFFF ctermbg=232 guibg=#07071A
 hi TelescopePromptPrefix ctermfg=83 guifg=#70FF5A
 hi TelescopePromptBorder ctermfg=61 guifg=#3030C0 ctermbg=232 guibg=#07071A
 hi TelescopePromptCounter ctermfg=61 guifg=#3030C0
+hi SnacksPickerDir ctermfg=103 guifg=#8C8CAF gui=italic
+hi SnacksDashboardDir ctermfg=103 guifg=#8C8CAF gui=italic
+hi SnacksDashboardDesc ctermfg=24 guifg=#107090
+hi SnacksDashboardFile ctermfg=208 guifg=#FF9800
+hi SnacksDashboardFooter ctermfg=63 guifg=#7050FF
+hi SnacksDashboardIcon ctermfg=231 guifg=#FFFFFF
+hi SnacksDashboardKey ctermfg=27 guifg=#2070FF
+hi SnacksDashboardSpecial ctermfg=99 guifg=#8860FF
+hi SnacksDashboardTitle ctermfg=73 guifg=#30B0C0 gui=bold
 hi LazyDimmed ctermfg=103 guifg=#8C8CAF gui=italic
 hi GitGutterAdd ctermfg=77 guifg=#50DF40 ctermbg=233 guibg=#0C0C2C
 hi GitGutterAddLine ctermfg=NONE guifg=NONE ctermbg=22 guibg=#063806
@@ -270,7 +279,7 @@ hi DapStoppedLine ctermfg=NONE guifg=NONE ctermbg=236 guibg=#283048 gui=italic
 hi WhichKey ctermfg=81 guifg=#70D0FF
 hi WhichKeySeparator ctermfg=103 guifg=#8C8CAF
 hi WhichKeyDesc ctermfg=141 guifg=#A080FF
-hi WhichKeyGroup ctermfg=79 guifg=#30D0C0
+hi WhichKeyGroup ctermfg=73 guifg=#30B0C0
 hi YankyPut ctermfg=NONE guifg=NONE ctermbg=63 guibg=#7050FF
 hi YankyYanked ctermfg=NONE guifg=NONE ctermbg=63 guibg=#7050FF
 hi sshconfigMatch ctermfg=99 guifg=#8860FF

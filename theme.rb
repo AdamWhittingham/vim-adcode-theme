@@ -23,7 +23,7 @@ lime         = '#70FF5A'
 light_green  = '#50E080'
 green        = '#50DF40'
 dark_green   = '#107020'
-teal         = '#30D0C0'
+teal         = '#30B0C0'
 dark_teal    = '#107090'
 darker_blue  = '#104080'
 dark_blue    = '#2070FF'
@@ -177,7 +177,7 @@ hi('SpecialKey',                  fg: dark_orange,  styles: :bold)
 hi('RedundantSpaces',             fg: none,         bg: red)
 hi('BadSpaces',                   fg: plain_fg,     bg: red)
 hi('NormalFloat',                 fg: plain_fg,     bg: float_bg)
-hi('FloatBorder',                 fg: muted,        bg: float_bg)
+hi('FloatBorder',                 fg: super_muted,        bg: float_bg)
 hi('Folded',                      fg: dark_blue,    bg: float_bg)
 hi('InactiveWindow',              fg: none,         bg: vertical_div)
 hi('ErrorMsg',                    fg: red,          bg: bg_red)
@@ -458,6 +458,18 @@ hi("TelescopePromptNormal",       fg: white,        bg: plain_bg)
 hi("TelescopePromptPrefix",       fg: lime)
 hi("TelescopePromptBorder",       fg: darker_purple,  bg: plain_bg)
 hi("TelescopePromptCounter",      fg: darker_purple)
+
+# Snacks
+hi("SnacksPickerDir",                fg: muted, styles: :italic)
+hi("SnacksDashboardDir",             fg: muted, styles: :italic)
+
+hi("SnacksDashboardDesc",            fg: dark_teal)
+hi("SnacksDashboardFile",            fg: dark_orange)
+hi("SnacksDashboardFooter",          fg: dark_purple)
+hi("SnacksDashboardIcon",            fg: white)
+hi("SnacksDashboardKey",             fg: dark_blue)
+hi("SnacksDashboardSpecial",         fg: purple)
+hi("SnacksDashboardTitle",           fg: teal, styles: :bold)
 
 # Lazy
 hi("LazyDimmed", fg: muted, styles: :italic)
