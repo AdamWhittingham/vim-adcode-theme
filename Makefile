@@ -6,7 +6,12 @@ build:
 dev:
 	bundle exec guard
 
-.PHONY: prod
-prod: build
+.PHONY: test
+test: build
 	cp -r colors ~/.config/nvim/
 	ls ~/.config/nvim/colors
+
+.PHONY: test-clean
+test-clean:
+	rm ~/.config/nvim/colors/adCode.vim
+	rm ~/.vim/colors/adCode.vim
