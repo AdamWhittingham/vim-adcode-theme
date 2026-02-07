@@ -27,9 +27,9 @@ teal         = '#30B0C0'
 dark_teal    = '#107090'
 darker_blue  = '#104080'
 dark_blue    = '#2070FF'
-mid_blue     = '#20A0FF'
+mid_blue     = '#2090FF'
 blue         = '#40B0FF'
-light_blue   = '#70D0FF'
+light_blue   = '#60D0FF'
 light_purple = '#A080FF'
 purple       = '#8860FF'
 dark_purple  = '#7050FF'
@@ -241,7 +241,7 @@ hi("@module",                fg: dark_teal)
 hi("@operator",              fg: white)
 hi("@parameter",             fg: plain_fg) # Depreacted
 hi("@variable.parameter",    fg: plain_fg)
-hi("@property",              fg: light_blue)
+hi("@property",              fg: blue)
 hi("@punctuation.bracket",   fg: dark_blue)
 hi("@punctuation.delimiter", fg: light_blue)
 hi("@punctuation.special",   fg: light_purple)
@@ -252,11 +252,11 @@ hi("@string.regex",          fg: lime)
 hi("@string.regexp",         fg: lime) # Depreacted
 hi("@symbol",                fg: teal) # Depreacted
 hi("@string.special.symbol", fg: teal)
-hi("@string.special.uri",    fg: light_blue, undercurl: blue)
+hi("@string.special.uri",    fg: blue, undercurl: blue)
 hi("@variable",              fg: plain_fg)
 hi("@variable.builtin",      fg: plain_fg,   styles:  :italic)
-hi("@field",                 fg: light_blue) # Depreacted
-hi("@variable.member",       fg: light_blue)
+hi("@field",                 fg: blue) # Depreacted
+hi("@variable.member",       fg: blue)
 hi("@number.float",          fg: lime)
 
 # Treesitter Context
@@ -285,7 +285,7 @@ hi("@comment.error",   fg: red,         bg: bg_red,        styles: %i[bold itali
 hi("ghostText",        fg: super_muted, styles: %i[italic])
 
 # Markdown
-hi("@markup.raw",                   fg: light_blue, bg: bg_light_blue)
+hi("@markup.raw",                   fg: blue, bg: bg_light_blue)
 hi("@markup.raw.block.markdown",    bg: bg_light_blue)
 hi("@text.literal.markdown",        fg: light_blue, bg: bg_light_blue)
 hi("@text.literal.markdown_inline", fg: light_blue, bg: bg_light_blue)
@@ -332,7 +332,7 @@ link("RenderMarkdownH6Bg", "@markup.heading.6.markdown")
 hi("StartifyBracket",             fg: muted)
 hi("StartifyPath",                fg: blue)
 hi("StartifySlash",               fg: muted)
-hi("StartifyFile",                fg: light_blue)
+hi("StartifyFile",                fg: blue)
 hi("StartifyFooter",              fg: muted)
 hi("StartifyHeader",              fg: green)
 hi("StartifyNumber",              fg: orange)
@@ -393,7 +393,7 @@ hi("DiagnosticSignError",         fg: red,          bg: gutter)
 hi("DiagnosticVirtualTextError",  fg: red,          bg: bg_red)
 hi("DiagnosticSignWarn",          fg: orange,       bg: gutter)
 hi("DiagnosticVirtualTextWarn",   fg: orange,       bg: bg_orange)
-hi("DiagnosticSignInfo",          fg: light_blue,   bg: gutter)
+hi("DiagnosticSignInfo",          fg: blue,   bg: gutter)
 hi("DiagnosticVirtualTextInfo",   fg: light_blue,   bg: bg_light_blue)
 hi("DiagnosticSignHint",          fg: white)
 hi("LspSignatureActiveParameter", fg: light_blue)
@@ -405,7 +405,7 @@ hi("LspReferenceWrite",           fg: blue,         bg: bg_light_blue,  styles: 
 ### LSPsaga
 hi("SagaNormal",                                    bg: float_bg)
 hi("SagaBorder",                  fg: dark_blue,    bg: float_bg)
-hi("DiagnosticInfo",              fg: light_blue)
+hi("DiagnosticInfo",              fg: blue)
 hi("DiagnostiError",              fg: red)
 hi("DiagnosticWarn",              fg: orange)
 
@@ -525,7 +525,7 @@ hi("DapStopped",                  fg: green,        bg: vertical_div)
 hi("DapStoppedLine",              fg: none,         bg: super_muted,    styles: :italic)
 
 # Whichkey
-hi("WhichKey",                    fg: light_blue)
+hi("WhichKey",                    fg: blue)
 hi("WhichKeySeparator",           fg: muted)
 hi("WhichKeyDesc",                fg: light_purple)
 hi("WhichKeyGroup",               fg: teal)
