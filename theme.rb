@@ -14,46 +14,44 @@ vertical_div = '#0C0C2C'
 gutter = '#0C0C2C'
 cursor_column = '#10084A'
 
-white        = '#FFFFFF'
-red          = '#E9475A'
-dark_orange  = '#FF9800'
-orange       = '#FFB633'
-yellow       = '#FFFF40'
-lime         = '#70FF5A'
-light_green  = '#50E080'
-green        = '#50DF40'
-dark_green   = '#107020'
-teal         = '#30B0C0'
-dark_teal    = '#107090'
-darker_blue  = '#104080'
-dark_blue    = '#2070FF'
-mid_blue     = '#2090FF'
-blue         = '#40B0FF'
-light_blue   = '#60D0FF'
-light_purple = '#A080FF'
-purple       = '#8860FF'
-dark_purple  = '#7050FF'
-darker_purple= '#3030C0'
-pink         = '#D040B0'
-magenta      = '#C030C0'
-highlight    = '#F8D454'
-visual       = '#003050'
+white         = '#FFFFFF'
+red           = '#E9475A'
+dark_orange   = '#FF9800'
+orange        = '#FFB633'
+yellow        = '#FFFF40'
+lime          = '#70FF5A'
+light_green   = '#50E080'
+green         = '#50DF40'
+dark_green    = '#107020'
+teal          = '#30B0C0'
+dark_teal     = '#107090'
+darker_blue   = '#104080'
+dark_blue     = '#2070FF'
+mid_blue      = '#2090FF'
+blue          = '#40B0FF'
+light_blue    = '#60D0FF'
+light_purple  = '#A080FF'
+purple        = '#8860FF'
+dark_purple   = '#7050FF'
+darker_purple = '#3030C0'
+pink          = '#D040B0'
+magenta       = '#C030C0'
+highlight     = '#F8D454'
+visual        = '#003050'
 
-bg_red       = '#200C20'
-bg_orange    = '#231A1D'
-bg_green     = '#103030'
-bg_light_blue= '#131D33'
-bg_white     = '#102020'
+bg_red        = '#200C20'
+bg_orange     = '#231A1D'
+bg_green      = '#103030'
+bg_light_blue = '#131D33'
 
-diff_add_bg  = '#063806'
-diff_del_bg  = '#380505'
-diff_moddel_bg  = '#383805'
-
-conflict_mine  = '#103050'
-conflict_theirs  = '#503010'
+diff_add_bg    = '#063806'
+diff_del_bg    = '#380505'
+diff_moddel_bg = '#383805'
+conflict_mine   = '#103050'
+conflict_theirs = '#503010'
 
 def hi(name, fg: nil, bg: nil, styles: [], guisp: nil, undercurl: nil, underdotted: nil)
-  puts vim_hi(name, fg: fg, bg: bg, styles: Array(styles), guisp: guisp, undercurl: undercurl, underdotted: nil)
+  puts vim_hi(name, fg: fg, bg: bg, styles: Array(styles), guisp: guisp, undercurl: undercurl, underdotted: underdotted)
 end
 
 def link(name, source)
@@ -61,7 +59,7 @@ def link(name, source)
 end
 
 def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil, undercurl: nil, underdotted: nil)
-  out = ["hi"]
+  out = ['hi']
   out << name
 
   if fg
@@ -78,7 +76,7 @@ def vim_hi(name, fg: nil, bg: nil, styles: [], guisp: nil, undercurl: nil, under
   out << undercurl(undercurl) if undercurl
   out << underdotted(underdotted) if underdotted
   out << "guisp=#{guisp}" if guisp
-  out.compact.join(" ")
+  out.compact.join(' ')
 end
 
 XT_VALUES = [0, 95, 135, 175, 215, 255].freeze # the set of possible RGB values in XTerm
@@ -125,10 +123,11 @@ end
 def resolve_style(opts)
   return unless opts
 
-  valid_opts = Array(opts).map { |opt| resolve_opt!(opt) }
-  if valid_opts.any?
-    "gui=#{valid_opts.join(',')}"
-  end
+  gui_opts = Array(opts)
+      .map { |opt| resolve_opt!(opt) }
+      .join(',')
+
+  "gui=#{gui_opts}" if gui_opts != ''
 end
 
 def undercurl(guisp)
@@ -163,11 +162,11 @@ end
 ####################################
 # Core Vim Elemets
 hi('Normal',                      fg: plain_fg,     bg: plain_bg)
-hi('Visual',                      bg: visual)
+hi('Visual',                                        bg: visual)
 hi('LineNr',                      fg: muted,        bg: vertical_div)
 hi('Cursor',                      fg: plain_fg,     bg: white)
 hi('CursorLine',                  fg: none,         bg: gutter)
-hi('CursorLineNr',                fg: green,        bg: gutter,         styles: :bold)
+hi('CursorLineNr',                fg: green,        bg: gutter,             styles: :bold)
 hi('CursorColumn',                fg: none,         bg: cursor_column)
 hi('MatchParen',                  fg: lime,         bg: bg_green,           styles: :bold)
 hi('SignColumn',                  fg: plain_fg,     bg: vertical_div)
@@ -177,7 +176,7 @@ hi('SpecialKey',                  fg: dark_orange,  styles: :bold)
 hi('RedundantSpaces',             fg: none,         bg: red)
 hi('BadSpaces',                   fg: plain_fg,     bg: red)
 hi('NormalFloat',                 fg: plain_fg,     bg: float_bg)
-hi('FloatBorder',                 fg: super_muted,        bg: float_bg)
+hi('FloatBorder',                 fg: super_muted,  bg: float_bg)
 hi('Folded',                      fg: dark_blue,    bg: float_bg)
 hi('InactiveWindow',              fg: none,         bg: vertical_div)
 hi('ErrorMsg',                    fg: red,          bg: bg_red)
