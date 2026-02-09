@@ -240,7 +240,7 @@ hi("@module",                fg: dark_teal)
 hi("@operator",              fg: white)
 hi("@parameter",             fg: plain_fg) # Depreacted
 hi("@variable.parameter",    fg: plain_fg)
-hi("@property",              fg: blue)
+hi("@property",              fg: plain_fg)
 hi("@punctuation.bracket",   fg: dark_blue)
 hi("@punctuation.delimiter", fg: light_blue)
 hi("@punctuation.special",   fg: light_purple)

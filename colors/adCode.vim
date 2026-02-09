@@ -70,7 +70,7 @@ hi @module ctermfg=24 guifg=#107090
 hi @operator ctermfg=231 guifg=#FFFFFF
 hi @parameter ctermfg=231 guifg=#FAFAFA
 hi @variable.parameter ctermfg=231 guifg=#FAFAFA
-hi @property ctermfg=75 guifg=#40B0FF
+hi @property ctermfg=231 guifg=#FAFAFA
 hi @punctuation.bracket ctermfg=27 guifg=#2070FF
 hi @punctuation.delimiter ctermfg=81 guifg=#60D0FF
 hi @punctuation.special ctermfg=141 guifg=#A080FF
