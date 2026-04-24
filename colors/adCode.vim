@@ -39,6 +39,7 @@ hi Label ctermfg=73 guifg=#30B0C0
 hi Number ctermfg=77 guifg=#50DF40
 hi Operator ctermfg=231 guifg=#FAFAFA
 hi Parameter ctermfg=73 guifg=#30B0C0
+hi PreProc ctermfg=169 guifg=#D040B0
 hi PunctBracket ctermfg=77 guifg=#50DF40
 hi PunctDelimiter ctermfg=231 guifg=#FFFFFF
 hi PunctSpecial ctermfg=77 guifg=#50DF40
